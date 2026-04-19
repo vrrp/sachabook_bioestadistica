@@ -1,8 +1,8 @@
 <div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #D0F5D2">
 <!--h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Ciencia de Datos para Investigación Aplicada usando Python</b></span></h1-->
-<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Estadística para Investigación usando Python y AI</b></span></h1>
+<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Bioestadística para Investigación usando Python con Inteligencia Artificial</b></span></h1>
 </div>
-<br>
+
 <style>
 table tr:last-child td:last-child {
   border-bottom-right-radius: 0.5rem;
@@ -10,7 +10,7 @@ table tr:last-child td:last-child {
 </style>
 
 
-<table align="left" style="background-color: #D0F5D2">
+<table align="center" style="background-color: #D0F5D2;font-size: 13px;">
 <tr>
     <th align="left"><span style="font-family:Monospace;color:#046D0B">Autor :</span></th>
     <th align="left"><span style="font-family:Monospace;color:#046D0B">VR ROJAS</span></th>
@@ -25,31 +25,28 @@ table tr:last-child td:last-child {
 </tr>
 </table>
 
-<br><br><br><br>
+<br>
 
 # Descripción del Curso
 %-----------------------------------------------------------------------------------------------------
 (Última actualización: 13 Marzo, 2026)
 
-  En la era de la información, la capacidad de extraer valor de los datos se ha convertido en una habilidad fundamental en todas las disciplinas. Este curso integral está diseñado para llevar a científicos, ingenieros, docentes y estudiantes universitarios desde los conceptos más básicos de programación hasta el corazón del análisis de datos.
-
-A través de un enfoque práctico y progresivo, aprenderás a utilizar Python, el lenguaje de programación más popular para ciencia de datos, para leer, limpiar, transformar, visualizar y, finalmente, describir y comprender conjuntos de datos del mundo real. No importa si tu área es la investigación, la ingeniería o la academia; este curso te proporcionará las herramientas esenciales para potenciar tu trabajo con datos.
+Este curso intensivo de Bioestadística está diseñado para proporcionar a profesionales de Biología, Genética, Medicina, Epidemiología y Salud Pública las herramientas estadísticas y computacionales necesarias para analizar e interpretar datos biomédicos. A través de la aplicación práctica de métodos estadísticos y el lenguaje de programación Python, los participantes aprenderán a abordar problemas relacionados con tasas de incidencia de enfermedades, expresiones genéticas, resultados clínicos e indicadores de salud poblacional. El curso se centra en casos de estudio para analizar datos clínicos, con el fin de comprender los procesos biológicos, las enfermedades y las intervenciones médicas.
 
 
 # Objetivos
 %-----------------------------------------------------------------------------------------------------
 **General**
 
-Desarrollar aplicaciones para analizar y modelar datos utilizando el lenguaje de programación Python, con el fin de evaluar patrones, tendencias y realizar predicciones.
+Capacitar a los participantes en el uso de métodos bioestadísticos y de herramientas tecnológicas para analizar e interpretar datos biomédicos, mejorando su capacidad para la investigación y la toma de desiciones basada en evidencia.
 
 **Específicos**
 
 - Introducción a la computación en la nube (Google Colaboratory).
-- Establecer bases en el conocimiento de programación básica emplenado el lenguaje de programación Python.
 - Procesar, analizar y construir base de datos provenientes de archivos en formato CSV y XLSX.
 - Emplear paquetes o librerias estándar de Python para generar gráficos descriptivos que permitan visualizar tendencias y patrones en datos procesados.
-- Organizar y resumir datos para realizar pruebas de normalidad, hipótesis paramétricas y no paramétricas.
-- Implementar modelos de regresión lineal simple logísticos binarios. 
+- Realizar análisis estadístico descriptivo e inferencial para tomar decisiones informadas y basadas en evidencia.
+- Implementar el modelo Bioestadístico de Regresión Logística Binaria
 
 # Estructura del Curso (Plan de Estudio)
 %-----------------------------------------------------------------------------------------------------

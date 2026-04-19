@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/home
+chapters:
+- file: docs/preambulo
+- file: docs/sesion1-programacion_basica_python
+- file: docs/sesion2-procesamiento_datos
+- file: docs/sesion3-visualizacion_graficas
+- file: docs/sesion4-estadistica_descriptiva
+- file: docs/sesion5-estadistica_inferencial

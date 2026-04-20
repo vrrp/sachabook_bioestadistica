@@ -28,7 +28,7 @@ table tr:last-child td:last-child {
 
 # Descripción del Curso
 %-----------------------------------------------------------------------------------------------------
-(Última actualización: 13 Marzo, 2026)
+(Última actualización: 21 Abril, 2026)
 
 Este curso intensivo de Bioestadística está diseñado para proporcionar a profesionales de Biología, Genética, Medicina, Epidemiología y Salud Pública las herramientas estadísticas y computacionales necesarias para analizar e interpretar datos biomédicos. A través de la aplicación práctica de métodos estadísticos y el lenguaje de programación Python, los participantes aprenderán a abordar problemas relacionados con tasas de incidencia de enfermedades, expresiones genéticas, resultados clínicos e indicadores de salud poblacional. El curso se centra en casos de estudio para analizar datos clínicos, con el fin de comprender los procesos biológicos, las enfermedades y las intervenciones médicas.
 

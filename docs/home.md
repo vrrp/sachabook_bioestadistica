@@ -1,6 +1,5 @@
-<div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #D0F5D2">
-<!--h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Ciencia de Datos para Investigación Aplicada usando Python</b></span></h1-->
-<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Bioestadística para Investigación usando Python con Inteligencia Artificial</b></span></h1>
+<div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #E7E7E7">
+<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Bioestadística para Investigación Científica <br>usando Python con Inteligencia Artificial</b></span></h1>
 </div>
 
 <style>

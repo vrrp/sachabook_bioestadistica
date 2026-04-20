@@ -608,44 +608,79 @@ table tr:last-child td:last-child {
 </div>
 </div>
 </div>
-<p>La siguiente celda de código lista el contenido de la carpeta <strong>Datos</strong></p>
+<p>En la siguiente celda de código se define la ruta de  <strong>Drive</strong> en la computadora en la nube</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drive_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
 
-<span class="n">data_dir</span> <span class="o">=</span><span class="s2">&quot;/content/drive/MyDrive/Bioestadistica/Datos/&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">drive_dir</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;datos_abiertos_vigilancia_dengue_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2000_2008.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2009_2023.csv&#39;, &#39;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&#39;, &#39;datos_abiertos_vigilancia_zoonosis_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_iras_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv&#39;, &#39;pmGenoma_25Septiembre2021.csv&#39;, &#39;pmGenoma_27Sep2023.csv&#39;, &#39;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&#39;, &#39;primeras_100_filas_anemia.xlsx&#39;, &#39;primeras_100_filas_anemia.gsheet&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/
+</pre></div>
+</div>
+</div>
+</div>
+<p>La funión <code class="docutils literal notranslate"><span class="pre">explorar_drive</span></code> permite inspeccionar cada carpeta y subcarpetas que se encuentran en el <strong>Drive</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">explorar_drive</span><span class="p">(</span><span class="n">nombre_carpeta</span><span class="p">):</span>
+  <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+  <span class="n">ruta_drive</span> <span class="o">=</span><span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
+  <span class="n">contenido_carpeta</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">ruta_drive</span> <span class="o">+</span> <span class="n">nombre_carpeta</span><span class="p">)</span>
+  <span class="n">n_elem</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido_carpeta</span><span class="p">)</span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ruta: </span><span class="si">{</span><span class="n">ruta_drive</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre_carpeta</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de elementos: </span><span class="si">{</span><span class="n">n_elem</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_elem</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">contenido_carpeta</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lista_archivos</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="n">lista_archivos</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">ifile</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datos_abiertos_vigilancia_dengue_2000_2023.csv
-datos_abiertos_vigilancia_malaria_2000_2008.csv
-datos_abiertos_vigilancia_malaria_2009_2023.csv
-Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
-datos_abiertos_vigilancia_zoonosis_2000_2023.csv
-datos_abiertos_vigilancia_iras_2000_2023.csv
-datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
-pmGenoma_25Septiembre2021.csv
-pmGenoma_27Sep2023.csv
-TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
-primeras_100_filas_anemia.xlsx
-primeras_100_filas_anemia.gsheet
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos
+Numero de elementos: 5
+(0) fuente_de_datos.gdoc
+(1) shapes
+(2) biomedicina
+(3) meteorologia
+(4) finanzas
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos/biomedicina&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos/biomedicina
+Numero de elementos: 13
+(0) datos_abiertos_vigilancia_dengue_2000_2023.csv
+(1) datos_abiertos_vigilancia_malaria_2000_2008.csv
+(2) datos_abiertos_vigilancia_malaria_2009_2023.csv
+(3) Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
+(4) datos_abiertos_vigilancia_zoonosis_2000_2023.csv
+(5) datos_abiertos_vigilancia_iras_2000_2023.csv
+(6) datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
+(7) pmGenoma_25Septiembre2021.csv
+(8) pmGenoma_27Sep2023.csv
+(9) primeras_100_filas_anemia.gsheet
+(10) TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
+(11) analisis_datos.docx
+(12) primeras_100_filas_anemia.xlsx
 </pre></div>
 </div>
 </div>
@@ -682,6 +717,7 @@ primeras_100_filas_anemia.gsheet
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;datos_abiertos_vigilancia_dengue_2000_2023.csv&quot;</span>
+<span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Base_datos/biomedicina/&quot;</span>
 
 <span class="n">df_dengue</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_dengue</span><span class="p">)</span>
@@ -1467,9 +1503,9 @@ Interpretación para el grupo Masculino:
 ==================================================
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.11/dist-packages/scipy/stats/_axis_nan_policy.py:586: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 406959.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 406959.
   res = hypotest_fun_out(*samples, **kwds)
-/usr/local/lib/python3.11/dist-packages/scipy/stats/_axis_nan_policy.py:586: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 350888.
+/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 350888.
   res = hypotest_fun_out(*samples, **kwds)
 </pre></div>
 </div>
@@ -1500,7 +1536,7 @@ Interpretación para el grupo Masculino:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7db989168690&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7ff4466a6a20&gt;
 </pre></div>
 </div>
 </div>
@@ -1863,6 +1899,18 @@ Name: count, dtype: int64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sexo
+F    112970
+M     91517
+Name: count, dtype: int64
+sexo
+F    112970
+M     91517
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
 </div>
 <p>Implementar una función para realizar pruebas de hipótesis (distribución normal) Shapiro-Wilk.</p>
 <div class="cell docutils container">
@@ -1915,6 +1963,10 @@ Name: count, dtype: int64
 	Se rechaza H0. La distribución de la Edad en este grupo NO es significativamente normal.
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 652053.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1949,20 +2001,33 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>         ano sexo  edad tipo_edad                   enfermedad tipo_dx
-0       2000    M     9         A  DENGUE SIN SIGNOS DE ALARMA       P
-1       2000    F    18         A  DENGUE SIN SIGNOS DE ALARMA       P
-2       2000    F    32         A  DENGUE SIN SIGNOS DE ALARMA       C
-3       2000    F    40         A  DENGUE SIN SIGNOS DE ALARMA       P
-4       2000    M    16         A  DENGUE SIN SIGNOS DE ALARMA       C
-...      ...  ...   ...       ...                          ...     ...
-757885  2023    F     8         A  DENGUE SIN SIGNOS DE ALARMA       P
-757886  2023    M     7         A  DENGUE SIN SIGNOS DE ALARMA       C
-757887  2023    M     6         A  DENGUE SIN SIGNOS DE ALARMA       P
-757888  2023    M    11         A  DENGUE SIN SIGNOS DE ALARMA       P
-757889  2023    M    11         A  DENGUE SIN SIGNOS DE ALARMA       C
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>         ano departamento sexo  edad tipo_edad                   enfermedad  \
+0       2000      HUANUCO    M     9         A  DENGUE SIN SIGNOS DE ALARMA   
+1       2000      HUANUCO    F    18         A  DENGUE SIN SIGNOS DE ALARMA   
+2       2000      HUANUCO    F    32         A  DENGUE SIN SIGNOS DE ALARMA   
+3       2000      HUANUCO    F    40         A  DENGUE SIN SIGNOS DE ALARMA   
+4       2000      HUANUCO    M    16         A  DENGUE SIN SIGNOS DE ALARMA   
+...      ...          ...  ...   ...       ...                          ...   
+757885  2023       TUMBES    F     8         A  DENGUE SIN SIGNOS DE ALARMA   
+757886  2023       TUMBES    M     7         A  DENGUE SIN SIGNOS DE ALARMA   
+757887  2023       TUMBES    M     6         A  DENGUE SIN SIGNOS DE ALARMA   
+757888  2023       TUMBES    M    11         A  DENGUE SIN SIGNOS DE ALARMA   
+757889  2023       TUMBES    M    11         A  DENGUE SIN SIGNOS DE ALARMA   
 
-[757847 rows x 6 columns]
+       tipo_dx  
+0            P  
+1            P  
+2            C  
+3            P  
+4            C  
+...        ...  
+757885       P  
+757886       C  
+757887       P  
+757888       P  
+757889       C  
+
+[757847 rows x 7 columns]
 </pre></div>
 </div>
 </div>
@@ -2017,7 +2082,7 @@ P    28.526003
 Name: edad, dtype: float64
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-44-42bcc01eddc5&gt;:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_18224/2689004157.py:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   print(df_interes.groupby(&#39;tipo_dx&#39;)[&#39;edad&#39;].mean())
 </pre></div>
 </div>
@@ -2034,8 +2099,8 @@ Name: edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a1bf9064-8687-47bd-a580-378ccef57a40">
-<span class="eqno">(3)<a class="headerlink" href="#equation-a1bf9064-8687-47bd-a580-378ccef57a40" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8fb5bddb-ad0c-4693-83bd-a86300a4f386">
+<span class="eqno">(3)<a class="headerlink" href="#equation-8fb5bddb-ad0c-4693-83bd-a86300a4f386" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -2077,33 +2142,33 @@ Name: count, dtype: int64
 
 ==================================================
 
-         ano sexo  edad tipo_edad                   enfermedad tipo_dx  \
-0       2000    M     9         A  DENGUE SIN SIGNOS DE ALARMA       P   
-1       2000    F    18         A  DENGUE SIN SIGNOS DE ALARMA       P   
-2       2000    F    32         A  DENGUE SIN SIGNOS DE ALARMA       C   
-3       2000    F    40         A  DENGUE SIN SIGNOS DE ALARMA       P   
-4       2000    M    16         A  DENGUE SIN SIGNOS DE ALARMA       C   
-...      ...  ...   ...       ...                          ...     ...   
-757885  2023    F     8         A  DENGUE SIN SIGNOS DE ALARMA       P   
-757886  2023    M     7         A  DENGUE SIN SIGNOS DE ALARMA       C   
-757887  2023    M     6         A  DENGUE SIN SIGNOS DE ALARMA       P   
-757888  2023    M    11         A  DENGUE SIN SIGNOS DE ALARMA       P   
-757889  2023    M    11         A  DENGUE SIN SIGNOS DE ALARMA       C   
+         ano departamento sexo  edad tipo_edad                   enfermedad  \
+0       2000      HUANUCO    M     9         A  DENGUE SIN SIGNOS DE ALARMA   
+1       2000      HUANUCO    F    18         A  DENGUE SIN SIGNOS DE ALARMA   
+2       2000      HUANUCO    F    32         A  DENGUE SIN SIGNOS DE ALARMA   
+3       2000      HUANUCO    F    40         A  DENGUE SIN SIGNOS DE ALARMA   
+4       2000      HUANUCO    M    16         A  DENGUE SIN SIGNOS DE ALARMA   
+...      ...          ...  ...   ...       ...                          ...   
+757885  2023       TUMBES    F     8         A  DENGUE SIN SIGNOS DE ALARMA   
+757886  2023       TUMBES    M     7         A  DENGUE SIN SIGNOS DE ALARMA   
+757887  2023       TUMBES    M     6         A  DENGUE SIN SIGNOS DE ALARMA   
+757888  2023       TUMBES    M    11         A  DENGUE SIN SIGNOS DE ALARMA   
+757889  2023       TUMBES    M    11         A  DENGUE SIN SIGNOS DE ALARMA   
 
-        Dx_Confirmado  
-0                   0  
-1                   0  
-2                   1  
-3                   0  
-4                   1  
-...               ...  
-757885              0  
-757886              1  
-757887              0  
-757888              0  
-757889              1  
+       tipo_dx  Dx_Confirmado  
+0            P              0  
+1            P              0  
+2            C              1  
+3            P              0  
+4            C              1  
+...        ...            ...  
+757885       P              0  
+757886       C              1  
+757887       P              0  
+757888       P              0  
+757889       C              1  
 
-[757847 rows x 7 columns]
+[757847 rows x 8 columns]
 </pre></div>
 </div>
 </div>
@@ -2124,8 +2189,8 @@ Name: count, dtype: int64
 Dep. Variable:          Dx_Confirmado   No. Observations:               757847
 Model:                          Logit   Df Residuals:                   757844
 Method:                           MLE   Df Model:                            2
-Date:                Thu, 05 Jun 2025   Pseudo R-squ.:                0.001154
-Time:                        02:31:21   Log-Likelihood:            -3.0599e+05
+Date:                Mon, 20 Apr 2026   Pseudo R-squ.:                0.001154
+Time:                        22:54:06   Log-Likelihood:            -3.0599e+05
 converged:                       True   LL-Null:                   -3.0635e+05
 Covariance Type:            nonrobust   LLR p-value:                3.127e-154
 ================================================================================
@@ -2171,7 +2236,7 @@ edad             0.0048      0.000     26.281      0.000       0.004       0.005
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Creating legend with loc=&quot;best&quot; can be slow with large amounts of data.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Creating legend with loc=&quot;best&quot; can be slow with large amounts of data.
   fig.canvas.print_figure(bytes_io, **kw)
 </pre></div>
 </div>

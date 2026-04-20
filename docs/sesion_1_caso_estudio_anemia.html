@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3.4.1. tipo_Dx: Definitivo (D) &#8212; Sacha Analytics</title>
+    <title>1. Diseño de Caso Estudio: Anemia &#8212; Sacha Analytics</title>
   
   
   
@@ -59,7 +59,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Sesion_1_caso_estudio_anemia';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/sesion_1_caso_estudio_anemia';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -183,7 +183,9 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+
+
 
 
 <li class="toctree-l1"><a class="reference internal" href="sesion2-procesamiento_datos.html"><strong>2. Manejo, Preprocesamiento y Procesamiento de datos</strong></a></li>
@@ -261,7 +263,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/Sesion_1_caso_estudio_anemia.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/sesion_1_caso_estudio_anemia.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -309,7 +311,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/Sesion_1_caso_estudio_anemia.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion_1_caso_estudio_anemia.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -339,7 +341,7 @@
       
       
       
-      <li><a href="../_sources/docs/Sesion_1_caso_estudio_anemia.ipynb" target="_blank"
+      <li><a href="../_sources/docs/sesion_1_caso_estudio_anemia.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -423,7 +425,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>3.4.1. tipo_Dx: Definitivo (D)</h1>
+    <h1>1. <b>Diseño de Caso Estudio: </b>Anemia</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -433,9 +435,51 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-marco-teorico"><strong>I. Marco Teórico</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo"><strong>1.1 Objetivo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-bioestadisticos"><strong>1.2 Fundamentos Bioestadísticos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables"><strong>1.2.1 Tipos de variables</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-estadisticos-relevantes"><strong>1.2.2 Métodos estadísticos relevantes</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-recoleccion-de-datos"><strong>II. Recolección de Datos</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes-de-datos"><strong>2.1. Fuentes de datos</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos-de-anemia"><strong>3.3. Importar Base de Datos de Anemia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-definitivo-d"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-frecuencia-de-datos-categoricos-por-columna-analisis-univariado"><strong>3.5.1. Distribución de frecuencia de datos categóricos por columna (análisis univariado)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-de-datos-categoricos-vs-numericos-analisis-bivariado"><strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-la-variable-edad"><strong>3.5.3. Distribución de la variable “Edad”</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-medidas-de-tendencia-central-y-dispersion"><strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica-inferencial-pruebas-de-hipotesis"><strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chi-cuadrado"><strong>3.6.1. Chi-cuadrado</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-prueba-de-hipotesis-t-test"><strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prueba-de-hipotesis-parametrica-shapiro-wilk"><strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-anova"><strong>3.6.4. Comparación de medidas:</strong> Anova</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-bioestadistico"><strong>3.7. Modelo Bioestadístico</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion-logistica-binaria"><strong>3.7.1 Regresión logística binaria</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-referencias"><strong>IV. Referencias</strong></a></li>
 </ul>
 
             </nav>
@@ -449,42 +493,54 @@ document.write(`
                 <article class="bd-article">
                   
   <div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #E7E7E7">
-<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b> </b></span></h1>
-</div>
-<figure align="center" class="image">
-  <img src="https://sge.unac.edu.pe/assets2/Logo_UNAC.png">  
-  <figcaption></figcaption>
-</figure>
-<div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #E7E7E7">
 <h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Bioestadística para Investigación Científica <br>usando Python con Inteligencia Artificial</b></span></h1>
 </div>
-<div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #E7E7E7">
-<h6 align="center"><span style="font-family:Times New Roman;color:#046D0B">Instructor: VR ROJAS</span></h6>
-</div>
-<h6 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>SESIÓN 1</b></span></h6>
-</div>
-<h6 align="center"><span style="font-family:Times New Roman;color:#046D0B">Callao, 2025</span></h6>
-</div>
-<div class="alert alert-block alert-success" style="font-family:Times New Roman;color:#FFFFFF;background-color: #E7E7E7">
-<h1 align="center"><span style="font-family:Times New Roman;color:#046D0B"><b>Diseño de Caso Estudio: </b>Anemia</span></h1>
-</div>
+<style>
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+</style>
+<table align="center" style="font-size: 13px;">
+<tr>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Autor</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">:VR ROJAS</span></th>
+</tr>
+<tr>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Email</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">:sacha.analytics@gmail.com</span></th>
+</tr>
+<tr>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Web</span></th>
+    <th align="left">:<a href="https://sacha-analytics.github.io/" style="font-family:Monospace;font-size: 13px;">sacha-analytics</a></th>
+</tr>
+</table>
+<section class="tex2jax_ignore mathjax_ignore" id="diseno-de-caso-estudio-anemia">
+<h1>1. <b>Diseño de Caso Estudio: </b>Anemia<a class="headerlink" href="#diseno-de-caso-estudio-anemia" title="Link to this heading">#</a></h1>
 <p>La anemia es un transtorno en el cual el número de glóbulos rojos o eritrocitos circulantes en la sangre se ha reducido y es insuficiente para satisfacer las necesidades del organismo. En términos de salud pública, la anemia se define como una concentración de hemoglobina por debajo de dos desviaciones estándar del promedio según género, edad y altura a nivel del mar,</p>
 <p><strong>Fuentes</strong></p>
 <ul class="simple">
 <li><p><a href="https://www.datosabiertos.gob.pe/dataset/anemia">Plataforma de datos abiertos del Perú</a>.</p></li>
 <li><p><a href="https://www.who.int/news-room/fact-sheets/detail/anaemia">Organización Mundial de la Salud (OMS)</a></p></li>
 </ul>
-<p>#<strong>I. Marco Teórico</strong></p>
-<p>###<strong>1.1 Objetivo</strong>
-Analizar la distribución y características de casos de <strong>Anemia</strong> en función de las variables <strong>Sexo, Edad</strong> y <strong>Tipo de Diagnóstico</strong> utilizando métodos bioestadístico.</p>
-<p>###<strong>1.2 Fundamentos Bioestadísticos</strong></p>
-<p>####<strong>1.2.1 Tipos de variables</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="i-marco-teorico">
+<h1><strong>I. Marco Teórico</strong><a class="headerlink" href="#i-marco-teorico" title="Link to this heading">#</a></h1>
+<section id="objetivo">
+<h2><strong>1.1 Objetivo</strong><a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
+<p>Analizar la distribución y características de casos de <strong>Anemia</strong> en función de las variables <strong>Sexo, Edad</strong> y <strong>Tipo de Diagnóstico</strong> utilizando métodos bioestadístico.</p>
+</section>
+<section id="fundamentos-bioestadisticos">
+<h2><strong>1.2 Fundamentos Bioestadísticos</strong><a class="headerlink" href="#fundamentos-bioestadisticos" title="Link to this heading">#</a></h2>
+<section id="tipos-de-variables">
+<h3><strong>1.2.1 Tipos de variables</strong><a class="headerlink" href="#tipos-de-variables" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Sexo</strong>: categórica nomial (Femenino, Masculino).</p></li>
 <li><p><strong>Edad</strong>: cuantitativa continua.</p></li>
 <li><p><strong>Tipo de Diagnóstico (Tipo de Dx)</strong>: categórica nominal (Ej. Anemia ferropénica, megaloblástica, etc)</p></li>
 </ul>
-<p>####<strong>1.2.2 Métodos estadísticos relevantes</strong></p>
+</section>
+<section id="metodos-estadisticos-relevantes">
+<h3><strong>1.2.2 Métodos estadísticos relevantes</strong><a class="headerlink" href="#metodos-estadisticos-relevantes" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Estadística descriptiva univariada y bivariada</p></li>
 <li><p>Distribución de frecuencias.</p></li>
@@ -495,14 +551,23 @@ Analizar la distribución y características de casos de <strong>Anemia</strong>
 <li><p>Modelos multivariantes (regresión logística si se desea modelar probabilidad de anemia)</p></li>
 <li><p>Validación de supuestos estadísticos</p></li>
 </ul>
-<p>#<strong>II. Recolección de Datos</strong></p>
-<p>###<strong>2.1. Fuentes de datos</strong></p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ii-recoleccion-de-datos">
+<h1><strong>II. Recolección de Datos</strong><a class="headerlink" href="#ii-recoleccion-de-datos" title="Link to this heading">#</a></h1>
+<section id="fuentes-de-datos">
+<h2><strong>2.1. Fuentes de datos</strong><a class="headerlink" href="#fuentes-de-datos" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a href="https://www.datosabiertos.gob.pe">Plataforma Nacional de Datos Abiertos</a>.</p></li>
 <li><p>Datos para caso estudio: <a href="https://www.datosabiertos.gob.pe/dataset/anemia">Anemia</a>.</p></li>
 </ul>
-<p>#<strong>III. Metodología Práctica</strong></p>
-<p>###<strong>3.1. Montar Drive a Google Colaboratory</strong></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="iii-metodologia-practica">
+<h1><strong>III. Metodología Práctica</strong><a class="headerlink" href="#iii-metodologia-practica" title="Link to this heading">#</a></h1>
+<section id="montar-drive-a-google-colaboratory">
+<h2><strong>3.1. Montar Drive a Google Colaboratory</strong><a class="headerlink" href="#montar-drive-a-google-colaboratory" title="Link to this heading">#</a></h2>
 <p>La siguiente celda de código monta el drive en la computadora remota de Google</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -592,7 +657,9 @@ primeras_100_filas_anemia.xlsx
 </div>
 </div>
 </div>
-<p>###<strong>3.2. Preparar Entorno</strong></p>
+</section>
+<section id="preparar-entorno">
+<h2><strong>3.2. Preparar Entorno</strong><a class="headerlink" href="#preparar-entorno" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Paquete especializado en metodos numericos</span>
@@ -616,7 +683,9 @@ primeras_100_filas_anemia.xlsx
 </div>
 </div>
 </div>
-<p>###<strong>3.3. Importar Base de Datos de Anemia</strong></p>
+</section>
+<section id="importar-base-de-datos-de-anemia">
+<h2><strong>3.3. Importar Base de Datos de Anemia</strong><a class="headerlink" href="#importar-base-de-datos-de-anemia" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&quot;</span>
@@ -658,7 +727,9 @@ primeras_100_filas_anemia.xlsx
 </div>
 </div>
 </div>
-<p>###<strong>3.4. Revision de Metadatos</strong></p>
+</section>
+<section id="revision-de-metadatos">
+<h2><strong>3.4. Revision de Metadatos</strong><a class="headerlink" href="#revision-de-metadatos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_anemia</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">())</span>
@@ -702,7 +773,7 @@ primeras_100_filas_anemia.xlsx
 <p><strong>Tipo_Dx</strong>: Tipo de diagnostico: Definitivo, Presuntivo, Repetido</p>
 <p>En el contexto de la anemia, los términos diagnóstico <strong>Definitivo</strong>, <strong>Presuntivo</strong> y <strong>Repetido</strong> se refiere a categorias utilizadas en la práctica clínica para clasificar el nivel de certeza y el proceso de diagnóstico. A continuación, se describe detalladamente cada uno de ellos, con un enfoque específico en su aplicación al diagnóstico de anemia:</p>
 <section id="tipo-dx-definitivo-d">
-<h1><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)<a class="headerlink" href="#tipo-dx-definitivo-d" title="Link to this heading">#</a></h1>
+<h3><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)<a class="headerlink" href="#tipo-dx-definitivo-d" title="Link to this heading">#</a></h3>
 <p>Es el diagnótico establecido con absoluta certeza, respaldado por pruebas clínicas de laboratorio o estudios complementarios que confirman de manera inequívoca la presencia y la causa específica de la anemia. Este diagnóstico se basa en evidencia objetiva y criterios de diagnósticos estandarizados.</p>
 <p><strong>Características</strong></p>
 <ul class="simple">
@@ -712,7 +783,7 @@ primeras_100_filas_anemia.xlsx
 </ul>
 </section>
 <section id="tipo-dx-presuntivo-p">
-<h1><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)<a class="headerlink" href="#tipo-dx-presuntivo-p" title="Link to this heading">#</a></h1>
+<h3><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)<a class="headerlink" href="#tipo-dx-presuntivo-p" title="Link to this heading">#</a></h3>
 <p>Es un diagnóstico preliminar o tentativo  basado en datos clínicos, sintomáticos, antecedentes y pruebas iniciales, pero sin confirmación completa de todas las pruebas necesarias para establecer un diagnóstico definitivo. Se utiliza cuando hay una alta probabilidad de anemia, pero aún se requieren estudios adicionales para confirmar la causa exacta.</p>
 <p><strong>Características</strong></p>
 <ul class="simple">
@@ -722,7 +793,7 @@ primeras_100_filas_anemia.xlsx
 </ul>
 </section>
 <section id="tipo-dx-repetido-r">
-<h1><strong>3.4.3. tipo_Dx:</strong> Repetido (R)<a class="headerlink" href="#tipo-dx-repetido-r" title="Link to this heading">#</a></h1>
+<h3><strong>3.4.3. tipo_Dx:</strong> Repetido (R)<a class="headerlink" href="#tipo-dx-repetido-r" title="Link to this heading">#</a></h3>
 <p>Se refiere a un diagnóstico que se registra nuevamente en una consulta o episodio clínico posterior, confirmando o reevaluando una condición previamente identificada (ya sea presuntiva o definitiva). Este término se usa en sistemas de codificación clínica (como CIE-10) para indicar que la anemia sigue presente o se ha reevaluado en el paciente.</p>
 <p><strong>Características</strong></p>
 <ul class="simple">
@@ -822,9 +893,13 @@ Name: Edad, Length: 248893, dtype: int64
 </div>
 </div>
 </div>
-<p>###<strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong></p>
+</section>
+</section>
+<section id="analisis-estadistico-descriptivo-univariado-y-bivariado">
+<h2><strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong><a class="headerlink" href="#analisis-estadistico-descriptivo-univariado-y-bivariado" title="Link to this heading">#</a></h2>
 <p>Esta sección se enfoca en realizar análisis estadístico descriptivo sobre las variables seleccionadas del DataFrame <code class="docutils literal notranslate"><span class="pre">df_interes</span></code>: Sexo, Edad y Tipo_Dx. Cubriremos estadísticas descriptivas univariadas (análisis de variable individual) y bivariadas (análisis de la relación entre dos variables).</p>
-<p>####<strong>3.5.1. Distribución de frecuencia de datos categóricos por columna (análisis univariado)</strong></p>
+<section id="distribucion-de-frecuencia-de-datos-categoricos-por-columna-analisis-univariado">
+<h3><strong>3.5.1. Distribución de frecuencia de datos categóricos por columna (análisis univariado)</strong><a class="headerlink" href="#distribucion-de-frecuencia-de-datos-categoricos-por-columna-analisis-univariado" title="Link to this heading">#</a></h3>
 <p>Para variables categóricas como <strong>Sexo, Tipo_edad</strong> y <strong>Tipo_Dx</strong>, el análisis descriptivo más común es observar la distribución de frecuencias. Esto nos indica cuántas veces aparece cada valor único en la columna.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -855,7 +930,9 @@ Name: count, dtype: int64
 </div>
 </div>
 </div>
-<p>####<strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong></p>
+</section>
+<section id="relacion-de-datos-categoricos-vs-numericos-analisis-bivariado">
+<h3><strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong><a class="headerlink" href="#relacion-de-datos-categoricos-vs-numericos-analisis-bivariado" title="Link to this heading">#</a></h3>
 <p>Para explorar la relación entre una variable categórica (<strong>Sexo</strong>) y una variable numérica (<strong>Edad</strong>), un gráfico de cajas (boxplot) es una visualización adecuada.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -868,7 +945,9 @@ Name: count, dtype: int64
 <img alt="../_images/4e07ee6c78943dabce2fb18dba6a0fc8016527378f59bc79d35f72251887fc88.png" src="../_images/4e07ee6c78943dabce2fb18dba6a0fc8016527378f59bc79d35f72251887fc88.png" />
 </div>
 </div>
-<p>####<strong>3.5.3. Distribución de la variable “Edad”</strong></p>
+</section>
+<section id="distribucion-de-la-variable-edad">
+<h3><strong>3.5.3. Distribución de la variable “Edad”</strong><a class="headerlink" href="#distribucion-de-la-variable-edad" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estadísticas descriptivas para la variable &#39;Edad&#39;</span>
@@ -918,7 +997,9 @@ Name: Edad, dtype: float64
 <img alt="../_images/d719720d4a3618b2805cf0660a3d1fce292c6696bb400a6e0a7e3272d7932427.png" src="../_images/d719720d4a3618b2805cf0660a3d1fce292c6696bb400a6e0a7e3272d7932427.png" />
 </div>
 </div>
-<p>####<strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong></p>
+</section>
+<section id="analisis-de-medidas-de-tendencia-central-y-dispersion">
+<h3><strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong><a class="headerlink" href="#analisis-de-medidas-de-tendencia-central-y-dispersion" title="Link to this heading">#</a></h3>
 <p>Vamos a calcular medidas de tendencia central (como la media, mediana y moda) y medidas de dispersión (como la desviación estándar, varianza y rango) para las variables <strong>Sexo, Edad</strong> y <strong>Tipo_Dx</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -997,9 +1078,13 @@ Análisis para la variable &#39;Tipo_Dx&#39;:
 </div>
 </div>
 </div>
-<p>###<strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis</p>
-<p>####<strong>3.6.1. Chi-cuadrado</strong>
-La prueba de hipótesis no paramétrica <strong>Chi-cuadrado</strong> es una técnica estadística fundamental para analizar datos categóricos, es decir, datos que se pueden agrupar en categorías (com sexo, tipo de enfermedad, opinión, etc.). Se considera <strong>no paramétrica</strong> porque no asume que los datos sigan una distribución de probabilidad específica (como la distribución normal), lo que la hace muy útil en situaciones donde las suposiciones de pruebas paramétricas no se cumplen.</p>
+</section>
+</section>
+<section id="estadistica-inferencial-pruebas-de-hipotesis">
+<h2><strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis<a class="headerlink" href="#estadistica-inferencial-pruebas-de-hipotesis" title="Link to this heading">#</a></h2>
+<section id="chi-cuadrado">
+<h3><strong>3.6.1. Chi-cuadrado</strong><a class="headerlink" href="#chi-cuadrado" title="Link to this heading">#</a></h3>
+<p>La prueba de hipótesis no paramétrica <strong>Chi-cuadrado</strong> es una técnica estadística fundamental para analizar datos categóricos, es decir, datos que se pueden agrupar en categorías (com sexo, tipo de enfermedad, opinión, etc.). Se considera <strong>no paramétrica</strong> porque no asume que los datos sigan una distribución de probabilidad específica (como la distribución normal), lo que la hace muy útil en situaciones donde las suposiciones de pruebas paramétricas no se cumplen.</p>
 <p><b>¿Por qué se usa la prueba de Chi-cuadrado?</b></p>
 <ul>
   <li>Se aplica a <b>datos categóricos</b> en forma de tablas de frecuencias.</li>
@@ -1173,7 +1258,9 @@ Resultado:
 Hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
 </pre></div>
 </div>
-<p>####<strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test</p>
+</section>
+<section id="comparacion-de-medidas-prueba-de-hipotesis-t-test">
+<h3><strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test<a class="headerlink" href="#comparacion-de-medidas-prueba-de-hipotesis-t-test" title="Link to this heading">#</a></h3>
 <p>La prueba <strong>T-test</strong> (también conocido como <strong>t de Student</strong>) se utiliza para comparar las medias de dos muestras independientes. En este caso, las dos muestras son las edades de los individuos masculinos y femeninos.</p>
 <p><strong>El T-test</strong> es una herramienta fundamental en bioestadística que permite tomar decisiones basadas en evidencia sobre diferencias entre grupos, siendo especialmente valioso en investigación médica y epidemiológica donde las decisiones pueden tener implicaciones importantes para la salud pública.</p>
 <p><strong>Supuestos del T-test</strong></p>
@@ -1391,7 +1478,9 @@ Medias de Edad por Sexo:
 </div>
 </div>
 </div>
-<p>####<strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong></p>
+</section>
+<section id="prueba-de-hipotesis-parametrica-shapiro-wilk">
+<h3><strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong><a class="headerlink" href="#prueba-de-hipotesis-parametrica-shapiro-wilk" title="Link to this heading">#</a></h3>
 <p>La <strong>prueba de Shapiro-Wilk</strong> es un método estadístico utilizado para evaluar si una muestra de datos proviene de una distribución normal. Es una de las pruebas más comunes y poderosas para verificar la normalidad de los datos, lo cual es un supuesto clave en muchas pruebas estadísticas paramétricas, como la t de Student o ANOVA. En investigación, esta prueba es útil para determinar si los datos cumplen con los requisitos de normalidad antes de aplicar métodos estadísticos que asumen una distribución normal.</p>
 <p><strong>Hipótesis para la prueba Shapiro-Wilk</strong></p>
 <ul class="simple">
@@ -1481,7 +1570,9 @@ Interpretación para el grupo Masculino:
 </div>
 </div>
 </div>
-<p>####<strong>3.6.4. Comparación de medidas:</strong> Anova</p>
+</section>
+<section id="comparacion-de-medidas-anova">
+<h3><strong>3.6.4. Comparación de medidas:</strong> Anova<a class="headerlink" href="#comparacion-de-medidas-anova" title="Link to this heading">#</a></h3>
 <p>La prueba de hipótesis ANOVA (Análisis de la Varianza) es una herramienta estadística paramétrica que se utiliza para comparar las medias de tres o más grupos independientes y determinar si existen diferencias significativas entre ellas. Aunque la ANOVA es relativamente robusta a la falta de la normalidad con tamaños de muestra grandes, la homogeneidad de varianzas es más crítica.</p>
 <p><strong>Nota Importante para ANOVA</strong></p>
 <ul class="simple">
@@ -1751,15 +1842,19 @@ Name: Edad, dtype: float64
 </div>
 </div>
 </div>
-<p>###<strong>3.7. Modelo Bioestadístico</strong></p>
-<p>####<strong>3.7.1 Regresión logística binaria</strong></p>
+</section>
+</section>
+<section id="modelo-bioestadistico">
+<h2><strong>3.7. Modelo Bioestadístico</strong><a class="headerlink" href="#modelo-bioestadistico" title="Link to this heading">#</a></h2>
+<section id="regresion-logistica-binaria">
+<h3><strong>3.7.1 Regresión logística binaria</strong><a class="headerlink" href="#regresion-logistica-binaria" title="Link to this heading">#</a></h3>
 <p>Un modelo de regresión logística es un tipo de modelo estadístico que se utiliza para predecir la probabilidad de que un resultado pertenezca a una de varias categorías. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística se utiliza para problemas de clasificación.</p>
 <p><strong>¿Para que sirve?</strong></p>
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-469e5a34-fcd7-4eeb-964f-824fce2bdeeb">
-<span class="eqno">(2)<a class="headerlink" href="#equation-469e5a34-fcd7-4eeb-964f-824fce2bdeeb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2c233b64-d63f-4e82-82f9-6ee3ed9123c1">
+<span class="eqno">(2)<a class="headerlink" href="#equation-2c233b64-d63f-4e82-82f9-6ee3ed9123c1" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -1899,48 +1994,22 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 <img alt="../_images/eeb4b0d739e01a9640aec2387553e59a425867af3d258f5e30ce15d24f60c196.png" src="../_images/eeb4b0d739e01a9640aec2387553e59a425867af3d258f5e30ce15d24f60c196.png" />
 </div>
 </div>
-<p>#<strong>IV. Referencias</strong></p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="iv-referencias">
+<h1><strong>IV. Referencias</strong><a class="headerlink" href="#iv-referencias" title="Link to this heading">#</a></h1>
 <p><strong>Libros y manuales</strong></p>
-<ul>
-<li><p>Libro de estadisitica con python</p>
-<p><a class="reference external" href="https://www.editorial-sciela.org/index.php/sciela/article/view/16/49">https://www.editorial-sciela.org/index.php/sciela/article/view/16/49</a></p>
-</li>
-<li><p>Introducción a la teoria de probabilidades</p>
-<p><a class="reference external" href="https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf">https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf</a></p>
-</li>
-<li><p>Guía practica de análsis exploratorio de python</p>
-<p><a class="reference external" href="https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf">https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf</a></p>
-</li>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.editorial-sciela.org/index.php/sciela/article/view/16/49">Libro de estadisitica con python </a>, <a class="reference external" href="https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf">Introducción a la teoria de probabilidades</a>, <a class="reference external" href="https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf">Guía practica de análsis exploratorio de python</a></p></li>
 </ul>
 <p><strong>Cursos en linea</strong></p>
-<ul>
-<li><p>Estadística W3School:</p>
-<p><a class="reference external" href="https://www.w3schools.com/statistics/index.php">https://www.w3schools.com/statistics/index.php</a></p>
-</li>
-<li><p>Estadística con python:</p>
-<p><a class="reference external" href="https://docs.python.org/es/3/library/statistics.html">https://docs.python.org/es/3/library/statistics.html</a></p>
-</li>
-<li><p>Kaggle:</p>
-<p><a class="reference external" href="https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists">https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists</a></p>
-</li>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3schools.com/statistics/index.php">Estadística W3School</a>, <a class="reference external" href="https://docs.python.org/es/3/library/statistics.html">Estadística con python</a>, <a class="reference external" href="https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists">Kaggle</a></p></li>
 </ul>
 <p><strong>Aplicaciones IA</strong></p>
-<ul>
-<li><p>Gemini iA</p>
-<p><a class="reference external" href="https://gemini.google.com">https://gemini.google.com</a></p>
-</li>
-<li><p>DeepSeek</p>
-<p><a class="reference external" href="https://www.deepseek.com/">https://www.deepseek.com/</a></p>
-</li>
-<li><p>Chat GPT</p>
-<p><a class="reference external" href="https://chatgpt.com/">https://chatgpt.com/</a></p>
-</li>
-<li><p>Claude IA</p>
-<p><a class="reference external" href="https://claude.ai/">https://claude.ai/</a></p>
-</li>
-<li><p>Julius IA:</p>
-<p><a class="reference external" href="https://julius.ai">https://julius.ai</a></p>
-</li>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gemini.google.com">Gemini iA</a>, <a class="reference external" href="https://www.deepseek.com/">DeepSeek</a>, <a class="reference external" href="https://chatgpt.com/">ChatGPT</a>, <a class="reference external" href="https://claude.ai/">Claude IA</a>, <a class="reference external" href="https://julius.ai">Julius IA:</a></p></li>
 </ul>
 </section>
 
@@ -2008,9 +2077,51 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-marco-teorico"><strong>I. Marco Teórico</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo"><strong>1.1 Objetivo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-bioestadisticos"><strong>1.2 Fundamentos Bioestadísticos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-variables"><strong>1.2.1 Tipos de variables</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-estadisticos-relevantes"><strong>1.2.2 Métodos estadísticos relevantes</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-recoleccion-de-datos"><strong>II. Recolección de Datos</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuentes-de-datos"><strong>2.1. Fuentes de datos</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos-de-anemia"><strong>3.3. Importar Base de Datos de Anemia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-definitivo-d"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-frecuencia-de-datos-categoricos-por-columna-analisis-univariado"><strong>3.5.1. Distribución de frecuencia de datos categóricos por columna (análisis univariado)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-de-datos-categoricos-vs-numericos-analisis-bivariado"><strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-la-variable-edad"><strong>3.5.3. Distribución de la variable “Edad”</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-medidas-de-tendencia-central-y-dispersion"><strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica-inferencial-pruebas-de-hipotesis"><strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chi-cuadrado"><strong>3.6.1. Chi-cuadrado</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-prueba-de-hipotesis-t-test"><strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prueba-de-hipotesis-parametrica-shapiro-wilk"><strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-anova"><strong>3.6.4. Comparación de medidas:</strong> Anova</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-bioestadistico"><strong>3.7. Modelo Bioestadístico</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regresion-logistica-binaria"><strong>3.7.1 Regresión logística binaria</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-referencias"><strong>IV. Referencias</strong></a></li>
 </ul>
 
   </nav></div>

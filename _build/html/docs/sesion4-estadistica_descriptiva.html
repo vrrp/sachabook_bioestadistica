@@ -183,8 +183,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="sesion1-programacion_basica_python.html"><strong>1. Programación Básica con Python</strong></a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Sesion_1_caso_estudio_anemia.html"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="sesion2-procesamiento_datos.html"><strong>2. Manejo, Preprocesamiento y Procesamiento de datos</strong></a></li>
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_modulo1/blob/main/docs/docs/sesion4-estadistica_descriptiva.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/sesion4-estadistica_descriptiva.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +292,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_modulo1" target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +309,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_modulo1/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion4-estadistica_descriptiva.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion4-estadistica_descriptiva.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -963,7 +962,7 @@ Name: hr, dtype: float64
 <p>Sea <span class="math notranslate nohighlight">\(x\)</span> una muestra de una población de <strong><span class="math notranslate nohighlight">\(n\)</span></strong> elementos.</p>
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-mediaaritmetica">
-<span class="eqno">(5)<a class="headerlink" href="#equation-eq-mediaaritmetica" title="Link to this equation">#</a></span>\[\overline{x} = \frac{1}{n} \sum_{i=1}^{n}x_{i}\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-mediaaritmetica" title="Link to this equation">#</a></span>\[\overline{x} = \frac{1}{n} \sum_{i=1}^{n}x_{i}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df_met</span><span class="p">[</span><span class="s2">&quot;temp_aire&quot;</span><span class="p">]))</span>
@@ -1083,7 +1082,7 @@ Name: Tipo_edad, dtype: object
 <p>Sea <span class="math notranslate nohighlight">\(x\)</span> una muestra de una población de <strong><span class="math notranslate nohighlight">\(n\)</span></strong> elementos.</p>
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-varianza">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-varianza" title="Link to this equation">#</a></span>\[\mathbf{S}_{x}=\mathbf{\sigma}^{2}_{x} = \frac{1}{n}\sum_{i=1}^{n}(x_{i} -\bar{x})^{2}\]</div>
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-varianza" title="Link to this equation">#</a></span>\[\mathbf{S}_{x}=\mathbf{\sigma}^{2}_{x} = \frac{1}{n}\sum_{i=1}^{n}(x_{i} -\bar{x})^{2}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">df_met</span><span class="p">[</span><span class="s2">&quot;temp_aire&quot;</span><span class="p">]))</span>
@@ -1115,7 +1114,7 @@ Name: Tipo_edad, dtype: object
 <p>Sea <span class="math notranslate nohighlight">\(x\)</span> una muestra de una población de <strong><span class="math notranslate nohighlight">\(n\)</span></strong> elementos.</p>
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-desviacionestandar">
-<span class="eqno">(7)<a class="headerlink" href="#equation-eq-desviacionestandar" title="Link to this equation">#</a></span>\[\mathbf{\sigma}_{x} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_{i} - \bar{x})^{2}}\]</div>
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-desviacionestandar" title="Link to this equation">#</a></span>\[\mathbf{\sigma}_{x} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_{i} - \bar{x})^{2}}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df_met</span><span class="p">[</span><span class="s2">&quot;temp_aire&quot;</span><span class="p">]))</span>
@@ -1147,7 +1146,7 @@ Name: Tipo_edad, dtype: object
 <p>Sea <span class="math notranslate nohighlight">\(x\)</span> una muestra de una población de <strong><span class="math notranslate nohighlight">\(n\)</span></strong> elementos.</p>
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-rangointercuartil">
-<span class="eqno">(8)<a class="headerlink" href="#equation-eq-rangointercuartil" title="Link to this equation">#</a></span>\[RIQ = Q_{3} - Q_{1}\]</div>
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-rangointercuartil" title="Link to this equation">#</a></span>\[RIQ = Q_{3} - Q_{1}\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calcular el primer cuartil (Q1) y el tercer cuartil (Q3)</span>
@@ -1179,7 +1178,7 @@ Name: Tipo_edad, dtype: object
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <p><span class="math notranslate nohighlight">\(y = (y_{1}, y_{2}, \dots, y_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-covarianza">
-<span class="eqno">(9)<a class="headerlink" href="#equation-eq-covarianza" title="Link to this equation">#</a></span>\[\mathbf{S}_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_{i} - \bar{x})(y_{i} - \bar{y})\]</div>
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-covarianza" title="Link to this equation">#</a></span>\[\mathbf{S}_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_{i} - \bar{x})(y_{i} - \bar{y})\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extraer las columnas como arrays de numpy</span>
@@ -1224,7 +1223,7 @@ Name: Tipo_edad, dtype: object
 <p><span class="math notranslate nohighlight">\(x = (x_{1}, x_{2}, \dots, x_{n})\)</span></p>
 <p><span class="math notranslate nohighlight">\(y = (y_{1}, y_{2}, \dots, y_{n})\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-correlacionpearson">
-<span class="eqno">(10)<a class="headerlink" href="#equation-eq-correlacionpearson" title="Link to this equation">#</a></span>\[
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-correlacionpearson" title="Link to this equation">#</a></span>\[
 r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \; \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}}
 \]</div>
 <div class="cell docutils container">

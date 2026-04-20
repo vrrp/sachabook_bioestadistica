@@ -182,8 +182,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="sesion1-programacion_basica_python.html"><strong>1. Programación Básica con Python</strong></a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="Sesion_1_caso_estudio_anemia.html"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="sesion2-procesamiento_datos.html"><strong>2. Manejo, Preprocesamiento y Procesamiento de datos</strong></a></li>
@@ -261,7 +260,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_modulo1/blob/main/docs/docs/sesion5-estadistica_inferencial.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/sesion5-estadistica_inferencial.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +291,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_modulo1" target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -309,7 +308,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_modulo1/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion5-estadistica_inferencial.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion5-estadistica_inferencial.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -762,16 +761,16 @@ Numero de elementos: 1
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="iii-modelo-de-regresion-lineal-simple">
 <h1><strong>III. Modelo de regresión lineal simple</strong><a class="headerlink" href="#iii-modelo-de-regresion-lineal-simple" title="Link to this heading">#</a></h1>
-<p>El modelo de regresión lineal simple (RLS) busca modelar la relación lineal entre una variable independiente (X) y una variable dependiente (Y) mediante la ecuación <a class="reference internal" href="#equation-eq-regresionlinealsimple">(11)</a></p>
+<p>El modelo de regresión lineal simple (RLS) busca modelar la relación lineal entre una variable independiente (X) y una variable dependiente (Y) mediante la ecuación <a class="reference internal" href="#equation-eq-regresionlinealsimple">(9)</a></p>
 <div class="math notranslate nohighlight" id="equation-eq-regresionlinealsimple">
-<span class="eqno">(11)<a class="headerlink" href="#equation-eq-regresionlinealsimple" title="Link to this equation">#</a></span>\[ Y = \beta_1 X +\beta_0+ \epsilon \]</div>
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-regresionlinealsimple" title="Link to this equation">#</a></span>\[ Y = \beta_1 X +\beta_0+ \epsilon \]</div>
 <p>Donde:</p>
 <p><span class="math notranslate nohighlight">\(Y\)</span> es el valor observado de la <strong>variable dependiente</strong>.
 <span class="math notranslate nohighlight">\(\beta_1 X + \beta_0\)</span> es el <strong>valor predicho</strong> de la variable dependiente por el modelo (<span class="math notranslate nohighlight">\(\hat{Y}\)</span>), y finalmente, <span class="math notranslate nohighlight">\(\epsilon\)</span> es el <strong>error residual</strong>.</p>
 <p>El <strong>error residual</strong> representa la parte de la variabilidad en la variable dependiente que no es explicada por el modelo. Idealmente, para un buen modelo, los residuos deberían ser pequeños, aleatorios y no mostrar patrones sistemáticos.</p>
-<p>En un modelo de regresión lineal simple, el <strong>error residual</strong> (<span class="math notranslate nohighlight">\(\epsilon\)</span>) es la diferencia entre el valor observado de la variable dependiente (<span class="math notranslate nohighlight">\(Y\)</span>) y el valor predicho por el modelo (<span class="math notranslate nohighlight">\(\hat{Y}\)</span>), ecuación <a class="reference internal" href="#equation-eq-errorresidual">(12)</a>.</p>
+<p>En un modelo de regresión lineal simple, el <strong>error residual</strong> (<span class="math notranslate nohighlight">\(\epsilon\)</span>) es la diferencia entre el valor observado de la variable dependiente (<span class="math notranslate nohighlight">\(Y\)</span>) y el valor predicho por el modelo (<span class="math notranslate nohighlight">\(\hat{Y}\)</span>), ecuación <a class="reference internal" href="#equation-eq-errorresidual">(10)</a>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-errorresidual">
-<span class="eqno">(12)<a class="headerlink" href="#equation-eq-errorresidual" title="Link to this equation">#</a></span>\[\epsilon = Y - \hat{Y}\]</div>
+<span class="eqno">(10)<a class="headerlink" href="#equation-eq-errorresidual" title="Link to this equation">#</a></span>\[\epsilon = Y - \hat{Y}\]</div>
 <p>Reducir el error residual implica mejorar la capacidad del modelo para predecir la variable dependiente.</p>
 <p><strong>Verificar y Abordar los Supuestos del Modelo</strong></p>
 <p>Es crucial examinar los supuestos de la regresión lineal. Si alguno de lo supuestos no se cumple, la precisión del modelo y la magnitud de los residuos pueden verse afectadas. Los supuesto que se debe cumplir son los siguientes:</p>
@@ -1367,18 +1366,18 @@ Estadístico Durbin-Watson statistico menor que 1.5: autocorrelación positiva.
 </ul><p>Antes de abordar cada uno de los supuestos y condiciones que deben cumplir las variables dependientes e independientes, primero se describe la función logística.</p>
 <section id="funcion-logistica">
 <h2>4.1. Función logística<a class="headerlink" href="#funcion-logistica" title="Link to this heading">#</a></h2>
-<p>El modelo de regresión logística binaria utiliza una función logística para modelar la probabilidad de un resultado, la relación matemática general para la probabilidad predicha viene definida en la ecuación <a class="reference internal" href="#equation-eq-regresionlogisticabinaria">(13)</a>.</p>
+<p>El modelo de regresión logística binaria utiliza una función logística para modelar la probabilidad de un resultado, la relación matemática general para la probabilidad predicha viene definida en la ecuación <a class="reference internal" href="#equation-eq-regresionlogisticabinaria">(11)</a>.</p>
 <div class="math notranslate nohighlight" id="equation-eq-regresionlogisticabinaria">
-<span class="eqno">(13)<a class="headerlink" href="#equation-eq-regresionlogisticabinaria" title="Link to this equation">#</a></span>\[ P(y) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times x_{1} + \beta_{2}\times x_{2})}}\]</div>
+<span class="eqno">(11)<a class="headerlink" href="#equation-eq-regresionlogisticabinaria" title="Link to this equation">#</a></span>\[ P(y) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times x_{1} + \beta_{2}\times x_{2})}}\]</div>
 <p>Donde:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(y\)</span> es la variable dependiente.</p></li>
 <li><p>Las variables predictoras <span class="math notranslate nohighlight">\(x_{1}\)</span>, <span class="math notranslate nohighlight">\(x_{2}\)</span> tienen que ser linealmente independientes.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_0, \beta_1\)</span> y <span class="math notranslate nohighlight">\(\beta_2\)</span> son coeficientes estimados.</p></li>
 </ul>
-<p>Para el caso estudio de anemia la función logística se define a través de la ecuación <a class="reference internal" href="#equation-eq-regresionlogisticabinariaanemia">(14)</a>. Donde, <code class="docutils literal notranslate"><span class="pre">Tipo_Dx</span></code> será la variable dependiente y <code class="docutils literal notranslate"><span class="pre">Edad</span></code> y <code class="docutils literal notranslate"><span class="pre">Sexo</span></code> serán las variables linealmente independinetes predictoras.</p>
+<p>Para el caso estudio de anemia la función logística se define a través de la ecuación <a class="reference internal" href="#equation-eq-regresionlogisticabinariaanemia">(12)</a>. Donde, <code class="docutils literal notranslate"><span class="pre">Tipo_Dx</span></code> será la variable dependiente y <code class="docutils literal notranslate"><span class="pre">Edad</span></code> y <code class="docutils literal notranslate"><span class="pre">Sexo</span></code> serán las variables linealmente independinetes predictoras.</p>
 <div class="math notranslate nohighlight" id="equation-eq-regresionlogisticabinariaanemia">
-<span class="eqno">(14)<a class="headerlink" href="#equation-eq-regresionlogisticabinariaanemia" title="Link to this equation">#</a></span>\[ P(Tipo\_Dx) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times Edad + \beta_{2}\times Sexo)}}\]</div>
+<span class="eqno">(12)<a class="headerlink" href="#equation-eq-regresionlogisticabinariaanemia" title="Link to this equation">#</a></span>\[ P(Tipo\_Dx) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times Edad + \beta_{2}\times Sexo)}}\]</div>
 </section>
 <section id="tamano-muestral-suficiente">
 <h2>4.2. Tamaño muestral suficiente<a class="headerlink" href="#tamano-muestral-suficiente" title="Link to this heading">#</a></h2>

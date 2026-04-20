@@ -5,7 +5,7 @@ format: jb-book
 root: docs/home
 chapters:
 - file: docs/preambulo
-- file: docs/sesion1-programacion_basica_python
+- file: docs/Sesion_1_caso_estudio_anemia
 - file: docs/sesion2-procesamiento_datos
 - file: docs/sesion3-visualizacion_graficas
 - file: docs/sesion4-estadistica_descriptiva

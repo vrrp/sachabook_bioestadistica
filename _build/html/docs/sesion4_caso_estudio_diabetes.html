@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Diseño de Caso Estudio: Anemia &#8212; Sacha Analytics</title>
+    <title>4. Diseño de Caso Estudio: Diabetes &#8212; Sacha Analytics</title>
   
   
   
@@ -59,12 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/sesion1_caso_estudio_anemia';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/sesion4_caso_estudio_diabetes';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Diseño de Caso Estudio: Dengue" href="sesion2_caso_estudio_dengue.html" />
-    <link rel="prev" title="Preámbulo" href="preambulo.html" />
+    <link rel="prev" title="3. Diseño de Caso Estudio: Malaria" href="sesion3_caso_estudio_malaria.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,7 +182,7 @@
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sesion1_caso_estudio_anemia.html">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
 
 
 
@@ -198,7 +197,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="sesion4_caso_estudio_diabetes.html">4. <b>Diseño de Caso Estudio: </b>Diabetes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. <b>Diseño de Caso Estudio: </b>Diabetes</a></li>
 
 
 
@@ -257,7 +256,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/sesion1_caso_estudio_anemia.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/vrrp/sachabook_bioestadistica/blob/main/docs/docs/sesion4_caso_estudio_diabetes.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +304,7 @@
       
       
       
-      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion1_caso_estudio_anemia.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vrrp/sachabook_bioestadistica/issues/new?title=Issue%20on%20page%20%2Fdocs/sesion4_caso_estudio_diabetes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -335,7 +334,7 @@
       
       
       
-      <li><a href="../_sources/docs/sesion1_caso_estudio_anemia.ipynb" target="_blank"
+      <li><a href="../_sources/docs/sesion4_caso_estudio_diabetes.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +418,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. <b>Diseño de Caso Estudio: </b>Anemia</h1>
+    <h1>4. <b>Diseño de Caso Estudio: </b>Diabetes</span></h1></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -429,7 +428,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4. <b>Diseño de Caso Estudio: </b>Diabetes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-marco-teorico"><strong>I. Marco Teórico</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo"><strong>1.1 Objetivo</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-bioestadisticos"><strong>1.2 Fundamentos Bioestadísticos</strong></a><ul class="nav section-nav flex-column">
@@ -446,11 +445,9 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos-de-anemia"><strong>3.3. Importar Base de Datos de Anemia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-definitivo-d"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
@@ -458,6 +455,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-de-datos-categoricos-vs-numericos-analisis-bivariado"><strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-la-variable-edad"><strong>3.5.3. Distribución de la variable “Edad”</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-medidas-de-tendencia-central-y-dispersion"><strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elegir-tipos-de-diabetes"><strong>3.5.5. Elegir tipos de diabetes</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica-inferencial-pruebas-de-hipotesis"><strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis</a><ul class="nav section-nav flex-column">
@@ -465,6 +463,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-prueba-de-hipotesis-t-test"><strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prueba-de-hipotesis-parametrica-shapiro-wilk"><strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-anova"><strong>3.6.4. Comparación de medidas:</strong> Anova</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-datos-usando-la-funcion-groupby-arg"><strong>3.6.5 Agrupar datos usando la función:</strong> <code class="docutils literal notranslate"><span class="pre">groupby(arg)</span></code></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-bioestadistico"><strong>3.7. Modelo Bioestadístico</strong></a><ul class="nav section-nav flex-column">
@@ -508,20 +507,20 @@ table tr:last-child td:last-child {
     <th align="left">:<a href="https://sacha-analytics.github.io/" style="font-family:Monospace;font-size: 13px;">sacha-analytics</a></th>
 </tr>
 </table>
-<br><section class="tex2jax_ignore mathjax_ignore" id="diseno-de-caso-estudio-anemia">
-<h1>1. <b>Diseño de Caso Estudio: </b>Anemia<a class="headerlink" href="#diseno-de-caso-estudio-anemia" title="Link to this heading">#</a></h1>
-<p>La anemia es un transtorno en el cual el número de glóbulos rojos o eritrocitos circulantes en la sangre se ha reducido y es insuficiente para satisfacer las necesidades del organismo. En términos de salud pública, la anemia se define como una concentración de hemoglobina por debajo de dos desviaciones estándar del promedio según género, edad y altura a nivel del mar,</p>
-<p><strong>Fuentes</strong></p>
+<br><section class="tex2jax_ignore mathjax_ignore" id="diseno-de-caso-estudio-diabetes">
+<h1>4. <b>Diseño de Caso Estudio: </b>Diabetes</span></h1><a class="headerlink" href="#diseno-de-caso-estudio-diabetes" title="Link to this heading">#</a></h1>
+<p>La diabetes es una enfermedad crónica que se presenta cuando el páncreas no secreta suficiente insulina o cuando el organismo no logra utilizar eficazmente la insulina que produce. La insulina es una hormona que regula la concentración de glucosa en la sangre. Un efecto común de la diabetes no controlada es la hiperglucemia (es decir, la glucemia elevada) que, con el tiempo, daña gravemente muchos órganos y sistemas del organismo, sobre todo los nervios y los vasos sanguíneos.</p>
+<p><strong>Fuente</strong></p>
 <ul class="simple">
-<li><p><a href="https://www.datosabiertos.gob.pe/dataset/anemia">Plataforma de datos abiertos del Perú</a>.</p></li>
-<li><p><a href="https://www.who.int/news-room/fact-sheets/detail/anaemia">Organización Mundial de la Salud (OMS)</a></p></li>
+<li><p><a href="https://www.who.int/es/news-room/fact-sheets/detail/diabetes">Organización Mundial de la Salud (OMS)</a></p></li>
+<li><p><a href="https://www.paho.org/es/temas/diabetes">Organización Panamericana de la Salud (OMS)</a></p></li>
 </ul>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="i-marco-teorico">
 <h1><strong>I. Marco Teórico</strong><a class="headerlink" href="#i-marco-teorico" title="Link to this heading">#</a></h1>
 <section id="objetivo">
 <h2><strong>1.1 Objetivo</strong><a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>Analizar la distribución y características de casos de <strong>Anemia</strong> en función de las variables <strong>Sexo, Edad</strong> y <strong>Tipo de Diagnóstico</strong> utilizando métodos bioestadístico.</p>
+<p>Analizar la distribución y características de casos de <strong>Diabetes</strong> en función de las variables <strong>Sexo, Edad, región</strong> y <strong>Tipo de Diagnóstico</strong> utilizando métodos bioestadístico.</p>
 </section>
 <section id="fundamentos-bioestadisticos">
 <h2><strong>1.2 Fundamentos Bioestadísticos</strong><a class="headerlink" href="#fundamentos-bioestadisticos" title="Link to this heading">#</a></h2>
@@ -530,7 +529,8 @@ table tr:last-child td:last-child {
 <ul class="simple">
 <li><p><strong>Sexo</strong>: categórica nomial (Femenino, Masculino).</p></li>
 <li><p><strong>Edad</strong>: cuantitativa continua.</p></li>
-<li><p><strong>Tipo de Diagnóstico (Tipo de Dx)</strong>: categórica nominal (Ej. Anemia ferropénica, megaloblástica, etc)</p></li>
+<li><p><strong>Departamento</strong>: categórica (región geográfica).</p></li>
+<li><p><strong>Tipo de Diagnóstico (Tipo de Dx)</strong>: categórica nominal</p></li>
 </ul>
 </section>
 <section id="metodos-estadisticos-relevantes">
@@ -554,7 +554,7 @@ table tr:last-child td:last-child {
 <h2><strong>2.1. Fuentes de datos</strong><a class="headerlink" href="#fuentes-de-datos" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a href="https://www.datosabiertos.gob.pe">Plataforma Nacional de Datos Abiertos</a>.</p></li>
-<li><p>Datos para caso estudio: <a href="https://www.datosabiertos.gob.pe/dataset/anemia">Anemia</a>.</p></li>
+<li><p>Datos para caso estudio estudio: <a href="https://www.datosabiertos.gob.pe/dataset/ex%C3%A1menes-de-laboratorio-de-consulta-externa-de-pacientes-diagnosticados-con-patolog%C3%ADas">Diabetes</a>.</p></li>
 </ul>
 </section>
 </section>
@@ -566,7 +566,7 @@ table tr:last-child td:last-child {
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive/&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -575,7 +575,7 @@ table tr:last-child td:last-child {
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive/&#39;</span><span class="p">)</span>
 
 <span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">jupyterbook</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.13</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">google</span><span class="o">/</span><span class="n">colab</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">20</span>
 <span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">division</span> <span class="k">as</span> <span class="n">_</span>
@@ -623,7 +623,7 @@ table tr:last-child td:last-child {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;datos_abiertos_vigilancia_dengue_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2000_2008.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2009_2023.csv&#39;, &#39;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&#39;, &#39;datos_abiertos_vigilancia_zoonosis_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_iras_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv&#39;, &#39;pmGenoma_25Septiembre2021.csv&#39;, &#39;pmGenoma_27Sep2023.csv&#39;, &#39;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&#39;, &#39;primeras_100_filas_anemia.xlsx&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;datos_abiertos_vigilancia_dengue_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2000_2008.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2009_2023.csv&#39;, &#39;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&#39;, &#39;datos_abiertos_vigilancia_zoonosis_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_iras_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv&#39;, &#39;pmGenoma_25Septiembre2021.csv&#39;, &#39;pmGenoma_27Sep2023.csv&#39;, &#39;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&#39;, &#39;primeras_100_filas_anemia.xlsx&#39;, &#39;primeras_100_filas_anemia.gsheet&#39;]
 </pre></div>
 </div>
 </div>
@@ -647,6 +647,7 @@ pmGenoma_25Septiembre2021.csv
 pmGenoma_27Sep2023.csv
 TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
 primeras_100_filas_anemia.xlsx
+primeras_100_filas_anemia.gsheet
 </pre></div>
 </div>
 </div>
@@ -678,45 +679,124 @@ primeras_100_filas_anemia.xlsx
 </div>
 </div>
 </section>
-<section id="importar-base-de-datos-de-anemia">
-<h2><strong>3.3. Importar Base de Datos de Anemia</strong><a class="headerlink" href="#importar-base-de-datos-de-anemia" title="Link to this heading">#</a></h2>
+<section id="importar-base-de-datos">
+<h2><strong>3.3. Importar Base de Datos</strong><a class="headerlink" href="#importar-base-de-datos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&quot;</span>
 
-<span class="n">df_anemia</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_anemia</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;latin-1&quot;</span><span class="p">)</span>
+<span class="c1">#df = pd.read_csv(data_dir + nombre_archivo) # decodificación: encoding=&quot;utf-8&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo  id_persona  Edad Tipo_edad  id_ubigeo  Fecha_atencion    Etapa  \
-0         F    41031388    20         A        NaN        20230208  18a-29a   
-1         F    40489600     2         A     1128.0        20230107  00a-11a   
-2         M    40315865     1         A        NaN        20230207  00a-11a   
-3         F    38917347    19         D     1460.0        20210511  00a-11a   
-4         M    40507941     3         A     1668.0        20230224  00a-11a   
-...     ...         ...   ...       ...        ...             ...      ...   
-248888    M     9206744     6         A     1631.0        20230119  00a-11a   
-248889    M    25824229     4         A      163.0        20210528  00a-11a   
-248890    F    19472530     6         A     1161.0        20230107  00a-11a   
-248891    F    33840534     4         A      242.0        20210412  00a-11a   
-248892    F    19486739    84         A     1703.0        20230525     60a+   
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        FECHA_CORTE DEPARTAMENTO         PROVINCIA     DISTRITO  UBIGEO  \
+0          20240531      UCAYALI  CORONEL PORTILLO     MANANTAY  250107   
+1          20240531      UCAYALI  CORONEL PORTILLO  YARINACOCHA  250105   
+2          20240531        TACNA             TACNA       CALANA  230103   
+3          20240531        TACNA             TACNA        TACNA  230101   
+4          20240531   SAN MARTIN          HUALLAGA      SAPOSOA  220401   
+...             ...          ...               ...          ...     ...   
+509711     20240531         LIMA              LIMA         LIMA  150101   
+509712     20240531         LIMA              LIMA         LIMA  150101   
+509713     20240531  LA LIBERTAD          TRUJILLO     TRUJILLO  130101   
+509714     20240531         LIMA              LIMA         LIMA  150101   
+509715     20240531         LIMA              LIMA         LIMA  150101   
 
-        Diagnostico Tipo_Dx  Lab  id_eess  
-0          99199.17       D  SF3     5942  
-1          99199.17       D  SF3     6856  
-2          99199.17       D  SF1    27109  
-3          99199.17       D  SF1       16  
-4          99199.17       D   TA     2978  
-...             ...     ...  ...      ...  
-248888     99199.17       D  SF2     3263  
-248889     99199.17       D  SF1     1819  
-248890     99199.17       D  SF2     5217  
-248891     99199.17       D  SF1     1812  
-248892     99199.17       D  SF1     3161  
+                                  RED                               IPRESS  \
+0             RED ASISTENCIAL UCAYALI                       CAP I MANANTAY   
+1             RED ASISTENCIAL UCAYALI                         P.M. ALAMEDA   
+2               RED ASISTENCIAL TACNA         H.III DANIEL ALCIDES CARRION   
+3               RED ASISTENCIAL TACNA  CAP II OSCAR FERNANDEZ DAVILA VELEZ   
+4       MICRORED ASISTENCIAL TARAPOTO                         P.M. SAPOSOA   
+...                               ...                                  ...   
+509711       RED ASISTENCIAL ALMENARA   H.III HOSPITAL DE EMERGENCIAS GRAU   
+509712       RED ASISTENCIAL ALMENARA   H.III HOSPITAL DE EMERGENCIAS GRAU   
+509713    RED ASISTENCIAL LA LIBERTAD        H.IV VICTOR LAZARTE ECHEGARAY   
+509714       RED ASISTENCIAL ALMENARA   H.III HOSPITAL DE EMERGENCIAS GRAU   
+509715       RED ASISTENCIAL ALMENARA   H.III HOSPITAL DE EMERGENCIAS GRAU   
 
-[248893 rows x 11 columns]
+                                 ID_PACIENTE  EDAD_PACIENTE SEXO_PACIENTE  \
+0       eJwzNDAwtDC0NDMxNzAyMzWxMAQAHqoDcA==             51     MASCULINO   
+1       eJwzNDAwMjAxNTUxsbQ0NTAzMgUAHnQDbg==             48      FEMENINO   
+2           eJwzNDCwMLOwMDKztDQHsszNAB+JA4w=             67     MASCULINO   
+3       eJwzNDCwNDU3Mja1MDUyMTCxMAEAHukDdA==             67     MASCULINO   
+4           eJwzNDA0szQCQgMDM2NLcxMTAB8CA3k=             59     MASCULINO   
+...                                      ...            ...           ...   
+509711  eJwzNDa2tDQ2MrO0MLIwNjYxMQEAH5oDgg==             62      FEMENINO   
+509712      eJwzNLYwNjAzNTY3NzExMQACAB8AA2g=             53      FEMENINO   
+509713  eJwzNLawMDQ2NDA0MzY0NjO3MAEAHsoDcQ==             74      FEMENINO   
+509714  eJwzNLS0NDSzMLI0tbQwNLAwsQQAH74Diw==             54      FEMENINO   
+509715  eJwzNLS0NDa1NDE2MzY0N7I0MAAAH4EDeQ==             55     MASCULINO   
+
+        ...        ACTIVIDAD_HOSPITALARIA FECHA_MUESTRA FEC_RESULTADO_1  \
+0       ...  ATENCION  MEDICA AMBULATORIA      20200102        20200111   
+1       ...  ATENCION  MEDICA AMBULATORIA      20200102        20200111   
+2       ...  ATENCION  MEDICA AMBULATORIA      20200102        20200102   
+3       ...  ATENCION  MEDICA AMBULATORIA      20200102        20200102   
+4       ...  ATENCION  MEDICA AMBULATORIA      20200102        20200102   
+...     ...                           ...           ...             ...   
+509711  ...  ATENCION  MEDICA AMBULATORIA      20240430        20240430   
+509712  ...  ATENCION  MEDICA AMBULATORIA      20240430        20240430   
+509713  ...  ATENCION  MEDICA AMBULATORIA      20240430        20240430   
+509714  ...  ATENCION  MEDICA AMBULATORIA      20240430        20240430   
+509715  ...  ATENCION  MEDICA AMBULATORIA      20240430        20240430   
+
+                                          PROCEDIMIENTO_1 RESULTADO_1  \
+0       DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       217.0   
+1       DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       192.0   
+2       DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       203.0   
+3       DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       207.0   
+4       DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       155.0   
+...                                                   ...         ...   
+509711  DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...       187.0   
+509712  DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...        97.0   
+509713  DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...       220.0   
+509714  DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...       204.0   
+509715  DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...       157.0   
+
+       UNIDADES_1 FEC_RESULTADO_2  \
+0           mg/dL        20200111   
+1           mg/dL        20200111   
+2           mg/dL        20200102   
+3           mg/dL        20200102   
+4           mg/dL        20200102   
+...           ...             ...   
+509711      mg/dL        20240430   
+509712      mg/dL        20240430   
+509713      mg/dL        20240430   
+509714      mg/dL        20240430   
+509715      mg/dL        20240430   
+
+                                          PROCEDIMIENTO_2  RESULTADO_2  \
+0       DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...        258.0   
+1       DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...        171.0   
+2       DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...         78.0   
+3       DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...        113.0   
+4       DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...         78.0   
+...                                                   ...          ...   
+509711  DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...        195.0   
+509712  DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...        176.0   
+509713  DOSAJE DE GLUCOSA EN SANGRE, CUANTITATIVO (EXC...        226.0   
+509714  DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...        185.0   
+509715  DOSAJE DE COLESTEROL TOTAL EN SANGRE COMPLETA ...        164.0   
+
+       UNIDADES_2  
+0           mg/dL  
+1           mg/dL  
+2           mg/dL  
+3           mg/dL  
+4           mg/dL  
+...           ...  
+509711      mg/dL  
+509712      mg/dL  
+509713      mg/dL  
+509714      mg/dL  
+509715      mg/dL  
+
+[509716 rows x 26 columns]
 </pre></div>
 </div>
 </div>
@@ -726,163 +806,92 @@ primeras_100_filas_anemia.xlsx
 <h2><strong>3.4. Revision de Metadatos</strong><a class="headerlink" href="#revision-de-metadatos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_anemia</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_nombre_columnas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_nombre_columnas</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Sexo&#39;, &#39;id_persona&#39;, &#39;Edad&#39;, &#39;Tipo_edad&#39;, &#39;id_ubigeo&#39;, &#39;Fecha_atencion&#39;, &#39;Etapa&#39;, &#39;Diagnostico&#39;, &#39;Tipo_Dx&#39;, &#39;Lab&#39;, &#39;id_eess&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;FECHA_CORTE&#39;, &#39;DEPARTAMENTO&#39;, &#39;PROVINCIA&#39;, &#39;DISTRITO&#39;, &#39;UBIGEO&#39;, &#39;RED&#39;, &#39;IPRESS&#39;, &#39;ID_PACIENTE&#39;, &#39;EDAD_PACIENTE&#39;, &#39;SEXO_PACIENTE&#39;, &#39;EDAD_MEDICO&#39;, &#39;ID_MEDICO&#39;, &#39;COD_DIAG&#39;, &#39;DIAGNOSTICO&#39;, &#39;AREA_HOSPITALARIA&#39;, &#39;SERVICIO_HOSPITALARIO&#39;, &#39;ACTIVIDAD_HOSPITALARIA&#39;, &#39;FECHA_MUESTRA&#39;, &#39;FEC_RESULTADO_1&#39;, &#39;PROCEDIMIENTO_1&#39;, &#39;RESULTADO_1&#39;, &#39;UNIDADES_1&#39;, &#39;FEC_RESULTADO_2&#39;, &#39;PROCEDIMIENTO_2&#39;, &#39;RESULTADO_2&#39;, &#39;UNIDADES_2&#39;]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_anemia</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">())):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">- </span><span class="si">{</span><span class="n">df_anemia</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">())):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">- </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0- Sexo
-1- id_persona
-2- Edad
-3- Tipo_edad
-4- id_ubigeo
-5- Fecha_atencion
-6- Etapa
-7- Diagnostico
-8- Tipo_Dx
-9- Lab
-10- id_eess
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0- FECHA_CORTE
+1- DEPARTAMENTO
+2- PROVINCIA
+3- DISTRITO
+4- UBIGEO
+5- RED
+6- IPRESS
+7- ID_PACIENTE
+8- EDAD_PACIENTE
+9- SEXO_PACIENTE
+10- EDAD_MEDICO
+11- ID_MEDICO
+12- COD_DIAG
+13- DIAGNOSTICO
+14- AREA_HOSPITALARIA
+15- SERVICIO_HOSPITALARIO
+16- ACTIVIDAD_HOSPITALARIA
+17- FECHA_MUESTRA
+18- FEC_RESULTADO_1
+19- PROCEDIMIENTO_1
+20- RESULTADO_1
+21- UNIDADES_1
+22- FEC_RESULTADO_2
+23- PROCEDIMIENTO_2
+24- RESULTADO_2
+25- UNIDADES_2
 </pre></div>
 </div>
 </div>
 </div>
-<p>Reconocimiento de las variables en base a los archvios <strong>Metadatos</strong></p>
-<p><strong>Metadata de la base de datos de anemia</strong></p>
-<p><strong>Sexo</strong>: M:Masculino, F:Femenino</p>
-<p><strong>Edad</strong>: Edad del paciente</p>
-<p><strong>Tipo_edad</strong>: AÑO, MES, DIA, HORA</p>
-<p><strong>Tipo_Dx</strong>: Tipo de diagnostico: Definitivo, Presuntivo, Repetido</p>
-<p>En el contexto de la anemia, los términos diagnóstico <strong>Definitivo</strong>, <strong>Presuntivo</strong> y <strong>Repetido</strong> se refiere a categorias utilizadas en la práctica clínica para clasificar el nivel de certeza y el proceso de diagnóstico. A continuación, se describe detalladamente cada uno de ellos, con un enfoque específico en su aplicación al diagnóstico de anemia:</p>
-<section id="tipo-dx-definitivo-d">
-<h3><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)<a class="headerlink" href="#tipo-dx-definitivo-d" title="Link to this heading">#</a></h3>
-<p>Es el diagnótico establecido con absoluta certeza, respaldado por pruebas clínicas de laboratorio o estudios complementarios que confirman de manera inequívoca la presencia y la causa específica de la anemia. Este diagnóstico se basa en evidencia objetiva y criterios de diagnósticos estandarizados.</p>
-<p><strong>Características</strong></p>
-<ul class="simple">
-<li><p>Se alccanza tras completar una evaluación exhaustiva, que incluye análisis de sangre, estudios de médula ósea (si es necesario), prubas bioquímicas u otros métodos especializados.</p></li>
-<li><p>Elimina dudas sobre otras posibles causas o condiciones diferenciales.</p></li>
-<li><p>Especifíca el tipo de anemia (Ej. anemia <strong>ferropénica, megaloblástica, hemolítica</strong>) y, cuando aplica, la causa subyacente (como deficiencia de hierro, déficit de vitamina <strong>B12</strong> ó enfermedad crónica)</p></li>
-</ul>
-</section>
-<section id="tipo-dx-presuntivo-p">
-<h3><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)<a class="headerlink" href="#tipo-dx-presuntivo-p" title="Link to this heading">#</a></h3>
-<p>Es un diagnóstico preliminar o tentativo  basado en datos clínicos, sintomáticos, antecedentes y pruebas iniciales, pero sin confirmación completa de todas las pruebas necesarias para establecer un diagnóstico definitivo. Se utiliza cuando hay una alta probabilidad de anemia, pero aún se requieren estudios adicionales para confirmar la causa exacta.</p>
-<p><strong>Características</strong></p>
-<ul class="simple">
-<li><p>Se basa en hallazgos parciales, como síntomas, examen físico o pruebas básicas (Ej Hemograma)</p></li>
-<li><p>Puede ser suficiente para iniciar un tratamiento provisional, pero debe ser seguido por pruebas confirmatorias.</p></li>
-<li><p>Está sujeto a revisión  y puede cambiar una vez que se obtengan resultados más específicos.</p></li>
-</ul>
-</section>
-<section id="tipo-dx-repetido-r">
-<h3><strong>3.4.3. tipo_Dx:</strong> Repetido (R)<a class="headerlink" href="#tipo-dx-repetido-r" title="Link to this heading">#</a></h3>
-<p>Se refiere a un diagnóstico que se registra nuevamente en una consulta o episodio clínico posterior, confirmando o reevaluando una condición previamente identificada (ya sea presuntiva o definitiva). Este término se usa en sistemas de codificación clínica (como CIE-10) para indicar que la anemia sigue presente o se ha reevaluado en el paciente.</p>
-<p><strong>Características</strong></p>
-<ul class="simple">
-<li><p>No implica un nuevo diagnóstico, sino la confirmación o monitoreo de una condición existente.</p></li>
-<li><p>Puede aplicarse tanto a diagnósticos definitivos como presuntivos que se mantienen en el tiempo.</p></li>
-<li><p>Es común en enfermedades crónicas o recurrentes, donde el paciente requiere seguimiento continuo.</p></li>
-</ul>
-<p><strong>Fuentes</strong></p>
-<ul class="simple">
-<li><p><a href="https://www.datosabiertos.gob.pe/dataset/anemia">Plataforma de datos abiertos del Perú</a>.</p></li>
-<li><p><a href="https://www.who.int/news-room/fact-sheets/detail/anaemia">Organización Mundial de la Salud (OMS)</a></p></li>
-</ul>
-<p>###<strong>3.4.4. Elección de variables de interés</strong></p>
+<section id="eleccion-de-variables-de-interes">
+<h3><strong>3.4.4. Elección de variables de interés</strong><a class="headerlink" href="#eleccion-de-variables-de-interes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_interes</span> <span class="o">=</span> <span class="n">df_anemia</span><span class="p">[[</span> <span class="s2">&quot;Sexo&quot;</span><span class="p">,</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">,</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_interes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;FECHA_MUESTRA&quot;</span><span class="p">,</span> <span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">,</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">,</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">,</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-3         F         D       D    19
-4         M         A       D     3
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        FECHA_MUESTRA DEPARTAMENTO SEXO_PACIENTE  EDAD_PACIENTE  \
+0            20200102      UCAYALI     MASCULINO             51   
+1            20200102      UCAYALI      FEMENINO             48   
+2            20200102        TACNA     MASCULINO             67   
+3            20200102        TACNA     MASCULINO             67   
+4            20200102   SAN MARTIN     MASCULINO             59   
+...               ...          ...           ...            ...   
+509711       20240430         LIMA      FEMENINO             62   
+509712       20240430         LIMA      FEMENINO             53   
+509713       20240430  LA LIBERTAD      FEMENINO             74   
+509714       20240430         LIMA      FEMENINO             54   
+509715       20240430         LIMA     MASCULINO             55   
 
-[248893 rows x 4 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">primeras_100_filas</span> <span class="o">=</span> <span class="n">df_interes</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">primeras_100_filas</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   Sexo Tipo_edad Tipo_Dx  Edad
-0     F         A       D    20
-1     F         A       D     2
-2     M         A       D     1
-3     F         D       D    19
-4     M         A       D     3
-..  ...       ...     ...   ...
-95    M         M       D     6
-96    F         A       D     2
-97    F         A       D     2
-98    M         A       D     2
-99    M         A       D     2
+                                              DIAGNOSTICO  
+0       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+1       DIABETES MELLITUS ESPECIFICADA, SIN MENCION DE...  
+2       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+3       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+4       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+...                                                   ...  
+509711  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509712  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+509713  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509714  DIABETES MELLITUS, NO ESPECIFICADA, SIN MENCIO...  
+509715  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
 
-[100 rows x 4 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo_excel</span> <span class="o">=</span> <span class="s2">&quot;primeras_100_filas_anemia.xlsx&quot;</span>
-<span class="n">ruta_completa_excel</span> <span class="o">=</span> <span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo_excel</span>
-
-<span class="n">primeras_100_filas</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">ruta_completa_excel</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0         20
-1          2
-2          1
-3         19
-4          3
-          ..
-248888     6
-248889     4
-248890     6
-248891     4
-248892    84
-Name: Edad, Length: 248893, dtype: int64
+[509716 rows x 5 columns]
 </pre></div>
 </div>
 </div>
@@ -897,28 +906,110 @@ Name: Edad, Length: 248893, dtype: int64
 <p>Para variables categóricas como <strong>Sexo, Tipo_edad</strong> y <strong>Tipo_Dx</strong>, el análisis descriptivo más común es observar la distribución de frecuencias. Esto nos indica cuántas veces aparece cada valor único en la columna.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;DEPARTAMENTO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sexo
-M    126255
-F    122638
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SEXO_PACIENTE
+FEMENINO     297424
+MASCULINO    212292
 Name: count, dtype: int64
-Tipo_edad
-A    137592
-M    111104
-D       197
+============================================================
+
+DEPARTAMENTO
+LIMA             180751
+AREQUIPA          46492
+LA LIBERTAD       43707
+LAMBAYEQUE        30393
+ANCASH            21204
+ICA               21103
+CALLAO            20708
+PIURA             19648
+TACNA             16941
+PUNO              16922
+SAN MARTIN        14492
+LORETO            14475
+JUNIN             10382
+CUSCO              8566
+CAJAMARCA          8522
+MOQUEGUA           7807
+AYACUCHO           6268
+HUANUCO            5458
+APURIMAC           4793
+TUMBES             3665
+MADRE DE DIOS      2693
+AMAZONAS           1983
+PASCO              1811
+HUANCAVELICA        824
+UCAYALI             108
 Name: count, dtype: int64
-Tipo_Dx
-D    248398
-R       454
-P        41
+============================================================
+
+DIAGNOSTICO
+DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION                                        340278
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES                                        44702
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS                                 25176
+OTROS TRASTORNOS ESPECIFICADOS DE LA SECRECION INTERNA DEL PANCREAS                           17316
+DIABETES MELLITUS, NO ESPECIFICADA, SIN MENCION DE COMPLICACION                               12401
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NEUROLOGICAS                                      9711
+DIABETES MELLITUS TIPO 1, SIN MENCION DE COMPLICACION                                          9507
+DIABETES MELLITUS ESPECIFICADA, SIN MENCION DE COMPLICACION                                    9248
+TRASTORNOS DE LA SECRECION INTERNA DEL PANCREAS, SIN OTRA ESPECIFICACION                       8123
+DIABETES MELLITUS TIPO 2, CON OTRAS COMPLICACIONES ESPECIFICADAS                               7515
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES RENALES                                           4565
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES MULTIPLES                                   3882
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES MULTIPLES                                         2917
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES RENALES                                     2769
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES CIRCULATORIAS PERIFERICAS                         1762
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES NO ESPECIFICADAS                            1515
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES NEUROLOGICAS                                1211
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES NO ESPECIFICADAS                                  1177
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES NEUROLOGICAS                                       499
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES NO ESPECIFICADAS                496
+DIABETES MELLITUS TIPO 1, CON OTRAS COMPLICACIONES ESPECIFICADAS                                457
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES CIRCULATORIAS PERIFERICAS                    454
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES MULTIPLES                                425
+DIABETES MELLITUS ESPECIFICADA, CON OTRAS COMPLICACIONES ESPECIFICADAS                          352
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES CIRCULATORIAS PERIFERICAS                          287
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES RENALES                                            271
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, SIN MENCION DE COMPLICACION                        257
+HIPOGLICEMIA, NO ESPECIFICADA                                                                   256
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES OFTALMICAS                                         246
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES MULTIPLES                       241
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES NO ESPECIFICADAS                         227
+DIABETES MELLITUS, NO ESPECIFICADA, CON OTRAS COMPLICACIONES ESPECIFICADAS                      187
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES NEUROLOGICAS                             185
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES RENALES                                  162
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES NEUROLOGICAS                    152
+DIABETES MELLITUS TIPO 2, CON COMA                                                              141
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES CIRCULATORIAS PERIFERICAS                100
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES CIRCULATORIAS PERIFERICAS        75
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES OFTALMICAS                       54
+DIABETES MELLITUS TIPO 2, CON CETOACIDOSIS                                                       54
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON OTRAS COMPLICACIONES ESPECIFICADAS              54
+DIABETES MELLITUS TIPO 1, CON COMPLICACIONES OFTALMICAS                                          50
+DIABETES MELLITUS ESPECIFICADA, CON COMPLICACIONES OFTALMICAS                                    43
+OTRAS HIPOGLICEMIAS                                                                              42
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMA                                                     30
+HIPOGLICEMIA SIN COMA, INDUCIDA POR DROGAS                                                       28
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMPLICACIONES RENALES                          27
+DIABETES MELLITUS, NO ESPECIFICADA, CON COMPLICACIONES OFTALMICAS                                25
+DIABETES MELLITUS TIPO 1, CON CETOACIDOSIS                                                       15
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON CETOACIDOSIS                                    13
+DIABETES MELLITUS ESPECIFICADA, CON CETOACIDOSIS                                                  9
+DIABETES MELLITUS, NO ESPECIFICADA, CON CETOACIDOSIS                                              9
+DIABETES MELLITUS TIPO 1, CON COMA                                                                6
+SECRECION EXAGERADA DEL GLUCAGON                                                                  5
+DIABETES MELLITUS ASOCIADA CON DESNUTRICION, CON COMA                                             4
+DIABETES MELLITUS ESPECIFICADA, CON COMA                                                          2
+DIABETES TIPO MODY                                                                                1
 Name: count, dtype: int64
 </pre></div>
 </div>
@@ -930,13 +1021,19 @@ Name: count, dtype: int64
 <p>Para explorar la relación entre una variable categórica (<strong>Sexo</strong>) y una variable numérica (<strong>Edad</strong>), un gráfico de cajas (boxplot) es una visualización adecuada.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;Sexo&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_interes</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_interes</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s2">&quot;.8&quot;</span><span class="p">,</span>
+            <span class="n">linecolor</span><span class="o">=</span><span class="s2">&quot;#137&quot;</span><span class="p">,</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="mf">.75</span><span class="p">,</span>
+            <span class="n">medianprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="s2">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+            <span class="n">flierprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;o&quot;</span><span class="p">},</span>
+            <span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4e07ee6c78943dabce2fb18dba6a0fc8016527378f59bc79d35f72251887fc88.png" src="../_images/4e07ee6c78943dabce2fb18dba6a0fc8016527378f59bc79d35f72251887fc88.png" />
+<img alt="../_images/444f03db708de4c94405e2d4cbb83bc65136b7a67aa576c5532341f529787715.png" src="../_images/444f03db708de4c94405e2d4cbb83bc65136b7a67aa576c5532341f529787715.png" />
 </div>
 </div>
 </section>
@@ -946,24 +1043,21 @@ Name: count, dtype: int64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estadísticas descriptivas para la variable &#39;Edad&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas para &#39;Edad&#39;:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador para mayor claridad</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas Descriptivas para &#39;Edad&#39;:
-count    248893.000000
-mean          4.765341
-std           5.621249
-min           1.000000
-25%           2.000000
-50%           4.000000
-75%           6.000000
-max          99.000000
-Name: Edad, dtype: float64
-
-==================================================
+count    509716.000000
+mean         61.865916
+std          13.336874
+min           0.000000
+25%          54.000000
+50%          63.000000
+75%          71.000000
+max         108.000000
+Name: EDAD_PACIENTE, dtype: float64
 </pre></div>
 </div>
 </div>
@@ -972,11 +1066,11 @@ Name: Edad, dtype: float64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histograma para visualizar la distribución de &#39;Edad&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Visualización de la Distribución para &#39;Edad&#39; (Histograma):&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1"># (ncols, nfil) Establece el tamaño de la figura para el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span> <span class="c1"># Establece el tamaño de la figura para el gráfico</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad de caso de Anemia&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad de caso de Diabetes&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje y</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Añade una cuadrícula al gráfico</span>
@@ -988,7 +1082,7 @@ Name: Edad, dtype: float64
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Visualización de la Distribución para &#39;Edad&#39; (Histograma):
 </pre></div>
 </div>
-<img alt="../_images/d719720d4a3618b2805cf0660a3d1fce292c6696bb400a6e0a7e3272d7932427.png" src="../_images/d719720d4a3618b2805cf0660a3d1fce292c6696bb400a6e0a7e3272d7932427.png" />
+<img alt="../_images/8f8c29b5f42ec4cc58b9ed4c40d19b5f622ef6e9fae181d5d782e8c869266c59.png" src="../_images/8f8c29b5f42ec4cc58b9ed4c40d19b5f622ef6e9fae181d5d782e8c869266c59.png" />
 </div>
 </div>
 </section>
@@ -998,78 +1092,179 @@ Name: Edad, dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis para la variable &#39;Edad&#39; (Cuantitativa)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Edad&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medidas de Tendencia Central para &#39;Edad&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># Separador</span>
 
 <span class="c1"># Medidas de Tendencia Central para &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Media: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Mediana: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># mode() puede devolver múltiples valores si hay un empate</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Media: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Mediana: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># mode() puede devolver múltiples valores si hay un empate</span>
 
-<span class="c1"># Medidas de Dispersión para &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Desviación Estándar: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Varianza: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Rango: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Cuartil 1 (Q1): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Cuartil 3 (Q3): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Rango Intercuartílico (IQR): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medidas de Dispersión para &#39;Edad&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># Separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Desviación Estándar: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Varianza: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Rango: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Cuartil 1 (Q1): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Cuartil 3 (Q3): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Rango Intercuartílico (IQR): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
 
 <span class="c1"># Análisis para la variable &#39;Sexo&#39; (Categórica)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Sexo&#39;:&quot;</span><span class="p">)</span>
 
-<span class="c1"># Medida de Tendencia Central para &#39;Sexo&#39; (Moda)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Sexo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medida de Tendencia Central (Moda)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="p">)</span> <span class="c1"># Separador</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;sexo&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;SEXO_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
+
 
 <span class="c1"># Análisis para la variable &#39;Tipo_edad&#39; (Categórica)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Tipo_edad&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;EDAD_PACIENTE&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
+
+<span class="c1"># Análisis para la variable &#39;Tipo_edad&#39; (Categórica)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;DEPARTAMENTO&#39;:&quot;</span><span class="p">)</span>
 
 <span class="c1"># Medida de Tendencia Central para &#39;Tipo_edad&#39; (Moda)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Tipo_edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
-
-<span class="c1"># Análisis para la variable &#39;Tipo_Dx&#39; (Categórica)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Tipo_Dx&#39;:&quot;</span><span class="p">)</span>
-
-<span class="c1"># Medida de Tendencia Central para &#39;Tipo_Dx&#39; (Moda)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Tipo_Dx&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;DEPARTAMENTO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Análisis para la variable &#39;Edad&#39;:
-  Media: 4.77
-  Mediana: 4.00
-  Moda: 1
-
-
-  Desviación Estándar: 5.62
-  Varianza: 31.60
-  Rango: 98
-  Cuartil 1 (Q1): 2.00
-  Cuartil 3 (Q3): 6.00
-  Rango Intercuartílico (IQR): 4.00
-
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medidas de Tendencia Central para &#39;Edad&#39;
 ==================================================
+  Media: 61.87
+  Mediana: 63.00
+  Moda: 67
 
-Análisis para la variable &#39;Sexo&#39;:
-  Moda: M
-
+Medidas de Dispersión para &#39;Edad&#39;
 ==================================================
+  Desviación Estándar: 13.34
+  Varianza: 177.87
+  Rango: 108
+  Cuartil 1 (Q1): 54.00
+  Cuartil 3 (Q3): 71.00
+  Rango Intercuartílico (IQR): 17.00
 
-Análisis para la variable &#39;Tipo_edad&#39;:
-  Moda: A
-
+Medida de Tendencia Central (Moda)
 ==================================================
+Análisis para la variable &#39;sexo&#39;:
+  Moda: FEMENINO
+Análisis para la variable &#39;EDAD_PACIENTE&#39;:
+  Moda: 67
+Análisis para la variable &#39;DEPARTAMENTO&#39;:
+  Moda: LIMA
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="elegir-tipos-de-diabetes">
+<h3><strong>3.5.5. Elegir tipos de diabetes</strong><a class="headerlink" href="#elegir-tipos-de-diabetes" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">frecuencias_diag</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">frecuencias_diag</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION&#39;,
+       &#39;DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES&#39;,
+       &#39;DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS&#39;],
+      dtype=&#39;object&#39;, name=&#39;DIAGNOSTICO&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tipos_diabetes</span> <span class="o">=</span> <span class="n">frecuencias_diag</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_filtrado</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">tipos_diabetes</span><span class="p">)]</span>
 
-Análisis para la variable &#39;Tipo_Dx&#39;:
-  Moda: D
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        FECHA_MUESTRA DEPARTAMENTO SEXO_PACIENTE  EDAD_PACIENTE  \
+0            20200102      UCAYALI     MASCULINO             51   
+2            20200102        TACNA     MASCULINO             67   
+3            20200102        TACNA     MASCULINO             67   
+4            20200102   SAN MARTIN     MASCULINO             59   
+5            20200102  LA LIBERTAD     MASCULINO             55   
+...               ...          ...           ...            ...   
+509708       20240430     AREQUIPA      FEMENINO             73   
+509711       20240430         LIMA      FEMENINO             62   
+509712       20240430         LIMA      FEMENINO             53   
+509713       20240430  LA LIBERTAD      FEMENINO             74   
+509715       20240430         LIMA     MASCULINO             55   
+
+                                              DIAGNOSTICO  
+0       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+2       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+3       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+4       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+5       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+...                                                   ...  
+509708  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+509711  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509712  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+509713  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509715  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+
+[410156 rows x 5 columns]
+DIAGNOSTICO
+DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION            340278
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES            44702
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS     25176
+Name: count, dtype: int64
 ==================================================
 </pre></div>
 </div>
+</div>
+</div>
+<p><strong>DM T2 SMC</strong>: DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION</p>
+<p><strong>DM T2 CCM</strong>: DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES</p>
+<p><strong>DM T2 CCNE</strong>: DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_filtrado</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s2">&quot;.8&quot;</span><span class="p">,</span>
+            <span class="n">linecolor</span><span class="o">=</span><span class="s2">&quot;#137&quot;</span><span class="p">,</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="mf">.75</span><span class="p">,</span>
+            <span class="n">medianprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="s2">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+            <span class="n">flierprops</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="s2">&quot;o&quot;</span><span class="p">},</span>
+            <span class="p">)</span>
+
+<span class="c1"># Obtener los ejes del gráfico actual</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+<span class="n">nuevas_etiquetas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DM T2 SMC&quot;</span><span class="p">,</span> <span class="s2">&quot;DM T2 CCM&quot;</span><span class="p">,</span> <span class="s2">&quot;DM T2 CCNE&quot;</span><span class="p">]</span> <span class="c1"># Ejemplo: Reemplaza con tus etiquetas deseadas</span>
+
+<span class="c1"># Establecer las nuevas etiquetas en el eje x</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">nuevas_etiquetas</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-51-4025004484&gt;:14: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(nuevas_etiquetas)
+</pre></div>
+</div>
+<img alt="../_images/37b988b0f9970a5c9c0603095a76db97f5f330596f611a584a8fbd4c9b79fecd.png" src="../_images/37b988b0f9970a5c9c0603095a76db97f5f330596f611a584a8fbd4c9b79fecd.png" />
 </div>
 </div>
 </section>
@@ -1104,81 +1299,28 @@ Análisis para la variable &#39;Tipo_Dx&#39;:
 <li><p><strong>Variables categóricas</strong>: No aplica para variables continuas.</p></li>
 <li><p><strong>Direccionalidad</strong>: Chi-Cuadrado solo detecta relación o asociación , <strong>no causalida</strong>.</p></li>
 </ul>
-<p><strong>Nota</strong>:</p>
-<p>Diversos ejemplo aplicativos para generar tabla de contingenci</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dx_D</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;D&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dx_D</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">dx_D</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-3         F         D       D    19
-4         M         A       D     3
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
-
-[248398 rows x 4 columns]
-========================================
-Tipo_Dx
-D    248398
-Name: count, dtype: int64
-========================================
-Tipo_Dx
-D    248398
-R       454
-P        41
-Name: count, dtype: int64
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla_sx_D</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">dx_D</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">],</span> <span class="n">dx_D</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tabla_sx_D</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tipo_Dx       D
-Sexo           
-F        122359
-M        126039
-</pre></div>
-</div>
-</div>
-</div>
-<p>aplicación tabla de contingencia original del caso estudio</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">],</span> <span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabla</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">],</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tabla</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tipo_Dx       D   P    R
-Sexo                    
-F        122359  26  253
-M        126039  15  201
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DIAGNOSTICO    DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES  \
+SEXO_PACIENTE                                                           
+FEMENINO                                                   25400        
+MASCULINO                                                  19302        
+
+DIAGNOSTICO    DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS  \
+SEXO_PACIENTE                                                                  
+FEMENINO                                                   14472               
+MASCULINO                                                  10704               
+
+DIAGNOSTICO    DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION  
+SEXO_PACIENTE                                                         
+FEMENINO                                                  196686      
+MASCULINO                                                 143592      
 </pre></div>
 </div>
 </div>
@@ -1203,7 +1345,7 @@ M        126039  15  201
 <span class="sd">                    relación entre las variables.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="n">chi2_stat</span><span class="p">,</span> <span class="n">p_valor</span><span class="p">,</span> <span class="n">dof</span><span class="p">,</span> <span class="n">freq_esperadas</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">tabla_sx_D</span><span class="p">)</span>
+<span class="n">chi2_stat</span><span class="p">,</span> <span class="n">p_valor</span><span class="p">,</span> <span class="n">dof</span><span class="p">,</span> <span class="n">freq_esperadas</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">tabla</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1229,28 +1371,18 @@ M        126039  15  201
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Chi-cuadrado de Independencia:
-Estadístico Chi-cuadrado: 0.000
-Grados de libertad: 0
-p-valor: 1.000
+Estadístico Chi-cuadrado: 15.976
+Grados de libertad: 2
+p-valor: 0.000
 
 
 Resultado:
-	No se rechaza H0:
+	Se rechaza H0:
 
-	No hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
+	Hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
 </pre></div>
 </div>
 </div>
-</div>
-<p>Prueba de Chi-cuadrado de Independencia:</p>
-<p>Estadístico Chi-cuadrado: 10.865</p>
-<p>Grados de libertad: 2</p>
-<p>p-valor: 0.004</p>
-<p>Resultado:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Se rechaza H0:
-
-Hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
-</pre></div>
 </div>
 </section>
 <section id="comparacion-de-medidas-prueba-de-hipotesis-t-test">
@@ -1274,8 +1406,8 @@ Hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Separar la variable &#39;Edad&#39; en dos grupos basados en la variable &#39;Sexo&#39;</span>
-<span class="n">edad_femenino</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span><span class="p">][</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span>
-<span class="n">edad_masculino</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;M&quot;</span><span class="p">][</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span>
+<span class="n">edad_femenino</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;FEMENINO&quot;</span><span class="p">][</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">]</span>
+<span class="n">edad_masculino</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MASCULINO&quot;</span><span class="p">][</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">edad_femenino</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">edad_masculino</span><span class="p">)</span>
@@ -1283,148 +1415,34 @@ Hay una relación ó asociación significativa entre Sexo y Tipo_Dx.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0         20
-1          2
-3         19
-5          1
-7          2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7         73
+9         20
+13        50
+19        65
+22        77
           ..
-248885     4
-248886     6
-248890     6
-248891     4
-248892    84
-Name: Edad, Length: 122638, dtype: int64
-2         1
-4         3
-6         1
-8         8
-9         1
-         ..
-248880    3
-248881    6
-248887    4
-248888    6
-248889    4
-Name: Edad, Length: 126255, dtype: int64
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Nota</strong>:</p>
-<p>Ejemplo adicional aplicativo</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_f</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;F&quot;</span><span class="p">][</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_f</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0         20
-1          2
-3         19
-5          1
-7          2
+509704    53
+509708    73
+509711    62
+509712    53
+509713    74
+Name: EDAD_PACIENTE, Length: 236558, dtype: int64
+0         51
+2         67
+3         67
+4         59
+5         55
           ..
-248885     4
-248886     6
-248890     6
-248891     4
-248892    84
-Name: Edad, Length: 122638, dtype: int64
+509699    80
+509702    69
+509705    56
+509706    78
+509715    55
+Name: EDAD_PACIENTE, Length: 173598, dtype: int64
 </pre></div>
 </div>
 </div>
 </div>
-<p><strong>Nota</strong>:</p>
-<p>Ejemplo adicional aplicativo</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd_years</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;A&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_years</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_years</span><span class="p">[</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-4         M         A       D     3
-5         F         A       D     1
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
-
-[137592 rows x 4 columns]
-Tipo_edad
-A    137592
-Name: count, dtype: int64
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Nota</strong>:</p>
-<p>Ejemplo adicional aplicativo</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd_adulto_mayor</span> <span class="o">=</span> <span class="n">dd_years</span><span class="p">[(</span><span class="n">dd_years</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dd_years</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_adulto_mayor</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_adulto_mayor</span><span class="p">[</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-311       M         A       D    75
-312       M         A       D    84
-424       F         A       D    70
-425       M         A       D    69
-491       F         A       D    81
-...     ...       ...     ...   ...
-231679    F         A       D    78
-237405    F         A       D    82
-247719    F         A       D    71
-247722    F         A       D    87
-248892    F         A       D    84
-
-[630 rows x 4 columns]
-Tipo_edad
-A    630
-Name: count, dtype: int64
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>Nota</strong>:</p>
-<p>Ejemplo adicional aplicativo</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd_adolecentes</span> <span class="o">=</span> <span class="n">dd_years</span><span class="p">[(</span><span class="n">dd_years</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dd_years</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_adulto_mayor</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dd_adulto_mayor</span><span class="p">[</span><span class="s2">&quot;Tipo_edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;Sexo&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">dd_adulto_mayor</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/1b310bcaebb7eadcf8327702a5b985bc6f0e01e08cd9e212828caa1ed2ec7fd5.png" src="../_images/1b310bcaebb7eadcf8327702a5b985bc6f0e01e08cd9e212828caa1ed2ec7fd5.png" />
-</div>
-</div>
-<p>Continuación de la prueba de <strong>T-test</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Realizar la prueba T-test independiente</span>
@@ -1434,7 +1452,7 @@ Name: count, dtype: int64
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba T-test Independiente para la Edad entre Sexo Femenino y Masculino:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estadístico T: </span><span class="si">{</span><span class="n">t_stat</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-valor: </span><span class="si">{</span><span class="n">p_valor_ttest</span><span class="si">:</span><span class="s2">.13f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-valor: </span><span class="si">{</span><span class="n">p_valor_ttest</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="c1"># Interpretación del p-valor</span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.05</span> <span class="c1"># Nivel de significancia comúnmente utilizado</span>
@@ -1458,16 +1476,16 @@ Name: count, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba T-test Independiente para la Edad entre Sexo Femenino y Masculino:
-Estadístico T: 26.119
-p-valor: 0.0000000000000
+Estadístico T: -17.519
+p-valor: 0.000
 
 Interpretación del resultado:
 	Se rechaza H0.
 	Concluimos que existe una diferencia estadísticamente significativa en la media de la edad entre el sexo femenino y masculino.
 
 Medias de Edad por Sexo:
-	Media de Edad (Femenino): 5.06
-	Media de Edad (Masculino): 4.48
+	Media de Edad (Femenino): 62.64
+	Media de Edad (Masculino): 63.30
 </pre></div>
 </div>
 </div>
@@ -1540,7 +1558,7 @@ Medias de Edad por Sexo:
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Shapiro-Wilk para la Edad (Sexo Femenino):
-Estadístico Shapiro-Wilk: 0.504
+Estadístico Shapiro-Wilk: 0.991
 p-valor: 0.000
 
 Interpretación para el grupo Femenino:
@@ -1551,7 +1569,7 @@ Interpretación para el grupo Femenino:
 ==================================================
 
 Prueba de Shapiro-Wilk para la Edad (Sexo Masculino):
-Estadístico Shapiro-Wilk: 0.557
+Estadístico Shapiro-Wilk: 0.987
 p-valor: 0.000
 
 Interpretación para el grupo Masculino:
@@ -1580,16 +1598,19 @@ Interpretación para el grupo Masculino:
 <li><p><strong>Hipótesis Nula (<span class="math notranslate nohighlight">\(H_{0}\)</span>)</strong>: La muestra proviene de una distribución normal.</p></li>
 <li><p><strong>Hipóteisis Alternativa (<span class="math notranslate nohighlight">\(H_{1}\)</span>)</strong>: La muestra no proviene de una distribución normal.</p></li>
 </ul>
+</section>
+<section id="agrupar-datos-usando-la-funcion-groupby-arg">
+<h3><strong>3.6.5 Agrupar datos usando la función:</strong> <code class="docutils literal notranslate"><span class="pre">groupby(arg)</span></code><a class="headerlink" href="#agrupar-datos-usando-la-funcion-groupby-arg" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Separar la variable &#39;Edad&#39; en grupos basados en la variable &#39;Tipo_Dx&#39;</span>
-<span class="n">grupos_tipo_dx</span> <span class="o">=</span> <span class="n">df_interes</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">)</span>
+<span class="n">grupos_tipo_dx</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">grupos_tipo_dx</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7e266f8afc10&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7db38b3c5550&gt;
 </pre></div>
 </div>
 </div>
@@ -1598,47 +1619,55 @@ Interpretación para el grupo Masculino:
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_grupos</span> <span class="o">=</span> <span class="n">grupos_tipo_dx</span><span class="o">.</span><span class="n">groups</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nombre_grupos</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nombre_grupos</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;D&#39;, &#39;P&#39;, &#39;R&#39;])
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES&#39;, &#39;DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS&#39;, &#39;DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION&#39;])
+3
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Dx_D</span> <span class="o">=</span> <span class="n">grupos_tipo_dx</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Dx_D</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Dx_D</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-<span class="c1">#print(Dx_D[&quot;Edad&quot;].describe())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ccm</span> <span class="o">=</span> <span class="n">grupos_tipo_dx</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s2">&quot;DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ccm</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ccm</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-3         F         D       D    19
-4         M         A       D     3
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        FECHA_MUESTRA DEPARTAMENTO SEXO_PACIENTE  EDAD_PACIENTE  \
+29           20200103       ANCASH     MASCULINO             58   
+93           20200104        TACNA     MASCULINO             88   
+148          20200106       ANCASH      FEMENINO             36   
+201          20200106        PIURA     MASCULINO             68   
+206          20200106         LIMA      FEMENINO             65   
+...               ...          ...           ...            ...   
+509704       20240430         LIMA      FEMENINO             53   
+509706       20240430         LIMA     MASCULINO             78   
+509711       20240430         LIMA      FEMENINO             62   
+509713       20240430  LA LIBERTAD      FEMENINO             74   
+509715       20240430         LIMA     MASCULINO             55   
 
-[248398 rows x 4 columns]
-Tipo_Dx
-D    248398
-Name: count, dtype: int64
-Tipo_Dx
-D    248398
-R       454
-P        41
+                                              DIAGNOSTICO  
+29      DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+93      DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+148     DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+201     DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+206     DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+...                                                   ...  
+509704  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509706  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509711  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509713  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509715  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+
+[44702 rows x 5 columns]
+DIAGNOSTICO
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES    44702
 Name: count, dtype: int64
 </pre></div>
 </div>
@@ -1684,38 +1713,13 @@ Name: count, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Dx_D</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pruebaH_shapiroWilk</span><span class="p">(</span><span class="n">ccm</span><span class="p">,</span> <span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-3         F         D       D    19
-4         M         A       D     3
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
-
-[248398 rows x 4 columns]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pruebaH_shapiroWilk</span><span class="p">(</span><span class="n">Dx_D</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Shapiro-Wilk para Edad:
-	Estadístico Shapiro-Wilk: 0.518
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Shapiro-Wilk para EDAD_PACIENTE:
+	Estadístico Shapiro-Wilk: 0.989
 	p-valor: 0.000
 	Se rechaza H0. La distribución de la Edad en este grupo NO es significativamente normal.
 </pre></div>
@@ -1724,19 +1728,19 @@ Name: count, dtype: int64
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pruebaH_jerqueBera</span><span class="p">(</span><span class="n">Dx_D</span><span class="p">,</span> <span class="s2">&quot;Edad&quot;</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pruebaH_jerqueBera</span><span class="p">(</span><span class="n">ccm</span><span class="p">,</span> <span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Jarque-Bera para Edad:
-	Estadístico = 58285036.4549, p-valor = 0.0000
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Jarque-Bera para EDAD_PACIENTE:
+	Estadístico = 1545.9989, p-valor = 0.0000
 	Se rechaza la hipótesis nula: Los datos NO siguen una distribución normal.
 </pre></div>
 </div>
 </div>
 </div>
-<p>En tu DataFrame <strong>df_interes</strong>, la variable numérica es <strong>Edad</strong>, y la variable categórica con múltiples categorías que podemos usar para agrupar es <strong>Tipo_Dx</strong> (Definitivo, Presuntivo, Repetido) o potencialmente la combinación de <strong>Sexo</strong> y <strong>Tipo_Dx</strong>.</p>
+<p>En tu DataFrame <strong>df_filtrado</strong>, la variable numérica es <strong>Edad</strong>, y la variable categórica con múltiples categorías que podemos usar para agrupar es <strong>Tipo_Dx</strong> (Definitivo, Presuntivo, Repetido) o potencialmente la combinación de <strong>Sexo</strong> y <strong>Tipo_Dx</strong>.</p>
 <p>Acontinuación, realizaremos una prueba ANOVA para comparar la media de la variable <strong>Edad</strong> entre los grupos definidos por <strong>Tipo_Dx</strong>.</p>
 <p><strong>Hipótesis para la prueba ANOVA</strong></p>
 <ul class="simple">
@@ -1747,34 +1751,47 @@ Name: count, dtype: int64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Preparar los datos: asegurar que &#39;Tipo_Dx&#39; es de tipo category si no lo es,</span>
 <span class="c1"># ols puede manejar strings, es buena práctica.</span>
-<span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Tipo_Dx&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;Tipo_Dx&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">)</span>
+<span class="n">df_filtrado</span><span class="p">[</span><span class="s1">&#39;DIAGNOSTICO&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="s1">&#39;DIAGNOSTICO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
-0         F         A       D    20
-1         F         A       D     2
-2         M         A       D     1
-3         F         D       D    19
-4         M         A       D     3
-...     ...       ...     ...   ...
-248888    M         A       D     6
-248889    M         A       D     4
-248890    F         A       D     6
-248891    F         A       D     4
-248892    F         A       D    84
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>        FECHA_MUESTRA DEPARTAMENTO SEXO_PACIENTE  EDAD_PACIENTE  \
+0            20200102      UCAYALI     MASCULINO             51   
+2            20200102        TACNA     MASCULINO             67   
+3            20200102        TACNA     MASCULINO             67   
+4            20200102   SAN MARTIN     MASCULINO             59   
+5            20200102  LA LIBERTAD     MASCULINO             55   
+...               ...          ...           ...            ...   
+509708       20240430     AREQUIPA      FEMENINO             73   
+509711       20240430         LIMA      FEMENINO             62   
+509712       20240430         LIMA      FEMENINO             53   
+509713       20240430  LA LIBERTAD      FEMENINO             74   
+509715       20240430         LIMA     MASCULINO             55   
 
-[248893 rows x 4 columns]
+                                              DIAGNOSTICO  
+0       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+2       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+3       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+4       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+5       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+...                                                   ...  
+509708  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+509711  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509712  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...  
+509713  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+509715  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...  
+
+[410156 rows x 5 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-96-28a30ef10ef6&gt;:3: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-68-278204983&gt;:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  df_interes[&#39;Tipo_Dx&#39;] = df_interes[&#39;Tipo_Dx&#39;].astype(&#39;category&#39;)
+  df_filtrado[&#39;DIAGNOSTICO&#39;] = df_filtrado[&#39;DIAGNOSTICO&#39;].astype(&#39;category&#39;)
 </pre></div>
 </div>
 </div>
@@ -1784,54 +1801,62 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Realizar la prueba ANOVA usando statsmodels</span>
 <span class="c1"># La fórmula &#39;Edad ~ C(Tipo_Dx)&#39; indica que &#39;Edad&#39; es la variable dependiente</span>
 <span class="c1"># y &#39;Tipo_Dx&#39; es la variable independiente categórica (C() asegura que se trate como categórica)</span>
-<span class="n">modelo_anova</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;Edad ~ C(Tipo_Dx)&#39;</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span> <span class="c1"># Ajusta el modelo a los datos</span>
+<span class="n">modelo_anova</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="s1">&#39;EDAD_PACIENTE ~ C(DIAGNOSTICO)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_filtrado</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span> <span class="c1"># Ajusta el modelo a los datos</span>
 <span class="n">tabla_anova</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">anova_lm</span><span class="p">(</span><span class="n">modelo_anova</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># typ=2 para el tipo de suma de cuadrados</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Resultado de la Prueba ANOVA (Comparación de Edad entre Tipos de Diagnóstico):&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tabla_anova</span><span class="p">)</span>
 
 <span class="c1"># Interpretación del p-valor de la ANOVA</span>
-<span class="n">p_valor_anova</span> <span class="o">=</span> <span class="n">tabla_anova</span><span class="p">[</span><span class="s1">&#39;PR(&gt;F)&#39;</span><span class="p">][</span><span class="s1">&#39;C(Tipo_Dx)&#39;</span><span class="p">]</span>
+<span class="n">p_valor_anova</span> <span class="o">=</span> <span class="n">tabla_anova</span><span class="p">[</span><span class="s1">&#39;PR(&gt;F)&#39;</span><span class="p">][</span><span class="s1">&#39;C(DIAGNOSTICO)&#39;</span><span class="p">]</span>
 <span class="n">alfa_anova</span> <span class="o">=</span> <span class="mf">0.05</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Interpretación del resultado de la ANOVA:&quot;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">p_valor_anova</span> <span class="o">&lt;</span> <span class="n">alfa_anova</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Dado que el p-valor de la ANOVA (</span><span class="si">{</span><span class="n">p_valor_anova</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">) es menor que el nivel de significancia (</span><span class="si">{</span><span class="n">alfa_anova</span><span class="si">}</span><span class="s2">),&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">se rechaza la hipótesis nula.&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Concluimos que existe una diferencia estadísticamente significativa</span><span class="se">\n\t</span><span class="s2"> en la media de la edad entre al menos dos de los tipos de diagnóstico (Definitivo, Presuntivo, Repetido).&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Concluimos que existe una diferencia estadísticamente significativa</span><span class="se">\n\t</span><span class="s2"> en la media de la edad entre al menos de dos los tipos de diagnóstico.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Dado que el p-valor de la ANOVA (</span><span class="si">{</span><span class="n">p_valor_anova</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">) es mayor o igual que el nivel de significancia (</span><span class="si">{</span><span class="n">alfa_anova</span><span class="si">}</span><span class="s2">),&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">no se rechaza la hipótesis nula.&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Concluimos que no existe una diferencia estadísticamente significativa general en la media de la edad entre los diferentes tipos de diagnóstico.&quot;</span><span class="p">)</span>
-
-<span class="c1"># Opcional: Mostrar las medias de Edad por grupo para ver las diferencias (si ANOVA fue significativa)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medias de Edad por Tipo de Diagnóstico:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Tipo_Dx&#39;</span><span class="p">)[</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resultado de la Prueba ANOVA (Comparación de Edad entre Tipos de Diagnóstico):
-                  sum_sq        df           F        PR(&gt;F)
-C(Tipo_Dx)  7.565611e+03       2.0  119.829274  9.634893e-53
-Residual    7.857032e+06  248890.0         NaN           NaN
+                      sum_sq        df            F  PR(&gt;F)
+C(DIAGNOSTICO)  3.803195e+05       2.0  1327.959334     0.0
+Residual        5.873267e+07  410153.0          NaN     NaN
 
 Interpretación del resultado de la ANOVA:
 	Dado que el p-valor de la ANOVA (0.000) es menor que el nivel de significancia (0.05),
 	se rechaza la hipótesis nula.
 	Concluimos que existe una diferencia estadísticamente significativa
-	 en la media de la edad entre al menos dos de los tipos de diagnóstico (Definitivo, Presuntivo, Repetido).
-
-Medias de Edad por Tipo de Diagnóstico:
-Tipo_Dx
-D     4.761282
-P    17.902439
-R     5.799559
-Name: Edad, dtype: float64
+	 en la media de la edad entre al menos de dos los tipos de diagnóstico.
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-97-f7312f60d7e4&gt;:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
-  print(df_interes.groupby(&#39;Tipo_Dx&#39;)[&#39;Edad&#39;].mean())
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Opcional: Mostrar las medias de Edad por grupo para ver las diferencias (si ANOVA fue significativa)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medias de Edad por Tipo de Diagnóstico:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;DIAGNOSTICO&#39;</span><span class="p">)[</span><span class="s1">&#39;EDAD_PACIENTE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medias de Edad por Tipo de Diagnóstico:
+DIAGNOSTICO
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES           65.618652
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS    63.323125
+DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION            62.534090
+Name: EDAD_PACIENTE, dtype: float64
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-72-997876235&gt;:3: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  print(df_filtrado.groupby(&#39;DIAGNOSTICO&#39;)[&#39;EDAD_PACIENTE&#39;].mean())
 </pre></div>
 </div>
 </div>
@@ -1847,14 +1872,14 @@ Name: Edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c0162f56-97e0-4a59-887d-cec947b59599">
-<span class="eqno">(2)<a class="headerlink" href="#equation-c0162f56-97e0-4a59-887d-cec947b59599" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-306b82c9-d5cc-4405-9642-2393c51f6f0b">
+<span class="eqno">(5)<a class="headerlink" href="#equation-306b82c9-d5cc-4405-9642-2393c51f6f0b" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\beta_0\)</span> es el <strong>coeficiente estimado del intercepto</strong> obtenido de la salida del modelo <code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;Intercept&quot;]</span></code>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\beta_1\)</span> e el <strong>coeficiente estimado para la variable edad</strong> (<code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;edad&quot;]</span></code>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta_0\)</span> es el <strong>coeficiente estimado del intercepto</strong> obtenido de la salida del modelo <code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;Intercep&quot;]</span></code>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta_1\)</span> e el <strong>coeficiente estimado para la variable edad</strong> (<code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;&quot;edad]</span></code>).</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_2\)</span> es el <strong>coeficiente estimado para la variable sexo</strong> (<code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;C(sexo)[T.M]&quot;]</span></code>)</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\( \)</span></p>
@@ -1873,94 +1898,98 @@ P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times
 </div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Dx_Definitivo&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;D&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Tipo_Dx&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;Dx_Confirmado&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;DIAGNOSTICO&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Dx_Definitivo&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tipo_Dx
-D    248398
-R       454
-P        41
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DIAGNOSTICO
+DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION            340278
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES MULTIPLES            44702
+DIABETES MELLITUS TIPO 2, CON COMPLICACIONES NO ESPECIFICADAS     25176
 Name: count, dtype: int64
-
 ==================================================
 
-       Sexo Tipo_edad Tipo_Dx  Edad  Dx_Definitivo
-0         F         A       D    20              1
-1         F         A       D     2              1
-2         M         A       D     1              1
-3         F         D       D    19              1
-4         M         A       D     3              1
-...     ...       ...     ...   ...            ...
-248888    M         A       D     6              1
-248889    M         A       D     4              1
-248890    F         A       D     6              1
-248891    F         A       D     4              1
-248892    F         A       D    84              1
+        FECHA_MUESTRA DEPARTAMENTO SEXO_PACIENTE  EDAD_PACIENTE  \
+0            20200102      UCAYALI     MASCULINO             51   
+2            20200102        TACNA     MASCULINO             67   
+3            20200102        TACNA     MASCULINO             67   
+4            20200102   SAN MARTIN     MASCULINO             59   
+5            20200102  LA LIBERTAD     MASCULINO             55   
+...               ...          ...           ...            ...   
+509708       20240430     AREQUIPA      FEMENINO             73   
+509711       20240430         LIMA      FEMENINO             62   
+509712       20240430         LIMA      FEMENINO             53   
+509713       20240430  LA LIBERTAD      FEMENINO             74   
+509715       20240430         LIMA     MASCULINO             55   
 
-[248893 rows x 5 columns]
-Dx_Definitivo
-1    248398
-0       495
-Name: count, dtype: int64
+                                              DIAGNOSTICO  Dx_Confirmado  
+0       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+2       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+3       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+4       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+5       DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+...                                                   ...            ...  
+509708  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+509711  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...              0  
+509712  DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPL...              1  
+509713  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...              0  
+509715  DIABETES MELLITUS TIPO 2, CON COMPLICACIONES M...              0  
+
+[410156 rows x 6 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-99-9f315d2bba63&gt;:1: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-74-4049471973&gt;:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  df_interes[&quot;Dx_Definitivo&quot;] = (df_interes[&quot;Tipo_Dx&quot;] == &quot;D&quot;).astype(int)
+  df_filtrado[&quot;Dx_Confirmado&quot;] = (df_filtrado[&quot;DIAGNOSTICO&quot;] == &quot;DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION&quot;).astype(int)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modelo</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">logit</span><span class="p">(</span><span class="s2">&quot;Dx_Definitivo ~ Edad + C(Sexo)&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_interes</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">modelo</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">logit</span><span class="p">(</span><span class="s2">&quot;Dx_Confirmado ~ EDAD_PACIENTE + C(SEXO_PACIENTE)&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_filtrado</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">modelo</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization terminated successfully.
-         Current function value: 0.014267
-         Iterations 10
+         Current function value: 0.453916
+         Iterations 6
                            Logit Regression Results                           
 ==============================================================================
-Dep. Variable:          Dx_Definitivo   No. Observations:               248893
-Model:                          Logit   Df Residuals:                   248890
+Dep. Variable:          Dx_Confirmado   No. Observations:               410156
+Model:                          Logit   Df Residuals:                   410153
 Method:                           MLE   Df Model:                            2
-Date:                Sun, 01 Jun 2025   Pseudo R-squ.:                0.006323
-Time:                        03:08:21   Log-Likelihood:                -3550.9
-converged:                       True   LL-Null:                       -3573.5
-Covariance Type:            nonrobust   LLR p-value:                 1.540e-10
-================================================================================
-                   coef    std err          z      P&gt;|z|      [0.025      0.975]
---------------------------------------------------------------------------------
-Intercept        6.2584      0.067     93.620      0.000       6.127       6.389
-C(Sexo)[T.M]     0.2549      0.091      2.801      0.005       0.076       0.433
-Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
-================================================================================
+Date:                Thu, 12 Jun 2025   Pseudo R-squ.:                0.005599
+Time:                        02:40:41   Log-Likelihood:            -1.8618e+05
+converged:                       True   LL-Null:                   -1.8722e+05
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+=================================================================================================
+                                    coef    std err          z      P&gt;|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------
+Intercept                         2.6188      0.024    110.942      0.000       2.572       2.665
+C(SEXO_PACIENTE)[T.MASCULINO]    -0.0193      0.008     -2.297      0.022      -0.036      -0.003
+EDAD_PACIENTE                    -0.0161      0.000    -45.079      0.000      -0.017      -0.015
+=================================================================================================
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-
-<span class="c1"># Obtener las predicciones del modelo para los datos de entrenamiento</span>
-<span class="n">df_f</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span><span class="p">]</span>
-<span class="n">df_m</span> <span class="o">=</span> <span class="n">df_interes</span><span class="p">[</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Sexo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;M&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Obtener las predicciones del modelo para los datos de entrenamiento</span>
+<span class="n">df_f</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;FEMENINO&quot;</span><span class="p">]</span>
+<span class="n">df_m</span> <span class="o">=</span> <span class="n">df_filtrado</span><span class="p">[</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;SEXO_PACIENTE&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;MASCULINO&quot;</span><span class="p">]</span>
 
 <span class="n">y_pred_f</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_f</span><span class="p">)</span>
 <span class="n">y_pred_m</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_m</span><span class="p">)</span>
@@ -1968,15 +1997,15 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 <span class="c1"># Crear un gráfico de dispersión con los datos observados y forzados</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># Ajustar el tamaño de la figura si es necesario</span>
 <span class="c1">#plt.scatter(df_interes[&quot;Edad&quot;], df_interes[&quot;Dx_Ferropenica&quot;], label=&quot;Observado&quot;, alpha=0.5)  # Datos observados</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">][</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Dx_Definitivo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span>
-            <span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Dx_Definitivo&quot;</span><span class="p">][</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;Dx_Definitivo&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span>
-            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observado (Definitivo: 1)&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">][</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;Dx_Confirmado&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;Dx_Confirmado&quot;</span><span class="p">][</span><span class="n">df_filtrado</span><span class="p">[</span><span class="s2">&quot;Dx_Confirmado&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observado (Confirmado: 1)&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_f</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">],</span> <span class="n">y_pred_f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Forzado F&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># Datos forzados (predichos)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_m</span><span class="p">[</span><span class="s2">&quot;Edad&quot;</span><span class="p">],</span> <span class="n">y_pred_m</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Forzado M&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># Datos forzados (predichos)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_f</span><span class="p">[</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">],</span> <span class="n">y_pred_f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Forzado F&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># Datos forzados (predichos)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_m</span><span class="p">[</span><span class="s2">&quot;EDAD_PACIENTE&quot;</span><span class="p">],</span> <span class="n">y_pred_m</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Forzado M&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># Datos forzados (predichos)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probabilidad de Dx_Definitivo&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probabilidad de DIABETES MELLITUS TIPO 2 S/C&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Datos Observados vs. Forzados (Regresión Logística)&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -1985,7 +2014,11 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/eeb4b0d739e01a9640aec2387553e59a425867af3d258f5e30ce15d24f60c196.png" src="../_images/eeb4b0d739e01a9640aec2387553e59a425867af3d258f5e30ce15d24f60c196.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Creating legend with loc=&quot;best&quot; can be slow with large amounts of data.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../_images/8a5bef79c04be624f1e5540a0d96fd93636aa890e88b7bb1bd4341e681d53e3b.png" src="../_images/8a5bef79c04be624f1e5540a0d96fd93636aa890e88b7bb1bd4341e681d53e3b.png" />
 </div>
 </div>
 </section>
@@ -2038,22 +2071,13 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="preambulo.html"
+       href="sesion3_caso_estudio_malaria.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Preámbulo</p>
+        <p class="prev-next-title">3. <b>Diseño de Caso Estudio: </b>Malaria</span></h1></p>
       </div>
-    </a>
-    <a class="right-next"
-       href="sesion2_caso_estudio_dengue.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2. <b>Diseño de Caso Estudio:</b> Dengue</span></h1></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -2071,7 +2095,7 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. <b>Diseño de Caso Estudio: </b>Anemia</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4. <b>Diseño de Caso Estudio: </b>Diabetes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-marco-teorico"><strong>I. Marco Teórico</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo"><strong>1.1 Objetivo</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentos-bioestadisticos"><strong>1.2 Fundamentos Bioestadísticos</strong></a><ul class="nav section-nav flex-column">
@@ -2088,11 +2112,9 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos-de-anemia"><strong>3.3. Importar Base de Datos de Anemia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-definitivo-d"><strong>3.4.1. tipo_Dx:</strong> Definitivo (D)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-presuntivo-p"><strong>3.4.2. tipo_Dx:</strong> Presuntivo (P)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-repetido-r"><strong>3.4.3. tipo_Dx:</strong> Repetido (R)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5. Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
@@ -2100,6 +2122,7 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relacion-de-datos-categoricos-vs-numericos-analisis-bivariado"><strong>3.5.2. Relación de datos categóricos vs numéricos (análisis bivariado)</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribucion-de-la-variable-edad"><strong>3.5.3. Distribución de la variable “Edad”</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-medidas-de-tendencia-central-y-dispersion"><strong>3.5.4. Análisis de Medidas de Tendencia Central y Dispersión</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elegir-tipos-de-diabetes"><strong>3.5.5. Elegir tipos de diabetes</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estadistica-inferencial-pruebas-de-hipotesis"><strong>3.6. Estadística inferencial:</strong> pruebas de hipótesis</a><ul class="nav section-nav flex-column">
@@ -2107,6 +2130,7 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-prueba-de-hipotesis-t-test"><strong>3.6.2. Comparación de medidas:</strong> prueba de hipótesis T-test</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prueba-de-hipotesis-parametrica-shapiro-wilk"><strong>3.6.3. Prueba de hipótesis paramétrica Shapiro-Wilk</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-de-medidas-anova"><strong>3.6.4. Comparación de medidas:</strong> Anova</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agrupar-datos-usando-la-funcion-groupby-arg"><strong>3.6.5 Agrupar datos usando la función:</strong> <code class="docutils literal notranslate"><span class="pre">groupby(arg)</span></code></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-bioestadistico"><strong>3.7. Modelo Bioestadístico</strong></a><ul class="nav section-nav flex-column">

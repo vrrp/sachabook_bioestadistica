@@ -611,42 +611,79 @@ table tr:last-child td:last-child {
 </div>
 </div>
 </div>
-<p>La siguiente celda de código lista el contenido de la carpeta <strong>Datos</strong></p>
+<p>En la siguiente celda de código se define la ruta de  <strong>Drive</strong> en la computadora en la nube ()</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span> <span class="c1"># permite gestionar los directorios</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drive_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
 
-<span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Bioestadistica/Datos/&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">drive_dir</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;datos_abiertos_vigilancia_dengue_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2000_2008.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2009_2023.csv&#39;, &#39;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&#39;, &#39;datos_abiertos_vigilancia_zoonosis_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_iras_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv&#39;, &#39;pmGenoma_25Septiembre2021.csv&#39;, &#39;pmGenoma_27Sep2023.csv&#39;, &#39;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&#39;, &#39;primeras_100_filas_anemia.xlsx&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/
+</pre></div>
+</div>
+</div>
+</div>
+<p>La funión <code class="docutils literal notranslate"><span class="pre">explorar_drive</span></code> permite inspeccionar cada carpeta y subcarpetas que se encuentran en el <strong>Drive</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">explorar_drive</span><span class="p">(</span><span class="n">nombre_carpeta</span><span class="p">):</span>
+  <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+  <span class="n">ruta_drive</span> <span class="o">=</span><span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
+  <span class="n">contenido_carpeta</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">ruta_drive</span> <span class="o">+</span> <span class="n">nombre_carpeta</span><span class="p">)</span>
+  <span class="n">n_elem</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido_carpeta</span><span class="p">)</span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ruta: </span><span class="si">{</span><span class="n">ruta_drive</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre_carpeta</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de elementos: </span><span class="si">{</span><span class="n">n_elem</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_elem</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">contenido_carpeta</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">ifile</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datos_abiertos_vigilancia_dengue_2000_2023.csv
-datos_abiertos_vigilancia_malaria_2000_2008.csv
-datos_abiertos_vigilancia_malaria_2009_2023.csv
-Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
-datos_abiertos_vigilancia_zoonosis_2000_2023.csv
-datos_abiertos_vigilancia_iras_2000_2023.csv
-datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
-pmGenoma_25Septiembre2021.csv
-pmGenoma_27Sep2023.csv
-TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
-primeras_100_filas_anemia.xlsx
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos
+Numero de elementos: 5
+(0) fuente_de_datos.gdoc
+(1) shapes
+(2) biomedicina
+(3) meteorologia
+(4) finanzas
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos/biomedicina&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos/biomedicina
+Numero de elementos: 13
+(0) datos_abiertos_vigilancia_dengue_2000_2023.csv
+(1) datos_abiertos_vigilancia_malaria_2000_2008.csv
+(2) datos_abiertos_vigilancia_malaria_2009_2023.csv
+(3) Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
+(4) datos_abiertos_vigilancia_zoonosis_2000_2023.csv
+(5) datos_abiertos_vigilancia_iras_2000_2023.csv
+(6) datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
+(7) pmGenoma_25Septiembre2021.csv
+(8) pmGenoma_27Sep2023.csv
+(9) primeras_100_filas_anemia.xlsx
+(10) primeras_100_filas_anemia.gsheet
+(11) TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
+(12) analisis_datos.docx
 </pre></div>
 </div>
 </div>
@@ -683,6 +720,7 @@ primeras_100_filas_anemia.xlsx
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&quot;</span>
+<span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Base_datos/biomedicina/&quot;</span>
 
 <span class="n">df_anemia</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_anemia</span><span class="p">)</span>
@@ -1412,6 +1450,27 @@ Name: count, dtype: int64
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Sexo Tipo_edad Tipo_Dx  Edad
+311       M         A       D    75
+312       M         A       D    84
+424       F         A       D    70
+425       M         A       D    69
+491       F         A       D    81
+...     ...       ...     ...   ...
+231679    F         A       D    78
+237405    F         A       D    82
+247719    F         A       D    71
+247722    F         A       D    87
+248892    F         A       D    84
+
+[630 rows x 4 columns]
+Tipo_edad
+A    630
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1562,6 +1621,12 @@ Interpretación para el grupo Masculino:
 ==================================================
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 122638.
+  res = hypotest_fun_out(*samples, **kwds)
+/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 126255.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -1589,7 +1654,7 @@ Interpretación para el grupo Masculino:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7e266f8afc10&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7e49fd1839e0&gt;
 </pre></div>
 </div>
 </div>
@@ -1720,6 +1785,10 @@ Name: count, dtype: int64
 	Se rechaza H0. La distribución de la Edad en este grupo NO es significativamente normal.
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 248398.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1769,7 +1838,7 @@ Name: count, dtype: int64
 [248893 rows x 4 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-96-28a30ef10ef6&gt;:3: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_9255/4012265541.py:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1830,7 +1899,7 @@ R     5.799559
 Name: Edad, dtype: float64
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-97-f7312f60d7e4&gt;:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_9255/218252443.py:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   print(df_interes.groupby(&#39;Tipo_Dx&#39;)[&#39;Edad&#39;].mean())
 </pre></div>
 </div>
@@ -1847,8 +1916,8 @@ Name: Edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c0162f56-97e0-4a59-887d-cec947b59599">
-<span class="eqno">(2)<a class="headerlink" href="#equation-c0162f56-97e0-4a59-887d-cec947b59599" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6e63e8e2-bbca-49f3-a280-fd75fa72f267">
+<span class="eqno">(2)<a class="headerlink" href="#equation-6e63e8e2-bbca-49f3-a280-fd75fa72f267" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -1912,7 +1981,7 @@ Dx_Definitivo
 Name: count, dtype: int64
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-99-9f315d2bba63&gt;:1: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_9255/557549509.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1938,8 +2007,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 Dep. Variable:          Dx_Definitivo   No. Observations:               248893
 Model:                          Logit   Df Residuals:                   248890
 Method:                           MLE   Df Model:                            2
-Date:                Sun, 01 Jun 2025   Pseudo R-squ.:                0.006323
-Time:                        03:08:21   Log-Likelihood:                -3550.9
+Date:                Mon, 20 Apr 2026   Pseudo R-squ.:                0.006323
+Time:                        22:31:00   Log-Likelihood:                -3550.9
 converged:                       True   LL-Null:                       -3573.5
 Covariance Type:            nonrobust   LLR p-value:                 1.540e-10
 ================================================================================

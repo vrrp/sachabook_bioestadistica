@@ -10,18 +10,18 @@ table tr:last-child td:last-child {
 </style>
 
 
-<table align="center" style="background-color: #D0F5D2;font-size: 13px;">
+<table align="center" style="font-size: 13px;">
 <tr>
-    <th align="left"><span style="font-family:Monospace;color:#046D0B">Autor :</span></th>
-    <th align="left"><span style="font-family:Monospace;color:#046D0B">VR ROJAS</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Autor</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">:VR ROJAS</span></th>
 </tr>
 <tr>
-    <th align="left"><span style="font-family:Monospace;color:#046D0B">Email :</span></th>
-    <th align="left"><span style="font-family:Monospace;color:#046D0B">sacha.analytics@gmail.com</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Email</span></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">:sacha.analytics@gmail.com</span></th>
 </tr>
 <tr>
-    <th align="left"><span style="font-family:Monospace;color:#046D0B">Web :</span></th>
-    <th align="left"><a href="https://sacha-analytics.github.io/" style="font-family:Monospace;color:#046D0B">sacha-analytics</a></th>
+    <th align="left"><span style="font-family:Monospace;font-size: 12px;">Web</span></th>
+    <th align="left">:<a href="https://sacha-analytics.github.io/" style="font-family:Monospace;font-size: 13px;">sacha-analytics</a></th>
 </tr>
 </table>
 
@@ -48,29 +48,20 @@ Capacitar a los participantes en el uso de métodos bioestadísticos y de herram
 - Realizar análisis estadístico descriptivo e inferencial para tomar decisiones informadas y basadas en evidencia.
 - Implementar el modelo Bioestadístico de Regresión Logística Binaria
 
-# Estructura del Curso (Plan de Estudio)
+# Metodología
 %-----------------------------------------------------------------------------------------------------
-El curso está meticulosamente organizado en cinco partes, construyendo un conocimiento sólido y aplicable:
+En este curso se utilizará una combinación de clases magistrales, debates en clase, presentaciones, videos, aprendizaje cooperativo y aprendizaje basado en problemas.
+Este curso trabaja con 8 casos de estudio reales basados en datos biomédicos. A lo largo del desarrollo de cada caso, aprenderás de manera práctica los siguientes temas:
 
-**Parte 1**: Programación Básica con Python
+* **Introducción a la computación en la nube (Google Colaboratory)**: Presentar las ventajas y el funcionamiento básico de Google Colab como plataforma de computación en la nube para bioestadística. Los estudiantes aprenderán a crear, guardar y compartir notebooks interactivos, utilizar recursos de GPU/TPU gratuitos, importar librerías y trabajar de forma colaborativa sin necesidad de instalaciones locales, facilitando la reproducción de análisis en investigación biomédica.
 
-Sentamos las bases de todo el curso. En este módulo, los participantes sin experiencia previa en programación (o aquellos que deseen un repaso) se familiarizarán con la sintaxis de Python. Aprenderemos sobre variables, tipos de datos, estructuras de control (condicionales y bucles), funciones y manejo de errores. El objetivo es que al finalizar, puedas escribir scripts sencillos pero funcionales y te sientas cómodo con el entorno de desarrollo.
+* **Procesar y analizar base de datos provenientes de archivos en formato CSV y XLSX**: Desarrollar habilidades para importar, limpiar, transformar y estructurar datos clínicos o biológicos desde archivos CSV y XLSX utilizando pandas. Se enfatizará en el manejo de valores faltantes, detección de outliers, creación de nuevas variables, preparando los datos para análisis posteriores en contextos de investigación.
 
-**Parte 2**: Manipulación y Preprocesamiento de Datos
+* **Emplear paquetes o librerías estándar de Python para generar gráficos descriptivos que permitan visualizar tendencias y patrones en datos procesados**: Capacitar en el uso de librerías como Matplotlib y Seabor para crear gráficos univariados, bivariados y multivariados (histogramas, boxplots y scatter plots.). Los estudiantes aprenderán a interpretar visualizaciones que revelen distribuciones, correlaciones, tendencias temporales y patrones en datos biológicos o de salud, mejorando la exploración y comunicación de resultados.
 
-Una vez que tenemos las bases de programación, nos sumergimos en el corazón de la ciencia de datos. Aquí introducimos librerías fundamentales como NumPy para trabajar con arreglos y Pandas para la manipulación de datos tabulados (DataFrames). Aprenderás a importar datos desde diversos formatos (CSV, Excel), limpiarlos (manejar valores nulos y datos duplicados), filtrarlos, transformarlos y prepararlos para la siguiente fase del análisis.
+* **Realizar análisis estadístico descriptivo e inferencial para tomar decisiones informadas y basadas en evidencia**: Enseñar a calcular medidas de tendencia central, dispersión y posición, así como a aplicar pruebas de hipótesis paramétricas y no paramétricas (t-Student, ANOVA, chi-cuadrado y Shapiro-Wilk.). El objetivo es que los estudiantes interpreten los resultados estadísticos para respaldar conclusiones científicas y tomar decisiones basadas en evidencia en investigación biomédica.
 
-**Parte 3**: Visualización de Datos
-
-Un gráfico vale más que mil tablas. Este módulo está dedicado a comunicar hallazgos de manera efectiva. Utilizando la librería Matplotlib y el más expresivo Seaborn, los participantes aprenderán a crear una amplia variedad de visualizaciones: desde histogramas y gráficos de dispersión hasta diagramas de caja y mapas de calor. El enfoque no será solo en la creación del gráfico, sino en elegir el tipo correcto para cada pregunta y audiencia.
-
-**Parte 4**: Estadística Descriptiva (Nivel Básico)
-
-Con los datos limpios y visualizados, comenzamos a cuantificarlos. Esta parte introduce los conceptos clave de la estadística descriptiva. Aprenderemos a calcular e interpretar medidas de tendencia central (media, mediana, moda), medidas de dispersión (desviación estándar, varianza, rango) y a entender la forma de la distribución de los datos. Todo esto se implementará directamente en Python, aplicándolo a nuestros conjuntos de datos.
-
-**Parte 5**: Estadística Inferencial (Nivel Avanzado y Análisis Exploratorio de Datos - EDA)
-
-En este módulo final, profundizamos en el análisis. Tomamos todas las herramientas aprendidas (programación, manipulación, visualización y estadística básica) y las integramos para realizar un Análisis Exploratorio de Datos (EDA) completo. Exploraremos los supuestos (requisitos) para implementar modelos de regresión lineal simple y logística binaria. El resultado será la capacidad de generar un perfil estadístico profundo de cualquier conjunto de datos, identificando patrones, anomalías e historias ocultas que sirvan como punto de partida para modelos más complejos o para la toma de decisiones informada.
+* **Implementar el modelo Bioestadístico de Regresión Logística Binaria**: Introducir y aplicar la regresión logística binaria como herramienta clave en bioestadística para predecir eventos dicotómicos (presencia/ausencia de enfermedad, éxito/fracaso de tratamiento, etc.). Los estudiantes aprenderán a ajustar el modelo con statsmodels, interpretar odds ratios, evaluar el ajuste, validar el modelo y utilizar IA para optimizar y explicar predicciones en contextos de investigación clínica y epidemiológica
 
 # ¿A quién está dirigido?
 - **Científicos e ingenieros**: Que buscan automatizar el análisis de sus experimentos o simulaciones
@@ -83,11 +74,6 @@ En este módulo final, profundizamos en el análisis. Tomamos todas las herramie
 - No se requiere experiencia previa en programación.
 - Se recomienda tener curiosidad por los datos y las ganas de aprender.
 - Una computadora con acceso a internet para instalar las herramientas necesarias (se proporcionarán guías paso a paso).
-
-
-# Metodología
-%-----------------------------------------------------------------------------------------------------
-En este curso se utilizará una combinación de clases magistrales, debates en clase, presentaciones, videos, aprendizaje cooperativo y aprendizaje basado en problemas. Las calificaciones se determinarán según la entrega satisfactoria y puntual de las tareas. La calificación de cada tarea se basa en los prerrequisitos establecidos para cada una. A continuación, se presenta un resumen de los temas por cada sesión. Tenga en cuenta que las fechas y los plazos están sujetos a cambios.
 
 # Plagio e Integridad Académica
 %-----------------------------------------------------------------------------------------------------
@@ -206,5 +192,5 @@ Google Colaboratory.
 
 ¡Cada aporte  ayuda a mantener y ampliar este proyecto!
 
-<img src="https://github.com/vrrp/sachabook_modulo1/blob/main/docs/images/preambulo/bancos_qr.png?raw=true" alt="" width="500" height="140">
+<img src="https://github.com/vrrp/sachabook_modulo1/blob/main/docs/images/preambulo/bancos_qr.png?raw=true" alt="" width="480" height="120">
 

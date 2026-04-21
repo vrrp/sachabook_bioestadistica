@@ -63,6 +63,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Diseño de Caso Estudio: Zoonosis" href="sesion5_caso_estudio_zoonosis.html" />
     <link rel="prev" title="3. Diseño de Caso Estudio: Malaria" href="sesion3_caso_estudio_malaria.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -198,6 +199,11 @@
 
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. <b>Diseño de Caso Estudio: </b>Diabetes</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="sesion5_caso_estudio_zoonosis.html">5. <b>Diseño de Caso Estudio:</b> Zoonosis</a></li>
 
 
 
@@ -443,8 +449,16 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1. Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive">3.1.1. Montar Google Drive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube">3.1.2. Explorar archivos y directorios de Google Drive desde la nube</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-paquetes">3.2.1 Importar paquetes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-herramientas-de-paquetes">3.2.2. Explorar herramientas de Paquetes</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
@@ -542,8 +556,6 @@ table tr:last-child td:last-child {
 <li><p>Prueba de independencia (Chi-cuadrado)</p></li>
 <li><p>Comparaciones de medidas (t-test, ANOVA)</p></li>
 <li><p>Modelos de regresión logística (para predecir DX)</p></li>
-<li><p>Modelos multivariantes (regresión logística si se desea modelar probabilidad de anemia)</p></li>
-<li><p>Validación de supuestos estadísticos</p></li>
 </ul>
 </section>
 </section>
@@ -560,9 +572,11 @@ table tr:last-child td:last-child {
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="iii-metodologia-practica">
 <h1><strong>III. Metodología Práctica</strong><a class="headerlink" href="#iii-metodologia-practica" title="Link to this heading">#</a></h1>
-<section id="montar-drive-a-google-colaboratory">
-<h2><strong>3.1. Montar Drive a Google Colaboratory</strong><a class="headerlink" href="#montar-drive-a-google-colaboratory" title="Link to this heading">#</a></h2>
-<p>La siguiente celda de código monta el drive en la computadora remota de Google</p>
+<section id="gestion-de-archivos-y-directorios-en-la-nube">
+<h2><strong>3.1. Gestión de archivos y directorios en la Nube</strong><a class="headerlink" href="#gestion-de-archivos-y-directorios-en-la-nube" title="Link to this heading">#</a></h2>
+<section id="montar-google-drive">
+<h3>3.1.1. Montar Google Drive<a class="headerlink" href="#montar-google-drive" title="Link to this heading">#</a></h3>
+<p>La siguiente celda de código monta Google Drive a la nube (centro de datos remoto de Google)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
@@ -611,50 +625,92 @@ table tr:last-child td:last-child {
 </div>
 </div>
 </div>
-<p>La siguiente celda de código lista el contenido de la carpeta <strong>Datos</strong></p>
+</section>
+<section id="explorar-archivos-y-directorios-de-google-drive-desde-la-nube">
+<h3>3.1.2. Explorar archivos y directorios de Google Drive desde la nube<a class="headerlink" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube" title="Link to this heading">#</a></h3>
+<p>En la siguiente celda de código se define la ruta de  <strong>Google Drive</strong> en la computadora en la nube</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span> <span class="c1"># permite gestionar los directorios</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drive_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
 
-<span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Bioestadistica/Datos/&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">drive_dir</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;datos_abiertos_vigilancia_dengue_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2000_2008.csv&#39;, &#39;datos_abiertos_vigilancia_malaria_2009_2023.csv&#39;, &#39;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&#39;, &#39;datos_abiertos_vigilancia_zoonosis_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_iras_2000_2023.csv&#39;, &#39;datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv&#39;, &#39;pmGenoma_25Septiembre2021.csv&#39;, &#39;pmGenoma_27Sep2023.csv&#39;, &#39;TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv&#39;, &#39;primeras_100_filas_anemia.xlsx&#39;, &#39;primeras_100_filas_anemia.gsheet&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/
+</pre></div>
+</div>
+</div>
+</div>
+<p>La funión <code class="docutils literal notranslate"><span class="pre">explorar_drive</span></code> permite inspeccionar cada carpeta y subcarpetas de <strong>Google Drive</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">explorar_drive</span><span class="p">(</span><span class="n">nombre_carpeta</span><span class="p">):</span>
+  <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+  <span class="n">ruta_drive</span> <span class="o">=</span><span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
+  <span class="n">contenido_carpeta</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">ruta_drive</span> <span class="o">+</span> <span class="n">nombre_carpeta</span><span class="p">)</span>
+  <span class="n">n_elem</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido_carpeta</span><span class="p">)</span>
+
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ruta: </span><span class="si">{</span><span class="n">ruta_drive</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombre_carpeta</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de elementos: </span><span class="si">{</span><span class="n">n_elem</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_elem</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">contenido_carpeta</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_dir</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">ifile</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datos_abiertos_vigilancia_dengue_2000_2023.csv
-datos_abiertos_vigilancia_malaria_2000_2008.csv
-datos_abiertos_vigilancia_malaria_2009_2023.csv
-Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
-datos_abiertos_vigilancia_zoonosis_2000_2023.csv
-datos_abiertos_vigilancia_iras_2000_2023.csv
-datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
-pmGenoma_25Septiembre2021.csv
-pmGenoma_27Sep2023.csv
-TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
-primeras_100_filas_anemia.xlsx
-primeras_100_filas_anemia.gsheet
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos
+Numero de elementos: 5
+(0) fuente_de_datos.gdoc
+(1) shapes
+(2) biomedicina
+(3) meteorologia
+(4) finanzas
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">explorar_drive</span><span class="p">(</span><span class="s2">&quot;Base_datos/biomedicina&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ruta: /content/drive/MyDrive/Base_datos/biomedicina
+Numero de elementos: 13
+(0) datos_abiertos_vigilancia_dengue_2000_2023.csv
+(1) datos_abiertos_vigilancia_malaria_2000_2008.csv
+(2) datos_abiertos_vigilancia_malaria_2009_2023.csv
+(3) Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv
+(4) datos_abiertos_vigilancia_zoonosis_2000_2023.csv
+(5) datos_abiertos_vigilancia_iras_2000_2023.csv
+(6) datos_abiertos_vigilancia_enfermedad_carrion_2000_2023.csv
+(7) pmGenoma_25Septiembre2021.csv
+(8) pmGenoma_27Sep2023.csv
+(9) primeras_100_filas_anemia.gsheet
+(10) TB_DIGTEL_ANEMIA_TRATAMIENTOS.csv
+(11) analisis_datos.docx
+(12) primeras_100_filas_anemia.xlsx
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+</section>
 <section id="preparar-entorno">
 <h2><strong>3.2. Preparar Entorno</strong><a class="headerlink" href="#preparar-entorno" title="Link to this heading">#</a></h2>
+<section id="importar-paquetes">
+<h3>3.2.1 Importar paquetes<a class="headerlink" href="#importar-paquetes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Paquete especializado en metodos numericos</span>
@@ -679,11 +735,641 @@ primeras_100_filas_anemia.gsheet
 </div>
 </div>
 </section>
+<section id="explorar-herramientas-de-paquetes">
+<h3>3.2.2. Explorar herramientas de Paquetes<a class="headerlink" href="#explorar-herramientas-de-paquetes" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista de todos los atributos (métodos, clases, funciones):&quot;</span><span class="p">)</span>
+
+<span class="n">herramientas_paquete</span> <span class="o">=</span> <span class="nb">dir</span><span class="p">(</span><span class="n">np</span><span class="p">)</span>
+<span class="n">numero_herramientas</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">herramientas_paquete</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de herramientas: </span><span class="si">{</span><span class="n">numero_herramientas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numero_herramientas</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) </span><span class="si">{</span><span class="n">herramientas_paquete</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Lista de todos los atributos (métodos, clases, funciones):
+Numero de herramientas: 533
+(0) False_
+(1) ScalarType
+(2) True_
+(3) _CopyMode
+(4) _NoValue
+(5) __NUMPY_SETUP__
+(6) __all__
+(7) __array_api_version__
+(8) __builtins__
+(9) __cached__
+(10) __config__
+(11) __dir__
+(12) __doc__
+(13) __expired_attributes__
+(14) __file__
+(15) __former_attrs__
+(16) __future_scalars__
+(17) __getattr__
+(18) __loader__
+(19) __name__
+(20) __numpy_submodules__
+(21) __package__
+(22) __path__
+(23) __spec__
+(24) __version__
+(25) _core
+(26) _distributor_init
+(27) _expired_attrs_2_0
+(28) _get_promotion_state
+(29) _globals
+(30) _int_extended_msg
+(31) _mat
+(32) _msg
+(33) _no_nep50_warning
+(34) _pyinstaller_hooks_dir
+(35) _pytesttester
+(36) _set_promotion_state
+(37) _specific_msg
+(38) _type_info
+(39) _typing
+(40) _utils
+(41) abs
+(42) absolute
+(43) acos
+(44) acosh
+(45) add
+(46) all
+(47) allclose
+(48) amax
+(49) amin
+(50) angle
+(51) any
+(52) append
+(53) apply_along_axis
+(54) apply_over_axes
+(55) arange
+(56) arccos
+(57) arccosh
+(58) arcsin
+(59) arcsinh
+(60) arctan
+(61) arctan2
+(62) arctanh
+(63) argmax
+(64) argmin
+(65) argpartition
+(66) argsort
+(67) argwhere
+(68) around
+(69) array
+(70) array2string
+(71) array_equal
+(72) array_equiv
+(73) array_repr
+(74) array_split
+(75) array_str
+(76) asanyarray
+(77) asarray
+(78) asarray_chkfinite
+(79) ascontiguousarray
+(80) asfortranarray
+(81) asin
+(82) asinh
+(83) asmatrix
+(84) astype
+(85) atan
+(86) atan2
+(87) atanh
+(88) atleast_1d
+(89) atleast_2d
+(90) atleast_3d
+(91) average
+(92) bartlett
+(93) base_repr
+(94) binary_repr
+(95) bincount
+(96) bitwise_and
+(97) bitwise_count
+(98) bitwise_invert
+(99) bitwise_left_shift
+(100) bitwise_not
+(101) bitwise_or
+(102) bitwise_right_shift
+(103) bitwise_xor
+(104) blackman
+(105) block
+(106) bmat
+(107) bool
+(108) bool_
+(109) broadcast
+(110) broadcast_arrays
+(111) broadcast_shapes
+(112) broadcast_to
+(113) busday_count
+(114) busday_offset
+(115) busdaycalendar
+(116) byte
+(117) bytes_
+(118) c_
+(119) can_cast
+(120) cbrt
+(121) cdouble
+(122) ceil
+(123) char
+(124) character
+(125) choose
+(126) clip
+(127) clongdouble
+(128) column_stack
+(129) common_type
+(130) complex128
+(131) complex256
+(132) complex64
+(133) complexfloating
+(134) compress
+(135) concat
+(136) concatenate
+(137) conj
+(138) conjugate
+(139) convolve
+(140) copy
+(141) copysign
+(142) copyto
+(143) core
+(144) corrcoef
+(145) correlate
+(146) cos
+(147) cosh
+(148) count_nonzero
+(149) cov
+(150) cross
+(151) csingle
+(152) ctypeslib
+(153) cumprod
+(154) cumsum
+(155) datetime64
+(156) datetime_as_string
+(157) datetime_data
+(158) deg2rad
+(159) degrees
+(160) delete
+(161) diag
+(162) diag_indices
+(163) diag_indices_from
+(164) diagflat
+(165) diagonal
+(166) diff
+(167) digitize
+(168) divide
+(169) divmod
+(170) dot
+(171) double
+(172) dsplit
+(173) dstack
+(174) dtype
+(175) dtypes
+(176) e
+(177) ediff1d
+(178) einsum
+(179) einsum_path
+(180) emath
+(181) empty
+(182) empty_like
+(183) equal
+(184) errstate
+(185) euler_gamma
+(186) exceptions
+(187) exp
+(188) exp2
+(189) expand_dims
+(190) expm1
+(191) expm1x
+(192) extract
+(193) eye
+(194) f2py
+(195) fabs
+(196) fft
+(197) fill_diagonal
+(198) finfo
+(199) fix
+(200) flatiter
+(201) flatnonzero
+(202) flexible
+(203) flip
+(204) fliplr
+(205) flipud
+(206) float128
+(207) float16
+(208) float32
+(209) float64
+(210) float_power
+(211) floating
+(212) floor
+(213) floor_divide
+(214) fmax
+(215) fmin
+(216) fmod
+(217) format_float_positional
+(218) format_float_scientific
+(219) frexp
+(220) from_dlpack
+(221) frombuffer
+(222) fromfile
+(223) fromfunction
+(224) fromiter
+(225) frompyfunc
+(226) fromregex
+(227) fromstring
+(228) full
+(229) full_like
+(230) gcd
+(231) generic
+(232) genfromtxt
+(233) geomspace
+(234) get_include
+(235) get_printoptions
+(236) getbufsize
+(237) geterr
+(238) geterrcall
+(239) gradient
+(240) greater
+(241) greater_equal
+(242) half
+(243) hamming
+(244) hanning
+(245) heaviside
+(246) histogram
+(247) histogram2d
+(248) histogram_bin_edges
+(249) histogramdd
+(250) hsplit
+(251) hstack
+(252) hypot
+(253) i0
+(254) identity
+(255) iinfo
+(256) imag
+(257) in1d
+(258) index_exp
+(259) indices
+(260) inexact
+(261) inf
+(262) info
+(263) inner
+(264) insert
+(265) int16
+(266) int32
+(267) int64
+(268) int8
+(269) int_
+(270) intc
+(271) integer
+(272) interp
+(273) intersect1d
+(274) intp
+(275) invert
+(276) is_busday
+(277) isclose
+(278) iscomplex
+(279) iscomplexobj
+(280) isdtype
+(281) isfinite
+(282) isfortran
+(283) isin
+(284) isinf
+(285) isnan
+(286) isnat
+(287) isneginf
+(288) isposinf
+(289) isreal
+(290) isrealobj
+(291) isscalar
+(292) issubdtype
+(293) iterable
+(294) ix_
+(295) kaiser
+(296) kron
+(297) lcm
+(298) ldexp
+(299) left_shift
+(300) less
+(301) less_equal
+(302) lexsort
+(303) lib
+(304) linalg
+(305) linspace
+(306) little_endian
+(307) load
+(308) loadtxt
+(309) log
+(310) log10
+(311) log1p
+(312) log2
+(313) logaddexp
+(314) logaddexp2
+(315) logical_and
+(316) logical_not
+(317) logical_or
+(318) logical_xor
+(319) logspace
+(320) long
+(321) longdouble
+(322) longlong
+(323) ma
+(324) mask_indices
+(325) matmul
+(326) matrix
+(327) matrix_transpose
+(328) max
+(329) maximum
+(330) may_share_memory
+(331) mean
+(332) median
+(333) memmap
+(334) meshgrid
+(335) mgrid
+(336) min
+(337) min_scalar_type
+(338) minimum
+(339) mintypecode
+(340) mod
+(341) modf
+(342) moveaxis
+(343) multiply
+(344) nan
+(345) nan_to_num
+(346) nanargmax
+(347) nanargmin
+(348) nancumprod
+(349) nancumsum
+(350) nanmax
+(351) nanmean
+(352) nanmedian
+(353) nanmin
+(354) nanpercentile
+(355) nanprod
+(356) nanquantile
+(357) nanstd
+(358) nansum
+(359) nanvar
+(360) ndarray
+(361) ndenumerate
+(362) ndim
+(363) ndindex
+(364) nditer
+(365) negative
+(366) nested_iters
+(367) newaxis
+(368) nextafter
+(369) nonzero
+(370) not_equal
+(371) number
+(372) object_
+(373) ogrid
+(374) ones
+(375) ones_like
+(376) outer
+(377) packbits
+(378) pad
+(379) partition
+(380) percentile
+(381) permute_dims
+(382) pi
+(383) piecewise
+(384) place
+(385) poly
+(386) poly1d
+(387) polyadd
+(388) polyder
+(389) polydiv
+(390) polyfit
+(391) polyint
+(392) polymul
+(393) polynomial
+(394) polysub
+(395) polyval
+(396) positive
+(397) pow
+(398) power
+(399) printoptions
+(400) prod
+(401) promote_types
+(402) ptp
+(403) put
+(404) put_along_axis
+(405) putmask
+(406) quantile
+(407) r_
+(408) rad2deg
+(409) radians
+(410) random
+(411) ravel
+(412) ravel_multi_index
+(413) real
+(414) real_if_close
+(415) rec
+(416) recarray
+(417) reciprocal
+(418) record
+(419) remainder
+(420) repeat
+(421) require
+(422) reshape
+(423) resize
+(424) result_type
+(425) right_shift
+(426) rint
+(427) roll
+(428) rollaxis
+(429) roots
+(430) rot90
+(431) round
+(432) row_stack
+(433) s_
+(434) save
+(435) savetxt
+(436) savez
+(437) savez_compressed
+(438) sctypeDict
+(439) searchsorted
+(440) select
+(441) set_printoptions
+(442) setbufsize
+(443) setdiff1d
+(444) seterr
+(445) seterrcall
+(446) setxor1d
+(447) shape
+(448) shares_memory
+(449) short
+(450) show_config
+(451) show_runtime
+(452) sign
+(453) signbit
+(454) signedinteger
+(455) sin
+(456) sinc
+(457) single
+(458) sinh
+(459) size
+(460) sort
+(461) sort_complex
+(462) spacing
+(463) split
+(464) sqrt
+(465) square
+(466) squeeze
+(467) stack
+(468) std
+(469) str_
+(470) strings
+(471) subtract
+(472) sum
+(473) swapaxes
+(474) take
+(475) take_along_axis
+(476) tan
+(477) tanh
+(478) tensordot
+(479) test
+(480) testing
+(481) tile
+(482) timedelta64
+(483) trace
+(484) transpose
+(485) trapezoid
+(486) trapz
+(487) tri
+(488) tril
+(489) tril_indices
+(490) tril_indices_from
+(491) trim_zeros
+(492) triu
+(493) triu_indices
+(494) triu_indices_from
+(495) true_divide
+(496) trunc
+(497) typecodes
+(498) typename
+(499) typing
+(500) ubyte
+(501) ufunc
+(502) uint
+(503) uint16
+(504) uint32
+(505) uint64
+(506) uint8
+(507) uintc
+(508) uintp
+(509) ulong
+(510) ulonglong
+(511) union1d
+(512) unique
+(513) unique_all
+(514) unique_counts
+(515) unique_inverse
+(516) unique_values
+(517) unpackbits
+(518) unravel_index
+(519) unsignedinteger
+(520) unwrap
+(521) ushort
+(522) vander
+(523) var
+(524) vdot
+(525) vecdot
+(526) vectorize
+(527) void
+(528) vsplit
+(529) vstack
+(530) where
+(531) zeros
+(532) zeros_like
+</pre></div>
+</div>
+</div>
+</div>
+<p>Para obtener documentación detallada sobre el paquete <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, puedes usar <code class="docutils literal notranslate"><span class="pre">help(np)</span></code>. Esto imprimirá una gran cantidad de información directamente en la salida de la celda. <strong>Advertencia: Esta salida puede ser muy larga.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Descomenta la siguiente línea para ver la documentación completa de numpy</span>
+<span class="n">help</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function zeros in module numpy:
+
+zeros(...)
+    zeros(shape, dtype=float, order=&#39;C&#39;, *, like=None)
+
+    Return a new array of given shape and type, filled with zeros.
+
+    Parameters
+    ----------
+    shape : int or tuple of ints
+        Shape of the new array, e.g., ``(2, 3)`` or ``2``.
+    dtype : data-type, optional
+        The desired data-type for the array, e.g., `numpy.int8`.  Default is
+        `numpy.float64`.
+    order : {&#39;C&#39;, &#39;F&#39;}, optional, default: &#39;C&#39;
+        Whether to store multi-dimensional data in row-major
+        (C-style) or column-major (Fortran-style) order in
+        memory.
+    like : array_like, optional
+        Reference object to allow the creation of arrays which are not
+        NumPy arrays. If an array-like passed in as ``like`` supports
+        the ``__array_function__`` protocol, the result will be defined
+        by it. In this case, it ensures the creation of an array object
+        compatible with that passed in via this argument.
+
+        .. versionadded:: 1.20.0
+
+    Returns
+    -------
+    out : ndarray
+        Array of zeros with the given shape, dtype, and order.
+
+    See Also
+    --------
+    zeros_like : Return an array of zeros with shape and type of input.
+    empty : Return a new uninitialized array.
+    ones : Return a new array setting values to one.
+    full : Return a new array of given shape filled with value.
+
+    Examples
+    --------
+    &gt;&gt;&gt; np.zeros(5)
+    array([ 0.,  0.,  0.,  0.,  0.])
+
+    &gt;&gt;&gt; np.zeros((5,), dtype=int)
+    array([0, 0, 0, 0, 0])
+
+    &gt;&gt;&gt; np.zeros((2, 1))
+    array([[ 0.],
+           [ 0.]])
+
+    &gt;&gt;&gt; s = (2,2)
+    &gt;&gt;&gt; np.zeros(s)
+    array([[ 0.,  0.],
+           [ 0.,  0.]])
+
+    &gt;&gt;&gt; np.zeros((2,), dtype=[(&#39;x&#39;, &#39;i4&#39;), (&#39;y&#39;, &#39;i4&#39;)]) # custom dtype
+    array([(0, 0), (0, 0)],
+          dtype=[(&#39;x&#39;, &#39;&lt;i4&#39;), (&#39;y&#39;, &#39;&lt;i4&#39;)])
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 <section id="importar-base-de-datos">
 <h2><strong>3.3. Importar Base de Datos</strong><a class="headerlink" href="#importar-base-de-datos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_archivo</span> <span class="o">=</span> <span class="s2">&quot;Dataset_ExamenesLaboratorio_ConsultaExterna_PatologíasRelacionadas_Diabetes_202001_202404.csv&quot;</span>
+<span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Base_datos/biomedicina/&quot;</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_dir</span> <span class="o">+</span> <span class="n">nombre_archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;latin-1&quot;</span><span class="p">)</span>
 <span class="c1">#df = pd.read_csv(data_dir + nombre_archivo) # decodificación: encoding=&quot;utf-8&quot;</span>
@@ -1082,7 +1768,7 @@ Name: EDAD_PACIENTE, dtype: float64
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Visualización de la Distribución para &#39;Edad&#39; (Histograma):
 </pre></div>
 </div>
-<img alt="../_images/8f8c29b5f42ec4cc58b9ed4c40d19b5f622ef6e9fae181d5d782e8c869266c59.png" src="../_images/8f8c29b5f42ec4cc58b9ed4c40d19b5f622ef6e9fae181d5d782e8c869266c59.png" />
+<img alt="../_images/73e720664d4c3c0e27372f3c066c27b75aa04fe08166d9c9e9bbdba24f46058d.png" src="../_images/73e720664d4c3c0e27372f3c066c27b75aa04fe08166d9c9e9bbdba24f46058d.png" />
 </div>
 </div>
 </section>
@@ -1260,7 +1946,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-51-4025004484&gt;:14: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_13443/4025004484.py:14: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(nuevas_etiquetas)
 </pre></div>
 </div>
@@ -1580,6 +2266,12 @@ Interpretación para el grupo Masculino:
 ==================================================
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 236558.
+  res = hypotest_fun_out(*samples, **kwds)
+/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 173598.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -1610,7 +2302,7 @@ Interpretación para el grupo Masculino:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7db38b3c5550&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x78d2ae0a4b30&gt;
 </pre></div>
 </div>
 </div>
@@ -1724,6 +2416,10 @@ Name: count, dtype: int64
 	Se rechaza H0. La distribución de la Edad en este grupo NO es significativamente normal.
 </pre></div>
 </div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/scipy/stats/_axis_nan_policy.py:579: UserWarning: scipy.stats.shapiro: For N &gt; 5000, computed p-value may not be accurate. Current N is 44702.
+  res = hypotest_fun_out(*samples, **kwds)
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1786,7 +2482,7 @@ Name: count, dtype: int64
 [410156 rows x 5 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-68-278204983&gt;:3: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_13443/278204983.py:3: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1855,7 +2551,7 @@ DIABETES MELLITUS TIPO 2, SIN MENCION DE COMPLICACION            62.534090
 Name: EDAD_PACIENTE, dtype: float64
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-72-997876235&gt;:3: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_13443/997876235.py:3: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   print(df_filtrado.groupby(&#39;DIAGNOSTICO&#39;)[&#39;EDAD_PACIENTE&#39;].mean())
 </pre></div>
 </div>
@@ -1872,8 +2568,8 @@ Name: EDAD_PACIENTE, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f4303650-f0af-4646-81f2-717b7db425c3">
-<span class="eqno">(5)<a class="headerlink" href="#equation-f4303650-f0af-4646-81f2-717b7db425c3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ef21993b-df97-4d65-9a34-c4ac7048a6b9">
+<span class="eqno">(5)<a class="headerlink" href="#equation-ef21993b-df97-4d65-9a34-c4ac7048a6b9" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -1944,7 +2640,7 @@ Name: count, dtype: int64
 [410156 rows x 6 columns]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-74-4049471973&gt;:1: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_13443/4049471973.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -1970,8 +2666,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 Dep. Variable:          Dx_Confirmado   No. Observations:               410156
 Model:                          Logit   Df Residuals:                   410153
 Method:                           MLE   Df Model:                            2
-Date:                Thu, 12 Jun 2025   Pseudo R-squ.:                0.005599
-Time:                        02:40:41   Log-Likelihood:            -1.8618e+05
+Date:                Tue, 21 Apr 2026   Pseudo R-squ.:                0.005599
+Time:                        20:59:11   Log-Likelihood:            -1.8618e+05
 converged:                       True   LL-Null:                   -1.8722e+05
 Covariance Type:            nonrobust   LLR p-value:                     0.000
 =================================================================================================
@@ -2014,7 +2710,7 @@ EDAD_PACIENTE                    -0.0161      0.000    -45.079      0.000      -
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Creating legend with loc=&quot;best&quot; can be slow with large amounts of data.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.12/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Creating legend with loc=&quot;best&quot; can be slow with large amounts of data.
   fig.canvas.print_figure(bytes_io, **kw)
 </pre></div>
 </div>
@@ -2079,6 +2775,15 @@ EDAD_PACIENTE                    -0.0161      0.000    -45.079      0.000      -
         <p class="prev-next-title">3. <b>Diseño de Caso Estudio: </b>Malaria</span></h1></p>
       </div>
     </a>
+    <a class="right-next"
+       href="sesion5_caso_estudio_zoonosis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">5. <b>Diseño de Caso Estudio:</b> Zoonosis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -2110,8 +2815,16 @@ EDAD_PACIENTE                    -0.0161      0.000    -45.079      0.000      -
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-drive-a-google-colaboratory"><strong>3.1. Montar Drive a Google Colaboratory</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1. Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive">3.1.1. Montar Google Drive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube">3.1.2. Explorar archivos y directorios de Google Drive desde la nube</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparar-entorno"><strong>3.2. Preparar Entorno</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-paquetes">3.2.1 Importar paquetes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-herramientas-de-paquetes">3.2.2. Explorar herramientas de Paquetes</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-de-metadatos"><strong>3.4. Revision de Metadatos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>

@@ -203,6 +203,11 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="sesion5_caso_estudio_zoonosis.html">5. <b>Diseño de Caso Estudio:</b> Zoonosis</a></li>
+
+
+
+
 </ul>
 
     </div>
@@ -444,8 +449,8 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1.Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive-a-nube">3.1.1. Montar Google Drive a nube</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1. Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive">3.1.1. Montar Google Drive</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube">3.1.2. Explorar archivos y directorios de Google Drive desde la nube</a></li>
 </ul>
 </li>
@@ -550,8 +555,6 @@ table tr:last-child td:last-child {
 <li><p>Prueba de independencia (Chi-cuadrado)</p></li>
 <li><p>Comparaciones de medidas (t-test, ANOVA)</p></li>
 <li><p>Modelos de regresión logística (para predecir DX)</p></li>
-<li><p>Modelos multivariantes (regresión logística si se desea modelar probabilidad de anemia)</p></li>
-<li><p>Validación de supuestos estadísticos</p></li>
 </ul>
 </section>
 </section>
@@ -569,9 +572,9 @@ table tr:last-child td:last-child {
 <section class="tex2jax_ignore mathjax_ignore" id="iii-metodologia-practica">
 <h1><strong>III. Metodología Práctica</strong><a class="headerlink" href="#iii-metodologia-practica" title="Link to this heading">#</a></h1>
 <section id="gestion-de-archivos-y-directorios-en-la-nube">
-<h2><strong>3.1.Gestión de archivos y directorios en la Nube</strong><a class="headerlink" href="#gestion-de-archivos-y-directorios-en-la-nube" title="Link to this heading">#</a></h2>
-<section id="montar-google-drive-a-nube">
-<h3>3.1.1. Montar Google Drive a nube<a class="headerlink" href="#montar-google-drive-a-nube" title="Link to this heading">#</a></h3>
+<h2><strong>3.1. Gestión de archivos y directorios en la Nube</strong><a class="headerlink" href="#gestion-de-archivos-y-directorios-en-la-nube" title="Link to this heading">#</a></h2>
+<section id="montar-google-drive">
+<h3>3.1.1. Montar Google Drive<a class="headerlink" href="#montar-google-drive" title="Link to this heading">#</a></h3>
 <p>La siguiente celda de código monta Google Drive a la nube (centro de datos remoto de Google)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -624,7 +627,7 @@ table tr:last-child td:last-child {
 </section>
 <section id="explorar-archivos-y-directorios-de-google-drive-desde-la-nube">
 <h3>3.1.2. Explorar archivos y directorios de Google Drive desde la nube<a class="headerlink" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube" title="Link to this heading">#</a></h3>
-<p>En la siguiente celda de código se define la ruta de  <strong>Drive</strong> en la computadora en la nube</p>
+<p>En la siguiente celda de código se define la ruta de  <strong>Google Drive</strong> en la computadora en la nube</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drive_dir</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/&quot;</span>
@@ -736,7 +739,7 @@ Numero de elementos: 13
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista de todos los atributos (métodos, clases, funciones):&quot;</span><span class="p">)</span>
-<span class="c1"># `dir(np)` devuelve una lista de nombres válidos para los atributos del objeto.</span>
+
 <span class="n">herramientas_paquete</span> <span class="o">=</span> <span class="nb">dir</span><span class="p">(</span><span class="n">np</span><span class="p">)</span>
 <span class="n">numero_herramientas</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">herramientas_paquete</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de herramientas: </span><span class="si">{</span><span class="n">numero_herramientas</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -2561,8 +2564,8 @@ Name: Edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-502f96e1-b8c8-4300-9088-b37fc2ffb50d">
-<span class="eqno">(2)<a class="headerlink" href="#equation-502f96e1-b8c8-4300-9088-b37fc2ffb50d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d393314f-24d4-479b-963a-b174c3a68f20">
+<span class="eqno">(2)<a class="headerlink" href="#equation-d393314f-24d4-479b-963a-b174c3a68f20" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -2800,8 +2803,8 @@ Edad            -0.0290      0.004     -7.409      0.000      -0.037      -0.021
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-metodologia-practica"><strong>III. Metodología Práctica</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1.Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive-a-nube">3.1.1. Montar Google Drive a nube</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-de-archivos-y-directorios-en-la-nube"><strong>3.1. Gestión de archivos y directorios en la Nube</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#montar-google-drive">3.1.1. Montar Google Drive</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explorar-archivos-y-directorios-de-google-drive-desde-la-nube">3.1.2. Explorar archivos y directorios de Google Drive desde la nube</a></li>
 </ul>
 </li>

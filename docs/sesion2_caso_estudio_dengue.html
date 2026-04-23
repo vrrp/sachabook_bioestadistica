@@ -208,6 +208,20 @@
 
 
 
+<li class="toctree-l1"><a class="reference internal" href="sesion6_caso_estudio_covid19.html">6. <b>Diseño de Caso Estudio:</b> Linaje Genómico de Pruebas Moleculares del Instituto Nacional de Salud para COVID-19 (INS)</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="sesion7_caso_estudio_enfermedad_carrion.html">7. <b>Diseño de Caso Estudio: </b>Enfermedad de Carrión</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="sesion8_caso_estudio_infeccionRespiratoria.html">8. <b>Diseño de Caso Estudio:</b> Infecciones Respiratorias Agudas</a></li>
+
+
+
 </ul>
 
     </div>
@@ -2748,8 +2762,8 @@ Name: edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-20667ac6-7ae4-41d1-95d6-9ce8f80797d3">
-<span class="eqno">(3)<a class="headerlink" href="#equation-20667ac6-7ae4-41d1-95d6-9ce8f80797d3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e6c27f3b-5c65-488d-b29a-c0d00596904a">
+<span class="eqno">(3)<a class="headerlink" href="#equation-e6c27f3b-5c65-488d-b29a-c0d00596904a" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>

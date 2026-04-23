@@ -78,13 +78,14 @@ Este curso trabaja con 8 casos de estudio reales basados en datos biomédicos. A
 %-----------------------------------------------------------------------------------------------------
 El plagio es la práctica de copiar palabras, oraciones, imágenes o ideas para su uso en evaluaciones escritas u orales sin dar el crédito correspondiente a la fuente. Hacer trampa se define como dar o recibir ayuda ilegal en cualquier cosa que el profesor haya determinado como un esfuerzo individual. Ambas se consideran infracciones graves y afectarán significativamente la calificación del curso. 
 
-:::{admonition} Evaluación
+# Evaluación
+:::{admonition} Laborarotios guíados
 :class: warning %attention, caution, danger, error, important, hint, note, seealso, tip, warning
 Se desarrollaran laboratorios por cada sesión, con los cuáles se determinará el promedio final (PF), Ecuación  {eq}`eq:promedioFinal`. La nota mínima
 aprobatoria es 11.
 
 $$
- PF = \sum_{i=1}^n  \frac{lab_{(i)} }{n}
+ PF = \frac{1}{N} \sum_{i=1}^N lab_{(i)} 
 $$(eq:promedioFinal)
 :::
 

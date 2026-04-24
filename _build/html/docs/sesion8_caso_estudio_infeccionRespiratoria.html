@@ -1853,18 +1853,18 @@ Residual              12068.903658  2143896.0         NaN     NaN
 <p>Un modelo de regresión logística es un tipo de modelo estadístico que se utiliza para predecir la probabilidad de que un resultado pertenezca a una de varias categorías. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística se utiliza para problemas de clasificación.</p>
 <p><strong>¿Para que sirve?</strong></p>
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
-<p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
-<p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5c701a07-06ae-44da-a251-be55ef82b1b9">
-<span class="eqno">(9)<a class="headerlink" href="#equation-5c701a07-06ae-44da-a251-be55ef82b1b9" title="Permalink to this equation">#</a></span>\[\begin{equation}
-P(Defuncion|D=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times Neumo + \beta_{2}\times Hosp)}} \hspace{2cm} (1)
-\end{equation}\]</div>
-<p>hubo_defuncion ~ neumonias_men5 + hospitalizados_men5
-Donde:</p>
+<p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;hubo_defuncion</span> <span class="pre">~</span> <span class="pre">neumonias_men5</span> <span class="pre">+</span> <span class="pre">C(hospitalizados_men5)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
+<p>La expresión matemática estimada para este modelo está representada por la ecuación <a class="reference internal" href="#equation-eq-rlb-ira">(9)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-rlb-ira">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-rlb-ira" title="Link to this equation">#</a></span>\[
+P(Defunción|D=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times x_{1} + \beta_{2}\times x_{2})}} \hspace{2cm}
+\]</div>
+<p>Donde:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\beta_0\)</span> es el <strong>coeficiente estimado del intercepto</strong> obtenido de la salida del modelo <code class="docutils literal notranslate"><span class="pre">modelo_logistico.params[&quot;Intercep&quot;]</span></code>.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_1\)</span> e el <strong>coeficiente estimado para la variable edad</strong> (<code class="docutils literal notranslate"><span class="pre">modelo_logistico.params[&quot;neumonias_men5&quot;]</span></code>).</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_2\)</span> es el <strong>coeficiente estimado para la variable sexo</strong> (<code class="docutils literal notranslate"><span class="pre">modelo_logistico.params[&quot;hospitalizados_men5&quot;]</span></code>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_{1}\)</span> y <span class="math notranslate nohighlight">\(x_{2}\)</span> representan  las variables <code class="docutils literal notranslate"><span class="pre">neumonias_men5</span></code> y <code class="docutils literal notranslate"><span class="pre">hospitalizados_men5</span></code>, respectivamente.</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\( \)</span></p>
 <p><strong>Referencias</strong></p>

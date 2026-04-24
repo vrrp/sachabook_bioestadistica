@@ -1595,14 +1595,14 @@ Name: count, dtype: int64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estadísticas descriptivas para la variable &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas para &#39;Edad&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas para &#39;edad&#39;:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador para mayor claridad</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas Descriptivas para &#39;Edad&#39;:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadísticas Descriptivas para &#39;edad&#39;:
 count    563197.000000
 mean         20.517563
 std          17.410608
@@ -1621,13 +1621,13 @@ Name: edad, dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histograma para visualizar la distribución de &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Visualización de la Distribución para &#39;Edad&#39; (Histograma):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Visualización de la Distribución para &#39;edad&#39; (Histograma):&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span> <span class="c1"># Establece el tamaño de la figura para el gráfico</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad de caso de Malaria&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la edad de caso de Malaria&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;edad&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje y</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Añade una cuadrícula al gráfico</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1"># Muestra el gráfico</span>
@@ -1635,10 +1635,10 @@ Name: edad, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Visualización de la Distribución para &#39;Edad&#39; (Histograma):
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Visualización de la Distribución para &#39;edad&#39; (Histograma):
 </pre></div>
 </div>
-<img alt="../_images/2d720958bf03a47ee91ea84bc8f80a9ac1e34b447bf24dfd6b4fdd9d36746a53.png" src="../_images/2d720958bf03a47ee91ea84bc8f80a9ac1e34b447bf24dfd6b4fdd9d36746a53.png" />
+<img alt="../_images/71ee2f0ab6f4ed2ab384b20f764da908056e5a5a1e244c951b9101485eaeab89.png" src="../_images/71ee2f0ab6f4ed2ab384b20f764da908056e5a5a1e244c951b9101485eaeab89.png" />
 </div>
 </div>
 </section>
@@ -1647,8 +1647,8 @@ Name: edad, dtype: float64
 <p>Vamos a calcular medidas de tendencia central (como la media, mediana y moda) y medidas de dispersión (como la desviación estándar, varianza y rango) para las variables <strong>Sexo, Edad</strong> y <strong>Tipo_Dx</strong>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis para la variable &#39;Edad&#39; (Cuantitativa)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medidas de Tendencia Central para &#39;Edad&#39;&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Análisis para la variable &#39;edad&#39; (Cuantitativa)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Medidas de Tendencia Central para &#39;edad&#39;&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># Separador</span>
 
 <span class="c1"># Medidas de Tendencia Central para &#39;Edad&#39;</span>
@@ -1656,7 +1656,7 @@ Name: edad, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Mediana: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># mode() puede devolver múltiples valores si hay un empate</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medidas de Dispersión para &#39;Edad&#39;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medidas de Dispersión para &#39;edad&#39;&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># Separador</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Desviación Estándar: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Varianza: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1666,7 +1666,7 @@ Name: edad, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Rango Intercuartílico (IQR): </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 
-<span class="c1"># Análisis para la variable &#39;Sexo&#39; (Categórica)</span>
+<span class="c1"># Análisis para la variable &#39;sexo&#39; (Categórica)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Medida de Tendencia Central (Moda)&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="p">)</span> <span class="c1"># Separador</span>
@@ -1675,29 +1675,29 @@ Name: edad, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;sexo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
 
 
-<span class="c1"># Análisis para la variable &#39;Tipo_edad&#39; (Categórica)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Tipo_edad&#39;:&quot;</span><span class="p">)</span>
+<span class="c1"># Análisis para la variable &#39;tipo_edad&#39; (Categórica)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;tipo_edad&#39;:&quot;</span><span class="p">)</span>
 
-<span class="c1"># Medida de Tendencia Central para &#39;Tipo_edad&#39; (Moda)</span>
+<span class="c1"># Medida de Tendencia Central para &#39;tipo_edad&#39; (Moda)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;tipo_edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
 
 
-<span class="c1"># Análisis para la variable &#39;Tipo_Dx&#39; (Categórica)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;Tipo_Dx&#39;:&quot;</span><span class="p">)</span>
+<span class="c1"># Análisis para la variable &#39;tipo_dx&#39; (Categórica)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Análisis para la variable &#39;tipo_dx&#39;:&quot;</span><span class="p">)</span>
 
-<span class="c1"># Medida de Tendencia Central para &#39;Tipo_Dx&#39; (Moda)</span>
+<span class="c1"># Medida de Tendencia Central para &#39;tipo_dx&#39; (Moda)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Moda: </span><span class="si">{</span><span class="n">df_interes</span><span class="p">[</span><span class="s1">&#39;tipo_dx&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># La categoría más frecuente</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medidas de Tendencia Central para &#39;Edad&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Medidas de Tendencia Central para &#39;edad&#39;
 ==================================================
   Media: 20.52
   Mediana: 15.00
   Moda: 3
 
-Medidas de Dispersión para &#39;Edad&#39;
+Medidas de Dispersión para &#39;edad&#39;
 ==================================================
   Desviación Estándar: 17.41
   Varianza: 303.13
@@ -1710,9 +1710,9 @@ Medida de Tendencia Central (Moda)
 ==================================================
 Análisis para la variable &#39;sexo&#39;:
   Moda: M
-Análisis para la variable &#39;Tipo_edad&#39;:
+Análisis para la variable &#39;tipo_edad&#39;:
   Moda: A
-Análisis para la variable &#39;Tipo_Dx&#39;:
+Análisis para la variable &#39;tipo_dx&#39;:
   Moda: C
 </pre></div>
 </div>
@@ -1884,7 +1884,7 @@ Name: edad, dtype: float64
 
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">edad_femenino</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad de caso de Anemia (Femenino)&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la edad (Femenino)&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje y</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Añade una cuadrícula al gráfico</span>
@@ -1893,7 +1893,7 @@ Name: edad, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0364bf7dfd7e710893aa791b56da239a075a7566d5de6e7b9de8a4f4e1016e27.png" src="../_images/0364bf7dfd7e710893aa791b56da239a075a7566d5de6e7b9de8a4f4e1016e27.png" />
+<img alt="../_images/36163c92bc578f8f0792b00bbd6f4cb836e1dfb6a4beda950cd98b1f1aa97c25.png" src="../_images/36163c92bc578f8f0792b00bbd6f4cb836e1dfb6a4beda950cd98b1f1aa97c25.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1902,7 +1902,7 @@ Name: edad, dtype: float64
 
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">edad_masculino</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad de caso de Anemia (Masculino)&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la edad (Masculino)&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje x</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frecuencia&quot;</span><span class="p">)</span> <span class="c1"># Añade una etiqueta al eje y</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Añade una cuadrícula al gráfico</span>
@@ -1911,7 +1911,7 @@ Name: edad, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/13093f16e464b666b6ed50d67fc84d0ce3faf88f8cbd980e943720225cf34efa.png" src="../_images/13093f16e464b666b6ed50d67fc84d0ce3faf88f8cbd980e943720225cf34efa.png" />
+<img alt="../_images/aa859f44c9b227977c09c6af708c80fadd96d41050c0abbd1678e0f41b47b3fa.png" src="../_images/aa859f44c9b227977c09c6af708c80fadd96d41050c0abbd1678e0f41b47b3fa.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1921,7 +1921,7 @@ Name: edad, dtype: float64
 <span class="c1"># Si no estamos seguros de la igualdad de varianzas, podemos usar equal_var=False (Welch&#39;s T-test).</span>
 <span class="n">t_stat</span><span class="p">,</span> <span class="n">p_valor_ttest</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">edad_femenino</span><span class="p">,</span> <span class="n">edad_masculino</span><span class="p">,</span> <span class="n">equal_var</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba T-test Independiente para la Edad entre Sexo Femenino y Masculino:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba T-test Independiente para la edad entre sexo Femenino y Masculino:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estadístico T: </span><span class="si">{</span><span class="n">t_stat</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-valor: </span><span class="si">{</span><span class="n">p_valor_ttest</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
@@ -1946,7 +1946,7 @@ Name: edad, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba T-test Independiente para la Edad entre Sexo Femenino y Masculino:
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba T-test Independiente para la edad entre sexo Femenino y Masculino:
 Estadístico T: -45.514
 p-valor: 0.000
 
@@ -1980,7 +1980,7 @@ Medias de Edad por Sexo:
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Realizar la prueba de Shapiro-Wilk para el grupo Femenino</span>
 <span class="n">shapiro_femenino_stat</span><span class="p">,</span> <span class="n">shapiro_femenino_p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">shapiro</span><span class="p">(</span><span class="n">edad_femenino</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba de Shapiro-Wilk para la Edad (Sexo Femenino):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prueba de Shapiro-Wilk para Edad (Sexo Femenino):&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Estadístico Shapiro-Wilk: </span><span class="si">{</span><span class="n">shapiro_femenino_stat</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;p-valor: </span><span class="si">{</span><span class="n">shapiro_femenino_p</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
@@ -2028,7 +2028,7 @@ Medias de Edad por Sexo:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Shapiro-Wilk para la Edad (Sexo Femenino):
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba de Shapiro-Wilk para Edad (Sexo Femenino):
 Estadístico Shapiro-Wilk: 0.870
 p-valor: 0.000
 
@@ -2084,7 +2084,7 @@ Interpretación para el grupo Masculino:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x7d43a76cd760&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x78ca758107d0&gt;
 </pre></div>
 </div>
 </div>
@@ -2353,7 +2353,7 @@ MALARIA POR P. VIVAX     20.353462
 Name: edad, dtype: float64
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_24114/3807175530.py:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_13774/3807175530.py:26: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   print(df_interes.groupby(&#39;enfermedad&#39;)[&#39;edad&#39;].mean())
 </pre></div>
 </div>
@@ -2370,8 +2370,8 @@ Name: edad, dtype: float64
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
 <p>La expresión matemática estimada para este modelo está representada por la ecuación <a class="reference internal" href="home.html#equation-eq-promediofinal">(1)</a>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cdf7303b-b108-4b47-a8c2-782deebcba6a">
-<span class="eqno">(4)<a class="headerlink" href="#equation-cdf7303b-b108-4b47-a8c2-782deebcba6a" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-eaf6a4c2-ff24-400d-a20b-ead162a02771">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eaf6a4c2-ff24-400d-a20b-ead162a02771" title="Permalink to this equation">#</a></span>\[\begin{equation}
 P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
 \end{equation}\]</div>
 <p>Donde:</p>
@@ -2446,8 +2446,8 @@ Name: count, dtype: int64
 Dep. Variable:              tipo_cepa   No. Observations:               563197
 Model:                          Logit   Df Residuals:                   563194
 Method:                           MLE   Df Model:                            2
-Date:                Tue, 21 Apr 2026   Pseudo R-squ.:               0.0008073
-Time:                        20:40:39   Log-Likelihood:            -2.6454e+05
+Date:                Fri, 24 Apr 2026   Pseudo R-squ.:               0.0008073
+Time:                        18:37:42   Log-Likelihood:            -2.6454e+05
 converged:                       True   LL-Null:                   -2.6475e+05
 Covariance Type:            nonrobust   LLR p-value:                 1.505e-93
 ================================================================================

@@ -2434,16 +2434,17 @@ Name: edad, dtype: float64
 <p><strong>¿Para que sirve?</strong></p>
 <p>Sirve para modelar la relación entre una o más <strong>variables independientes</strong> (predictoras) y una <strong>variable dependiente categórica</strong> (la que queremos predecir). La variable dependiente suele ser binaria (con dos categorías, como sí/no, verdadero/falso, 0/1).</p>
 <p>Se va ha implementar el modelo de regresión logística con la relación matemática <code class="docutils literal notranslate"><span class="pre">&quot;Dx_Confirmado</span> <span class="pre">~</span> <span class="pre">edad</span> <span class="pre">+</span> <span class="pre">C(sexo)&quot;</span></code>. Esto significa que las variables predictoras son <strong>edad</strong> (cuantitativa) y <strong>sexo</strong> (categórica).</p>
-<p>La expresión matemática estimada para este modelo está representada por la ecuación (1):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3e6b65bf-308a-49d3-aa83-b8fa8180fd55">
-<span class="eqno">(6)<a class="headerlink" href="#equation-3e6b65bf-308a-49d3-aa83-b8fa8180fd55" title="Permalink to this equation">#</a></span>\[\begin{equation}
-P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times EDAD + \beta_{2}\times SEXO)}} \hspace{2cm} (1)
-\end{equation}\]</div>
+<p>La expresión matemática estimada para este modelo está representada por la ecuación <a class="reference internal" href="#equation-eq-rlb-zoonosis">(6)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-rlb-zoonosis">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-rlb-zoonosis" title="Link to this equation">#</a></span>\[
+P(dx|C=1) = \frac{1}{1 + e^{-(\beta_{0} + \beta_{1}\times x_{1} + \beta_{2}\times x_{2})}} \hspace{2cm}
+\]</div>
 <p>Donde:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\beta_0\)</span> es el <strong>coeficiente estimado del intercepto</strong> obtenido de la salida del modelo <code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;Intercep&quot;]</span></code>.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_1\)</span> e el <strong>coeficiente estimado para la variable edad</strong> (<code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;&quot;edad]</span></code>).</p></li>
 <li><p><span class="math notranslate nohighlight">\(\beta_2\)</span> es el <strong>coeficiente estimado para la variable sexo</strong> (<code class="docutils literal notranslate"><span class="pre">modelo.params[&quot;C(sexo)[T.M]&quot;]</span></code>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_{1}\)</span> y <span class="math notranslate nohighlight">\(x_{2}\)</span> representan  las variables <code class="docutils literal notranslate"><span class="pre">edad</span></code> y <code class="docutils literal notranslate"><span class="pre">sexo</span></code>, respectivamente.</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\( \)</span></p>
 <p><strong>Referencias</strong></p>

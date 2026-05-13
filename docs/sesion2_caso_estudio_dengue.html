@@ -477,6 +477,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-metadatos"><strong>3.4. Revisión Metadatos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-confirmado-c"><strong>3.4.1. tipo_Dx:</strong> Confirmado (C)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-probable-p"><strong>3.4.2. tipo_Dx:</strong> Probable (P)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-sospechoso-s"><strong>3.4.3. tipo_Dx:</strong> Sospechoso (S)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5 Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
@@ -1495,14 +1497,18 @@ Name: count, dtype: int64
 <section id="tipo-dx-probable-p">
 <h3><strong>3.4.2. tipo_Dx:</strong> Probable (P)<a class="headerlink" href="#tipo-dx-probable-p" title="Link to this heading">#</a></h3>
 <p>Un caso se clasifica como probable cuando hay compatibilidad clínica y apoyo epidemiológico o serológico, pero sin confirmación por pruebas específicas.</p>
-<p>###<strong>3.4.3. tipo_Dx:</strong> Sospechoso (S)
-Un caso se considera sospechoso cuando presenta síntomas sugerentes, pero sin pruebas de laboratorio ni nexo epidemiológico confirmado.</p>
+</section>
+<section id="tipo-dx-sospechoso-s">
+<h3><strong>3.4.3. tipo_Dx:</strong> Sospechoso (S)<a class="headerlink" href="#tipo-dx-sospechoso-s" title="Link to this heading">#</a></h3>
+<p>Un caso se considera sospechoso cuando presenta síntomas sugerentes, pero sin pruebas de laboratorio ni nexo epidemiológico confirmado.</p>
 <p><strong>Fuentes</strong></p>
 <ul class="simple">
 <li><p><a href="https://www.datosabiertos.gob.pe/dataset/anemia">Plataforma de datos abiertos del Perú</a>.</p></li>
 <li><p><a href="https://www.who.int/publications/i/item/9789241547871">Organización Mundial de la Salud (OMS)</a></p></li>
 </ul>
-<p>###<strong>3.4.4. Elección de variables de interés</strong></p>
+</section>
+<section id="eleccion-de-variables-de-interes">
+<h3><strong>3.4.4. Elección de variables de interés</strong><a class="headerlink" href="#eleccion-de-variables-de-interes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_interes</span> <span class="o">=</span> <span class="n">df_dengue</span><span class="p">[[</span><span class="s2">&quot;ano&quot;</span><span class="p">,</span><span class="s2">&quot;departamento&quot;</span><span class="p">,</span> <span class="s2">&quot;sexo&quot;</span><span class="p">,</span><span class="s2">&quot;edad&quot;</span><span class="p">,</span><span class="s2">&quot;tipo_edad&quot;</span><span class="p">,</span><span class="s2">&quot;enfermedad&quot;</span><span class="p">,</span><span class="s2">&quot;tipo_dx&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -1729,7 +1735,7 @@ Name: edad, dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Estadísticas descriptivas para la variable &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas para &#39;Edad&#39;:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadísticas Descriptivas para &#39;edad&#39;:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># Separador para mayor claridad</span>
 </pre></div>
@@ -1755,7 +1761,7 @@ Name: edad, dtype: float64
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histograma para visualizar la distribución de &#39;Edad&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Visualización de la Distribución para &#39;Edad&#39; (Histograma):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Visualización de la Distribución para &#39;edad&#39; (Histograma):&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span> <span class="c1"># Establece el tamaño de la figura para el gráfico</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_interes</span><span class="p">[</span><span class="s2">&quot;edad&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># Crea el histograma</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de la Edad&quot;</span><span class="p">)</span> <span class="c1"># Añade un título al gráfico</span>
@@ -3019,6 +3025,8 @@ edad             0.0048      0.000     26.281      0.000       0.004       0.005
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-metadatos"><strong>3.4. Revisión Metadatos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-confirmado-c"><strong>3.4.1. tipo_Dx:</strong> Confirmado (C)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-probable-p"><strong>3.4.2. tipo_Dx:</strong> Probable (P)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipo-dx-sospechoso-s"><strong>3.4.3. tipo_Dx:</strong> Sospechoso (S)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5 Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">

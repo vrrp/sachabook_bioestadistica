@@ -474,7 +474,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-metadatos"><strong>3.4. Revisión Metadatos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.1. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5 Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
@@ -873,7 +873,7 @@ primeras_100_filas_anemia.gsheet
 </div>
 </div>
 <section id="eleccion-de-variables-de-interes">
-<h3><strong>3.4.4. Elección de variables de interés</strong><a class="headerlink" href="#eleccion-de-variables-de-interes" title="Link to this heading">#</a></h3>
+<h3><strong>3.4.1. Elección de variables de interés</strong><a class="headerlink" href="#eleccion-de-variables-de-interes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_interes</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;ano&quot;</span><span class="p">,</span> <span class="s2">&quot;neumonias_men5&quot;</span><span class="p">,</span><span class="s2">&quot;defunciones_men5&quot;</span><span class="p">,</span><span class="s2">&quot;departamento&quot;</span><span class="p">,</span> <span class="s2">&quot;hospitalizados_men5&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -2056,47 +2056,17 @@ hospitalizados_men5     0.1377      0.015      9.244      0.000       0.109     
 </div>
 </div>
 <p>#<strong>IV. Referencias</strong></p>
-<p>###<strong>4.1 Libros y manuales</strong></p>
-<ul>
-<li><p>Libro de estadisitica con python</p>
-<p><a class="reference external" href="https://www.editorial-sciela.org/index.php/sciela/article/view/16/49">https://www.editorial-sciela.org/index.php/sciela/article/view/16/49</a></p>
-</li>
-<li><p>Introducción a la teoria de probabilidades</p>
-<p><a class="reference external" href="https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf">https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf</a></p>
-</li>
-<li><p>Guía practica de análsis exploratorio de python</p>
-<p><a class="reference external" href="https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf">https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf</a></p>
-</li>
+<p><strong>Libros y manuales</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.editorial-sciela.org/index.php/sciela/article/view/16/49">Libro de estadisitica con python </a>, <a class="reference external" href="https://ciladi.org/wp-content/uploads/Version_final_Introduccion-Probabilidad-Python-vf_Bayas-3.pdf">Introducción a la teoria de probabilidades</a>, <a class="reference external" href="https://datos.gob.es/sites/default/files/doc/file/guia_eda_python.pdf">Guía practica de análsis exploratorio de python</a></p></li>
 </ul>
 <p><strong>Cursos en linea</strong></p>
-<ul>
-<li><p>Estadística W3School:</p>
-<p><a class="reference external" href="https://www.w3schools.com/statistics/index.php">https://www.w3schools.com/statistics/index.php</a></p>
-</li>
-<li><p>Estadística con python:</p>
-<p><a class="reference external" href="https://docs.python.org/es/3/library/statistics.html">https://docs.python.org/es/3/library/statistics.html</a></p>
-</li>
-<li><p>Kaggle:</p>
-<p><a class="reference external" href="https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists">https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists</a></p>
-</li>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.w3schools.com/statistics/index.php">Estadística W3School</a>, <a class="reference external" href="https://docs.python.org/es/3/library/statistics.html">Estadística con python</a>, <a class="reference external" href="https://www.kaggle.com/code/saurav9786/statistics-for-data-scientists">Kaggle</a></p></li>
 </ul>
 <p><strong>Aplicaciones IA</strong></p>
-<ul>
-<li><p>Gemini iA</p>
-<p><a class="reference external" href="https://gemini.google.com">https://gemini.google.com</a></p>
-</li>
-<li><p>DeepSeek</p>
-<p><a class="reference external" href="https://www.deepseek.com/">https://www.deepseek.com/</a></p>
-</li>
-<li><p>Chat GPT</p>
-<p><a class="reference external" href="https://chatgpt.com/">https://chatgpt.com/</a></p>
-</li>
-<li><p>Claude IA</p>
-<p><a class="reference external" href="https://claude.ai/">https://claude.ai/</a></p>
-</li>
-<li><p>Julius IA:</p>
-<p><a class="reference external" href="https://julius.ai">https://julius.ai</a></p>
-</li>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gemini.google.com">Gemini iA</a>, <a class="reference external" href="https://www.deepseek.com/">DeepSeek</a>, <a class="reference external" href="https://chatgpt.com/">ChatGPT</a>, <a class="reference external" href="https://claude.ai/">Claude IA</a>, <a class="reference external" href="https://julius.ai">Julius IA:</a></p></li>
 </ul>
 </section>
 </section>
@@ -2184,7 +2154,7 @@ hospitalizados_men5     0.1377      0.015      9.244      0.000       0.109     
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-base-de-datos"><strong>3.3. Importar Base de Datos</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revision-metadatos"><strong>3.4. Revisión Metadatos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.4. Elección de variables de interés</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-de-variables-de-interes"><strong>3.4.1. Elección de variables de interés</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-estadistico-descriptivo-univariado-y-bivariado"><strong>3.5 Análisis Estadístico Descriptivo Univariado y Bivariado</strong></a><ul class="nav section-nav flex-column">
